@@ -1,9 +1,4 @@
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-if [ -f $(brew --prefix)/etc/bash_completion  ]; then
-   . $(brew --prefix)/etc/bash_completion
-fi
 
 #zsh utf-8 'ls -v' display chinese 
 alias ls='ls -v'
