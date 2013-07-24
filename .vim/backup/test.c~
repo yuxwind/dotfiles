@@ -1,0 +1,10 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+int main()
+{
+    char c[10];
+    memset(c,49,9*sizeof(char));
+    printf("%s",c);
+    return 0;
+}

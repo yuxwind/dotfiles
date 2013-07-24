@@ -40,7 +40,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails3 rails rvm gem github brew bundler pow)
+plugins=(git ruby rails3 rails rvm gem brew mvn sbt scala)
 
 source $HOME/.bash_profile
 source $HOME/.bashrc
