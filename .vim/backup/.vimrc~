@@ -35,7 +35,8 @@
 "   -> Splitjoin
 "   -> Unite
 "   -> vimux
-"
+"   -> DoxygenToolkit.vim
+"   -> a.vim
 " Plugins_Included:
 "   > Vundle - https://github.com/gmarik/vundle
 "     Manage the Vim scripts
@@ -154,8 +155,12 @@
 "   > vim-matchit - https://github.com/tsaleh/vim-matchit
 "     Extended matching with "%"
 "     info -> :help matchit.txt
-"
+"   > DoxygenToolkit.vim -
+" https://github.com/vim-scripts/DoxygenToolkit.vim¬
+"   > a.vim - https://github.com/vim-scripts/a.vim¬
+"   switch .h and .c with :A¬
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"    "
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -335,7 +340,9 @@ Bundle 'Shougo/neosnippet'
 Bundle 'honza/vim-snippets'
 Bundle 'xolox/vim-misc'
 Bundle 'wikitopian/hardmode'
-Bundle 'tangledhelix/vim-octopress'
+Bundle 'marksim/vim-octopress'
+Bundle 'vim-scripts/DoxygenToolkit.vim'
+Bundle 'vim-scripts/a.vim'
 " Local bundles if avaiable
 if filereadable(expand("~/.vimrc.bundles.local"))
     source ~/.vimrc.bundles.local
@@ -1020,5 +1027,16 @@ class Object
   def flush; end unless Object.new.respond_to?(:flush)
 end
 EOF
+
+"-----------------------------------------------------------------¬
+" "" plugin - DoxygenToolkit.vim doxygen¬
+"-----------------------------------------------------------------¬
+let g:DoxygenToolkit_authorName="Jiessie - jiessie.cao AT gmail DOT com"
+let g:DoxygenToolkit_briefTag_funcName="yes"
+map <leader>da :DoxAuthor<CR>
+map <leader>df :Dox<CR>
+map <leader>db :DoxBlock<CR>
+map <leader>dc a <LEFT><LEFT><LEFT>
+
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
