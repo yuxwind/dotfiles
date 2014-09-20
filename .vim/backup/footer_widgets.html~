@@ -13,6 +13,9 @@
   <div class="span4">
     {% include custom/category_list.html %}
   </div>
+  <div class = "span3">
+    {% include custom/asides/douban.html %}
+  </div>
   <div class="span3">
     {% include custom/asides/instagram.html %}
   </div>

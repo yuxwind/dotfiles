@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Maintainer: Xiao-Ou Zhang (kepbod) <kepbod@gmail.com>
+" Maintainer: Jiessie Cao (Jiessie) <jiessie.cao@gmail.com>
 " Created: 2012-01-20
 " Last Modified: 2013-05-17
 "
@@ -20,17 +20,16 @@
 "   -> Tagbar
 "   -> NERD_tree
 "   -> NERD_commenter
-"   -> Neocomplcache
 "   -> delimitMate
 "   -> Ctrlp
 "   -> Ag(Ack)
+"   -> ListToggle
 "   -> Syntastic
 "   -> Indent Guides
 "   -> fugitive
 "   -> Gundo
 "   -> EasyTags
 "   -> SingleCompile
-"   -> Zencoding
 "   -> GoldenView
 "   -> Splitjoin
 "   -> Unite
@@ -50,9 +49,6 @@
 "   > NERD_commenter - https://github.com/scrooloose/nerdcommenter
 "     Provide many different commenting operations and styles
 "     info -> :help NERD_commenter.txt
-"   > Neocomplcache - https://github.com/Shougo/neocomplcache
-"     Performs keyword completion by maintaining a cache of keywords
-"     info -> :help neocomplcache.txt
 "   > surround - https://github.com/tpope/vim-surround
 "     Provide mappings to delete, change and add surroundings in pairs
 "     info -> :help surround.txt
@@ -98,9 +94,6 @@
 "   > CamelCaseMotion - https://github.com/bkad/CamelCaseMotion
 "     Refine words motion in Vim
 "     info -> :help camelcasemotion.txt
-"   > Zencoding - https://github.com/mattn/zencoding-vim
-"     High-speed HTML, XML, XSL coding and editing
-"     info -> :help zencoding.txt
 "   > Splitjoin - https://github.com/AndrewRadev/splitjoin.vim
 "     Switch between a single-line statement and a multi-line one
 "     info -> :help splitjoin.txt
@@ -189,7 +182,7 @@ set clipboard+=unnamed " Yanks go on clipboard instead
 set spell " Spell checking on
 set modeline " Turn on modeline
 set encoding=utf-8 " Set utf-8 encoding
-set completeopt+=longest " Optimize auto complete
+set completeopt+=longest,menu " Optimize auto complete
 set completeopt-=preview " Optimize auto complete
 
 set mousehide " Hide mouse after chars typed
@@ -275,6 +268,7 @@ endif
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'chrisbra/NrrwRgn'
 Bundle 'mhinz/vim-startify'
+
 " Navigation
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'terryma/vim-multiple-cursors'
@@ -304,6 +298,7 @@ if has('ruby')
     Bundle 'benmills/vimux'
 endif
 Bundle 'tsaleh/vim-matchit'
+
 " Commands
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
@@ -314,14 +309,16 @@ if has('python')
     Bundle 'mutewinter/swap-parameters'
 endif
 Bundle 'xuhdev/SingleCompile'
+
 " Automatic Helper
-Bundle 'Shougo/neocomplcache'
 Bundle 'Raimondi/delimitMate'
-Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-speeddating'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/ListToggle'
+Bundle 'scrooloose/syntastic'
+
 " Language related
 Bundle 'tpope/vim-rails'
-Bundle 'mattn/zencoding-vim'
 Bundle 'swaroopch/vim-markdown-preview'
 Bundle 'sampsyo/autolink.vim'
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
@@ -336,8 +333,6 @@ endif
 Bundle 'h1mesuke/unite-outline'
 Bundle 'tpope/vim-repeat'
 Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Shougo/neosnippet'
-Bundle 'honza/vim-snippets'
 Bundle 'xolox/vim-misc'
 Bundle 'wikitopian/hardmode'
 Bundle 'marksim/vim-octopress'
@@ -472,12 +467,13 @@ endif
 " => Colors and Fonts
 "-------------------------------------------------
 
-syntax on " Enable syntax
+syntax enable " Enable syntax
 set background=dark " Set background
 if !has('gui_running')
     set t_Co=256 " Use 256 colors
 endif
-colorscheme hybrid " Load a colorscheme
+"colorscheme hybrid " Load a colorscheme
+colorscheme  solarized" Load a colorscheme
 
 nnoremap <silent>\t :colorscheme Tomorrow-Night-Eighties<CR>
 nnoremap <silent>\j :colorscheme jellybeans<CR>
@@ -744,7 +740,7 @@ endfunction
 nnoremap <silent>\<Space> :call IsWhiteLine()<CR>
 
 " Strip all trailing whitespace in the current file
-nnoremap <Leader>q :%s/\s\+$//<CR>:let @/=''<CR>
+nnoremap <Leader>wq :%s/\s\+$//<CR>:let @/=''<CR>
 
 " See the differences between the current buffer and the file it was loaded from
 command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
@@ -807,44 +803,60 @@ let NERDRemoveExtraSpaces=1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""
 "--------------------------------------------------
-" => Neocomplcache
+" => Syntastic
+"--------------------------------------------------
+let g:syntastic_ignore_files=[".*\.py$"]   "pylint for python
+nnoremap <Leader>s :Errors<CR>
+let g:syntastic_check_on_open=1
+let g:syntastic_auto_jump=1
+let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+
+let g:syntastic_cpp_include_dirs = ['/usr/include/']
+let g:syntastic_cpp_remove_include_errors = 1
+let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'
+"set error or warning signs
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '⚠'
+"whether to show balloons
+let g:syntastic_enable_balloons = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+"-------------------------------------------------
+" => YCM
 "--------------------------------------------------
 
-let g:neocomplcache_enable_at_startup=1
-let g:neocomplcache_enable_auto_delimiter=1
-let g:neocomplcache_enable_camel_case_completion=1
-let g:neocomplcache_enable_underbar_completion=1
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_confirm_extra_conf = 0
+nmap <leader>gd :YcmDiags<CR>
+"nnoremap <leader>jl :YcmCompleter GoToDeclaration<CR>
+"nnoremap <leader>jj :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
-let g:snips_author='Xiao-Ou Zhang <kepbod@gmail.com>'
+"let g:ycm_error_symbol = '>>'
+"let g:ycm_warning_symbol = '>*'
+let g:ycm_cache_omnifunc=0  "  forbid cache
+let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 0 
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 
-" Tell Neosnippet about the other snippets
-let g:neosnippet#snippets_directory="$HOME/.vim/bundle/vim-snippets/snippets"
-let g:neosnippet#enable_snipmate_compatibility=1
+""""""""""""""""""""""""""""""""""""""""""""""""""""
+"-------------------------------------------------
+" => ListToggle
+"--------------------------------------------------
+let g:lt_location_list_toggle_map = '<leader>l'
+let g:lt_quickfix_list_toggle_map = '<leader>q'
+let g:lt_height = 10
 
-" Plugin key-mappings
-imap <C-K> <Plug>(neosnippet_expand_or_jump)
-smap <C-K> <Plug>(neosnippet_expand_or_jump)
-xmap <C-K> <Plug>(neosnippet_expand_target)
 
-" Map <C-E> to cancel completion
-inoremap <expr><C-E> neocomplcache#cancel_popup()
-
-" SuperTab like snippets behavior
-inoremap <expr><Tab> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-N>" : "\<Tab>"
-snoremap <expr><Tab> neosnippet#expandable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<Tab>"
-inoremap <expr><S-Tab> pumvisible() ? "\<C-P>" : "\<S-Tab>"
-
-" CR/S-CR: close popup and save indent
-inoremap <expr><CR> delimitMate#WithinEmptyPair() ? "\<C-R>=delimitMate#ExpandReturn()\<CR>" : pumvisible() ? neocomplcache#close_popup() : "\<CR>"
-inoremap <expr><S-CR> pumvisible() ? neocomplcache#close_popup() "\<CR>" : "\<CR>"
-
-" For snippet_complete marker
-if has('conceal')
-    set conceallevel=2 concealcursor=i
-endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "--------------------------------------------------
 " => delimitMate
@@ -878,17 +890,6 @@ endif
 if !executable('ag') && has('unix') && executable('ack-grep')
     let g:ackprg='ack-grep -H --nocolor --nogroup --column'
 endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"--------------------------------------------------
-" => Syntastic
-"--------------------------------------------------
-
-nnoremap <Leader>s :Errors<CR>
-let g:syntastic_check_on_open=1
-let g:syntastic_auto_jump=1
-let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -971,15 +972,6 @@ let g:SingleCompile_showquickfixiferror=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "--------------------------------------------------
-" => Zencoding
-"--------------------------------------------------
-
-let g:user_zen_leader_key='<C-Z>'
-let g:user_zen_settings={'indentation':'   '}
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"--------------------------------------------------
 " => GoldenView
 "--------------------------------------------------
 
@@ -1038,5 +1030,24 @@ map <leader>df :Dox<CR>
 map <leader>db :DoxBlock<CR>
 map <leader>dc a <LEFT><LEFT><LEFT>
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
+" filetype plugin on
+"
+" IMPORTANT: win32 users will need to have 'shellslash' set so that latex
+" can be called correctly.
+set shellslash
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+"OPTIONAL: This enables automatic indentation as you type.
+filetype indent on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'

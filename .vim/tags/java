@@ -1,0 +1,114 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+addColumn	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	public void addColumn(DataField field) {$/;"	m	language:Java	class:CSVSchema
+BEANSHELL_SCRIPTS_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static String BEANSHELL_SCRIPTS_DIR = YooreekaConfigurator.getHome()+"\/docs\/BeanShell-Notes";$/;"	f	language:Java	class:ScriptEvalUtils
+column	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	private int column = 0;$/;"	f	language:Java	class:CSVSchema	file:
+columnMap	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	private HashMap<Integer, DataField> columnMap;$/;"	f	language:Java	class:CSVSchema	file:
+CRAWL_DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String CRAWL_DATA_DIR="yooreeka.crawl.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+CSVSchema	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	public CSVSchema() {$/;"	m	language:Java	class:CSVSchema
+CSVSchema	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^public class CSVSchema {$/;"	c	language:Java
+CSVSchema.addColumn	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	public void addColumn(DataField field) {$/;"	m	language:Java	class:CSVSchema
+CSVSchema.column	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	private int column = 0;$/;"	f	language:Java	class:CSVSchema	file:
+CSVSchema.columnMap	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	private HashMap<Integer, DataField> columnMap;$/;"	f	language:Java	class:CSVSchema	file:
+CSVSchema.CSVSchema	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	public CSVSchema() {$/;"	m	language:Java	class:CSVSchema
+CSVSchema.getNumberOfColumns	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	public int getNumberOfColumns() {$/;"	m	language:Java	class:CSVSchema
+DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String DATA_DIR = "yooreeka.data.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+defaultResourceName	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static String defaultResourceName = "\/yooreeka.properties";$/;"	f	language:Java	class:YooreekaConfigurator	file:
+EPSILON	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public static final double EPSILON = 0.0001;$/;"	f	language:Java	class:MySearcher
+getHome	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getHome() {$/;"	m	language:Java	class:YooreekaConfigurator
+getLevel	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static Level getLevel(String cName) {$/;"	m	language:Java	class:YooreekaConfigurator
+getLogProperty	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getLogProperty(String key) {$/;"	m	language:Java	class:YooreekaConfigurator
+getNumberOfColumns	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^	public int getNumberOfColumns() {$/;"	m	language:Java	class:CSVSchema
+getProperty	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getProperty(String key) {$/;"	m	language:Java	class:YooreekaConfigurator
+getProperty	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getProperty(String key, String defaultValue) {$/;"	m	language:Java	class:YooreekaConfigurator
+getScript	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static String getScript(String scriptName) {$/;"	m	language:Java	class:ScriptEvalUtils
+getScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static List<String> getScripts(String dir, String filter) {$/;"	m	language:Java	class:ScriptEvalUtils
+getScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static List<String> getScripts(String filter) {$/;"	m	language:Java	class:ScriptEvalUtils
+indexFile	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private File indexFile;$/;"	f	language:Java	class:MySearcher	file:
+isVerbose	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public boolean isVerbose() {$/;"	m	language:Java	class:MySearcher
+learner	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private NaiveBayes learner = null;$/;"	f	language:Java	class:MySearcher	file:
+logProps	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static Properties logProps = new Properties();$/;"	f	language:Java	class:YooreekaConfigurator	file:
+LOG_LEVEL_CONFIG	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_CONFIG = "CONFIG";$/;"	f	language:Java	class:YooreekaConfigurator
+LOG_LEVEL_FINE	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_FINE = "FINE";$/;"	f	language:Java	class:YooreekaConfigurator
+LOG_LEVEL_FINER	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_FINER = "FINER";$/;"	f	language:Java	class:YooreekaConfigurator
+LOG_LEVEL_FINEST	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_FINEST = "FINEST";$/;"	f	language:Java	class:YooreekaConfigurator
+LOG_LEVEL_INFO	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_INFO = "INFO";$/;"	f	language:Java	class:YooreekaConfigurator
+LOG_LEVEL_SEVERE	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_SEVERE = "SEVERE";$/;"	f	language:Java	class:YooreekaConfigurator
+LOG_LEVEL_WARNING	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_WARNING = "WARNING";$/;"	f	language:Java	class:YooreekaConfigurator
+MOVIELENSTEST_DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String MOVIELENSTEST_DATA_DIR = "yooreeka.movielenstest.data.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+MOVIELENS_DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String MOVIELENS_DATA_DIR = "yooreeka.movielens.data.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+MySearcher	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public MySearcher(String indexDir) {$/;"	m	language:Java	class:MySearcher
+MySearcher	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^public class MySearcher {$/;"	c	language:Java
+MySearcher.EPSILON	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public static final double EPSILON = 0.0001;$/;"	f	language:Java	class:MySearcher
+MySearcher.indexFile	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private File indexFile;$/;"	f	language:Java	class:MySearcher	file:
+MySearcher.isVerbose	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public boolean isVerbose() {$/;"	m	language:Java	class:MySearcher
+MySearcher.learner	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private NaiveBayes learner = null;$/;"	f	language:Java	class:MySearcher	file:
+MySearcher.MySearcher	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public MySearcher(String indexDir) {$/;"	m	language:Java	class:MySearcher
+MySearcher.PRETTY_LINE	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private static final String PRETTY_LINE = "_______________________________________________________________________";$/;"	f	language:Java	class:MySearcher	file:
+MySearcher.printResults	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private void printResults(String header, String query,$/;"	m	language:Java	class:MySearcher	file:
+MySearcher.search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public SearchResult[] search(String query, int numberOfMatches) {$/;"	m	language:Java	class:MySearcher
+MySearcher.search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public SearchResult[] search(String query, int numberOfMatches, Rank pR) {$/;"	m	language:Java	class:MySearcher
+MySearcher.search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public SearchResult[] search(UserQuery uQuery, int numberOfMatches, Rank pR) {$/;"	m	language:Java	class:MySearcher
+MySearcher.setUserLearner	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public void setUserLearner(NaiveBayes nb) {$/;"	m	language:Java	class:MySearcher
+MySearcher.setVerbose	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public void setVerbose(boolean verbose) {$/;"	m	language:Java	class:MySearcher
+MySearcher.verbose	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private boolean verbose = true;$/;"	f	language:Java	class:MySearcher	file:
+org.yooreeka.config	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^package org.yooreeka.config;$/;"	p	language:Java
+org.yooreeka.examples.search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^package org.yooreeka.examples.search;$/;"	p	language:Java
+org.yooreeka.test.beanshellscripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^package org.yooreeka.test.beanshellscripts;$/;"	p	language:Java
+org.yooreeka.util.parsing.csv	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/util/parsing/csv/CSVSchema.java	/^package org.yooreeka.util.parsing.csv;$/;"	p	language:Java
+PRETTY_LINE	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private static final String PRETTY_LINE = "_______________________________________________________________________";$/;"	f	language:Java	class:MySearcher	file:
+printNoPropertiesFound	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static void printNoPropertiesFound() {$/;"	m	language:Java	class:YooreekaConfigurator	file:
+printResults	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private void printResults(String header, String query,$/;"	m	language:Java	class:MySearcher	file:
+props	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static Properties props = new Properties();$/;"	f	language:Java	class:YooreekaConfigurator	file:
+readProperties	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static Properties readProperties(String resourceName) {$/;"	m	language:Java	class:YooreekaConfigurator
+runDependentScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runDependentScripts(String[] scripts) {$/;"	m	language:Java	class:ScriptEvalUtils
+runIndependentScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runIndependentScripts(String[] scripts) {$/;"	m	language:Java	class:ScriptEvalUtils
+runScript	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runScript(String script) {$/;"	m	language:Java	class:ScriptEvalUtils
+runScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runScripts(String chapter) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^class ScriptEvalUtils {$/;"	c	language:Java
+ScriptEvalUtils.BEANSHELL_SCRIPTS_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static String BEANSHELL_SCRIPTS_DIR = YooreekaConfigurator.getHome()+"\/docs\/BeanShell-Notes";$/;"	f	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.getScript	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static String getScript(String scriptName) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.getScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static List<String> getScripts(String dir, String filter) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.getScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static List<String> getScripts(String filter) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.runDependentScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runDependentScripts(String[] scripts) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.runIndependentScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runIndependentScripts(String[] scripts) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.runScript	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runScript(String script) {$/;"	m	language:Java	class:ScriptEvalUtils
+ScriptEvalUtils.runScripts	/Volumes/WorkSpace/googlesvn/iWeb2/test/org/yooreeka/test/beanshellscripts/ScriptEvalUtils.java	/^    public static void runScripts(String chapter) {$/;"	m	language:Java	class:ScriptEvalUtils
+search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public SearchResult[] search(String query, int numberOfMatches) {$/;"	m	language:Java	class:MySearcher
+search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public SearchResult[] search(String query, int numberOfMatches, Rank pR) {$/;"	m	language:Java	class:MySearcher
+search	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public SearchResult[] search(UserQuery uQuery, int numberOfMatches, Rank pR) {$/;"	m	language:Java	class:MySearcher
+setStaticProperties	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static void setStaticProperties() {$/;"	m	language:Java	class:YooreekaConfigurator
+setUserLearner	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public void setUserLearner(NaiveBayes nb) {$/;"	m	language:Java	class:MySearcher
+setVerbose	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	public void setVerbose(boolean verbose) {$/;"	m	language:Java	class:MySearcher
+systemPropertyName	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static String systemPropertyName = "yooreeka.configuration";$/;"	f	language:Java	class:YooreekaConfigurator	file:
+TEMP_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String TEMP_DIR = "yooreeka.temp.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+verbose	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/examples/search/MySearcher.java	/^	private boolean verbose = true;$/;"	f	language:Java	class:MySearcher	file:
+YooreekaConfigurator	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^public class YooreekaConfigurator {$/;"	c	language:Java
+YooreekaConfigurator.CRAWL_DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String CRAWL_DATA_DIR="yooreeka.crawl.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String DATA_DIR = "yooreeka.data.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.defaultResourceName	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static String defaultResourceName = "\/yooreeka.properties";$/;"	f	language:Java	class:YooreekaConfigurator	file:
+YooreekaConfigurator.getHome	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getHome() {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.getLevel	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static Level getLevel(String cName) {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.getLogProperty	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getLogProperty(String key) {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.getProperty	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getProperty(String key) {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.getProperty	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static String getProperty(String key, String defaultValue) {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.logProps	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static Properties logProps = new Properties();$/;"	f	language:Java	class:YooreekaConfigurator	file:
+YooreekaConfigurator.LOG_LEVEL_CONFIG	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_CONFIG = "CONFIG";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.LOG_LEVEL_FINE	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_FINE = "FINE";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.LOG_LEVEL_FINER	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_FINER = "FINER";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.LOG_LEVEL_FINEST	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_FINEST = "FINEST";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.LOG_LEVEL_INFO	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_INFO = "INFO";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.LOG_LEVEL_SEVERE	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_SEVERE = "SEVERE";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.LOG_LEVEL_WARNING	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String LOG_LEVEL_WARNING = "WARNING";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.MOVIELENSTEST_DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String MOVIELENSTEST_DATA_DIR = "yooreeka.movielenstest.data.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.MOVIELENS_DATA_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String MOVIELENS_DATA_DIR = "yooreeka.movielens.data.dir";$/;"	f	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.printNoPropertiesFound	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static void printNoPropertiesFound() {$/;"	m	language:Java	class:YooreekaConfigurator	file:
+YooreekaConfigurator.props	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static Properties props = new Properties();$/;"	f	language:Java	class:YooreekaConfigurator	file:
+YooreekaConfigurator.readProperties	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static Properties readProperties(String resourceName) {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.setStaticProperties	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static void setStaticProperties() {$/;"	m	language:Java	class:YooreekaConfigurator
+YooreekaConfigurator.systemPropertyName	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	private static String systemPropertyName = "yooreeka.configuration";$/;"	f	language:Java	class:YooreekaConfigurator	file:
+YooreekaConfigurator.TEMP_DIR	/Volumes/WorkSpace/googlesvn/iWeb2/src/org/yooreeka/config/YooreekaConfigurator.java	/^	public static final String TEMP_DIR = "yooreeka.temp.dir";$/;"	f	language:Java	class:YooreekaConfigurator

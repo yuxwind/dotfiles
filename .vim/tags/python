@@ -1,0 +1,13 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+compilation_database_folder	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v	language:Python
+database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = None$/;"	v	language:Python
+database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v	language:Python
+DirectoryOfThisScript	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	language:Python
+flags	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^flags = [$/;"	v	language:Python
+FlagsForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	language:Python
+GetCompilationInfoForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f	language:Python
+IsHeaderFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	language:Python
+MakeRelativePathsInFlagsAbsolute	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	language:Python
+os	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import os$/;"	i	language:Python
+SOURCE_EXTENSIONS	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v	language:Python
+ycm_core	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import ycm_core$/;"	i	language:Python

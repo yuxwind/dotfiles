@@ -1,0 +1,168 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ar	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int n=0,ar[MAX_N]={0};$/;"	v	language:C
+BASENAMELEN	/Volumes/WorkSpace/vim74/src/os_unix.h	185;"	d	language:C
+BINARY_FILE_IO	/Volumes/WorkSpace/vim74/src/os_unix.h	42;"	d	language:C
+bin_search	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^bool bin_search(int x){$/;"	f	language:C
+bin_search	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^bool bin_search(int x){$/;"	f	language:C
+CASE_INSENSITIVE_FILENAME	/Volumes/WorkSpace/vim74/src/os_unix.h	44;"	d	language:C
+CHECK_INODE	/Volumes/WorkSpace/vim74/src/os_unix.h	471;"	d	language:C
+CMDBUFFSIZE	/Volumes/WorkSpace/vim74/src/os_unix.h	462;"	d	language:C
+DESC	/Volumes/WorkSpace/vim74/src/os_unix.h	/^typedef struct dsc$descriptor   DESC;$/;"	t	language:C	typeref:struct:dsc$descriptor
+DFLT_BDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	383;"	d	language:C
+DFLT_BDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	386;"	d	language:C
+DFLT_BDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	388;"	d	language:C
+DFLT_DIR	/Volumes/WorkSpace/vim74/src/os_unix.h	395;"	d	language:C
+DFLT_DIR	/Volumes/WorkSpace/vim74/src/os_unix.h	398;"	d	language:C
+DFLT_DIR	/Volumes/WorkSpace/vim74/src/os_unix.h	400;"	d	language:C
+DFLT_ERRORFILE	/Volumes/WorkSpace/vim74/src/os_unix.h	417;"	d	language:C
+DFLT_HELPFILE	/Volumes/WorkSpace/vim74/src/os_unix.h	250;"	d	language:C
+DFLT_MAXMEM	/Volumes/WorkSpace/vim74/src/os_unix.h	475;"	d	language:C
+DFLT_MAXMEM	/Volumes/WorkSpace/vim74/src/os_unix.h	482;"	d	language:C
+DFLT_MAXMEMTOT	/Volumes/WorkSpace/vim74/src/os_unix.h	478;"	d	language:C
+DFLT_MAXMEMTOT	/Volumes/WorkSpace/vim74/src/os_unix.h	485;"	d	language:C
+DFLT_RUNTIMEPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	420;"	d	language:C
+DFLT_RUNTIMEPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	423;"	d	language:C
+DFLT_RUNTIMEPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	426;"	d	language:C
+DFLT_RUNTIMEPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	428;"	d	language:C
+DFLT_VDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	407;"	d	language:C
+DFLT_VDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	410;"	d	language:C
+DFLT_VDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	412;"	d	language:C
+dirent	/Volumes/WorkSpace/vim74/src/os_unix.h	142;"	d	language:C
+display	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^void display(){$/;"	f	language:C
+EVIM_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	344;"	d	language:C
+EXRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	364;"	d	language:C
+FILETYPE_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	253;"	d	language:C
+flag	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int flag =0;$/;"	v	language:C
+flag	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int flag =0;$/;"	v	language:C
+FTOFF_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	262;"	d	language:C
+FTPLUGIN_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	256;"	d	language:C
+FTPLUGOF_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	265;"	d	language:C
+GVIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	373;"	d	language:C
+HAVE_ACL	/Volumes/WorkSpace/vim74/src/os_unix.h	570;"	d	language:C
+HAVE_DUP	/Volumes/WorkSpace/vim74/src/os_unix.h	566;"	d	language:C
+HAVE_ST_MODE	/Volumes/WorkSpace/vim74/src/os_unix.h	567;"	d	language:C
+HAVE_SYS_UTSNAME_H	/Volumes/WorkSpace/vim74/src/os_unix.h	17;"	d	language:C
+HAVE_TOTAL_MEM	/Volumes/WorkSpace/vim74/src/os_unix.h	198;"	d	language:C
+HAVE_TOTAL_MEM	/Volumes/WorkSpace/vim74/src/os_unix.h	37;"	d	language:C
+HAVE_UTIME	/Volumes/WorkSpace/vim74/src/os_unix.h	14;"	d	language:C
+INDENT_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	259;"	d	language:C
+INDOFF_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	268;"	d	language:C
+JMP_BUF	/Volumes/WorkSpace/vim74/src/os_unix.h	556;"	d	language:C
+JMP_BUF	/Volumes/WorkSpace/vim74/src/os_unix.h	560;"	d	language:C
+k	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+k	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+LONGJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	558;"	d	language:C
+LONGJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	562;"	d	language:C
+m	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+m	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+main	/Volumes/WorkSpace/git-workspace/localtest/hello.c	/^int main()$/;"	f	language:C
+main	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int main()$/;"	f	language:C
+main	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int main()$/;"	f	language:C
+main	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int main(){$/;"	f	language:C
+max	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	4;"	d	language:C	file:
+MAXNAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	166;"	d	language:C
+MAXNAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	170;"	d	language:C
+MAXNAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	174;"	d	language:C
+MAXNAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	182;"	d	language:C
+MAXPATHL	/Volumes/WorkSpace/vim74/src/os_unix.h	466;"	d	language:C
+MAXPATHL	/Volumes/WorkSpace/vim74/src/os_unix.h	468;"	d	language:C
+MAX_N	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	3;"	d	language:C	file:
+MAX_N	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	6;"	d	language:C	file:
+MAX_N	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	3;"	d	language:C	file:
+mch_getenv	/Volumes/WorkSpace/vim74/src/os_unix.h	517;"	d	language:C
+mch_getenv	/Volumes/WorkSpace/vim74/src/os_unix.h	519;"	d	language:C
+mch_memmove	/Volumes/WorkSpace/vim74/src/os_unix.h	494;"	d	language:C
+mch_memmove	/Volumes/WorkSpace/vim74/src/os_unix.h	497;"	d	language:C
+mch_memmove	/Volumes/WorkSpace/vim74/src/os_unix.h	500;"	d	language:C
+mch_remove	/Volumes/WorkSpace/vim74/src/os_unix.h	106;"	d	language:C
+mch_remove	/Volumes/WorkSpace/vim74/src/os_unix.h	97;"	d	language:C
+mch_rename	/Volumes/WorkSpace/vim74/src/os_unix.h	/^int mch_rename __ARGS((const char *src, const char *dest));$/;"	p	language:C
+mch_rename	/Volumes/WorkSpace/vim74/src/os_unix.h	509;"	d	language:C
+mch_rmdir	/Volumes/WorkSpace/vim74/src/os_unix.h	101;"	d	language:C
+mch_rmdir	/Volumes/WorkSpace/vim74/src/os_unix.h	105;"	d	language:C
+mch_setenv	/Volumes/WorkSpace/vim74/src/os_unix.h	521;"	d	language:C
+n	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+n	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+n	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int n=0,ar[MAX_N]={0};$/;"	v	language:C
+NAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	139;"	d	language:C
+NAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	143;"	d	language:C
+NO_EXPANDPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	456;"	d	language:C
+p_max	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int p_max =0;$/;"	v	language:C
+SETJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	557;"	d	language:C
+SETJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	561;"	d	language:C
+SIGDEFARG	/Volumes/WorkSpace/vim74/src/os_unix.h	123;"	d	language:C
+SIGDEFARG	/Volumes/WorkSpace/vim74/src/os_unix.h	127;"	d	language:C
+SIGDEFARG	/Volumes/WorkSpace/vim74/src/os_unix.h	132;"	d	language:C
+SIGDUMMYARG	/Volumes/WorkSpace/vim74/src/os_unix.h	124;"	d	language:C
+SIGDUMMYARG	/Volumes/WorkSpace/vim74/src/os_unix.h	128;"	d	language:C
+SIGDUMMYARG	/Volumes/WorkSpace/vim74/src/os_unix.h	133;"	d	language:C
+SIGHAS3ARGS	/Volumes/WorkSpace/vim74/src/os_unix.h	117;"	d	language:C
+SIGHASARG	/Volumes/WorkSpace/vim74/src/os_unix.h	113;"	d	language:C
+SIGPROTOARG	/Volumes/WorkSpace/vim74/src/os_unix.h	122;"	d	language:C
+SIGPROTOARG	/Volumes/WorkSpace/vim74/src/os_unix.h	126;"	d	language:C
+SIGPROTOARG	/Volumes/WorkSpace/vim74/src/os_unix.h	131;"	d	language:C
+SOLARIS	/Volumes/WorkSpace/vim74/src/os_unix.h	71;"	d	language:C
+solve	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int solve()$/;"	f	language:C
+solve	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int solve();$/;"	p	language:C	file:
+solve	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int solve()$/;"	f	language:C
+solve	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int solve();$/;"	p	language:C	file:
+solve	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int solve();$/;"	p	language:C	file:
+solve	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int solve(){$/;"	f	language:C
+solve1	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int solve1()$/;"	f	language:C
+solve1	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int solve1()$/;"	f	language:C
+SPECIAL_WILDCHAR	/Volumes/WorkSpace/vim74/src/os_unix.h	453;"	d	language:C
+std	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^using namespace std;$/;"	v	language:C
+SYNTAX_FNAME	/Volumes/WorkSpace/vim74/src/os_unix.h	378;"	d	language:C
+SYS_GVIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	247;"	d	language:C
+SYS_MENU_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	271;"	d	language:C
+SYS_VIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	244;"	d	language:C
+S_ISBLK	/Volumes/WorkSpace/vim74/src/os_unix.h	532;"	d	language:C
+S_ISCHR	/Volumes/WorkSpace/vim74/src/os_unix.h	541;"	d	language:C
+S_ISDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	526;"	d	language:C
+S_ISFIFO	/Volumes/WorkSpace/vim74/src/os_unix.h	538;"	d	language:C
+S_ISREG	/Volumes/WorkSpace/vim74/src/os_unix.h	529;"	d	language:C
+S_ISSOCK	/Volumes/WorkSpace/vim74/src/os_unix.h	535;"	d	language:C
+TEMPDIRNAMES	/Volumes/WorkSpace/vim74/src/os_unix.h	437;"	d	language:C
+TEMPDIRNAMES	/Volumes/WorkSpace/vim74/src/os_unix.h	447;"	d	language:C
+TEMPNAME	/Volumes/WorkSpace/vim74/src/os_unix.h	444;"	d	language:C
+TEMPNAMELEN	/Volumes/WorkSpace/vim74/src/os_unix.h	438;"	d	language:C
+TEMPNAMELEN	/Volumes/WorkSpace/vim74/src/os_unix.h	445;"	d	language:C
+TEMPNAMELEN	/Volumes/WorkSpace/vim74/src/os_unix.h	448;"	d	language:C
+USE_FNAME_CASE	/Volumes/WorkSpace/vim74/src/os_unix.h	45;"	d	language:C
+USE_GETCWD	/Volumes/WorkSpace/vim74/src/os_unix.h	81;"	d	language:C
+USR_EXRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	276;"	d	language:C
+USR_EXRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	278;"	d	language:C
+USR_EXRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	283;"	d	language:C
+USR_EXRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	286;"	d	language:C
+USR_GVIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	319;"	d	language:C
+USR_GVIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	321;"	d	language:C
+USR_GVIMRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	327;"	d	language:C
+USR_GVIMRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	330;"	d	language:C
+USR_GVIMRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	332;"	d	language:C
+USR_GVIMRC_FILE3	/Volumes/WorkSpace/vim74/src/os_unix.h	339;"	d	language:C
+USR_VIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	291;"	d	language:C
+USR_VIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	293;"	d	language:C
+USR_VIMRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	300;"	d	language:C
+USR_VIMRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	303;"	d	language:C
+USR_VIMRC_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	305;"	d	language:C
+USR_VIMRC_FILE3	/Volumes/WorkSpace/vim74/src/os_unix.h	311;"	d	language:C
+USR_VIMRC_FILE3	/Volumes/WorkSpace/vim74/src/os_unix.h	314;"	d	language:C
+VIMINFO_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	350;"	d	language:C
+VIMINFO_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	352;"	d	language:C
+VIMINFO_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	356;"	d	language:C
+VIMINFO_FILE2	/Volumes/WorkSpace/vim74/src/os_unix.h	359;"	d	language:C
+VIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	368;"	d	language:C
+VIM_MEMMOVE	/Volumes/WorkSpace/vim74/src/os_unix.h	502;"	d	language:C
+vim_mkdir	/Volumes/WorkSpace/vim74/src/os_unix.h	104;"	d	language:C
+vim_mkdir	/Volumes/WorkSpace/vim74/src/os_unix.h	98;"	d	language:C
+VMS_TEMPNAM	/Volumes/WorkSpace/vim74/src/os_unix.h	442;"	d	language:C
+WIN32UNIX	/Volumes/WorkSpace/vim74/src/os_unix.h	41;"	d	language:C
+_NO_PROTO	/Volumes/WorkSpace/vim74/src/os_unix.h	52;"	d	language:C
+__ARGS	/Volumes/WorkSpace/vim74/src/os_unix.h	192;"	d	language:C
+__ARGS	/Volumes/WorkSpace/vim74/src/os_unix.h	88;"	d	language:C
+__ARGS	/Volumes/WorkSpace/vim74/src/os_unix.h	90;"	d	language:C

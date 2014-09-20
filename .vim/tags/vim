@@ -1,0 +1,235 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+#	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap # #zzzv$/;"	m	language:Vim
+#	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap # :<C-U>call <SID>VSetSearch()<CR>??<CR>$/;"	m	language:Vim
+&	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap & :&&<CR>$/;"	m	language:Vim
+*	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap * *zzzv$/;"	m	language:Vim
+*	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap * :<C-U>call <SID>VSetSearch()<CR>\/\/<CR>$/;"	m	language:Vim
+,,	/Volumes/WorkSpace/study.vim	/^nmap ,, ^v\/^$<cr>dma\/^= Known<cr>P'azt<c-y><c-l>$/;"	m	language:Vim
+,c	/Volumes/WorkSpace/study.vim	/^nmap ,c ^v\/^$<cr>dma\/^$<cr>\/^$<cr>\/^$<cr>\/^$<cr>jP'azt<c-y><c-l>:noh<cr>$/;"	m	language:Vim
+,k	/Volumes/WorkSpace/study.vim	/^nmap ,k ^v\/^$<cr>dma\/^= Known<cr>jjP'azt<c-y><c-l>$/;"	m	language:Vim
+/	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap \/ \/\\v$/;"	m	language:Vim
+/	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap \/ \/\\v$/;"	m	language:Vim
+<	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap < <gv$/;"	m	language:Vim
+<C-G>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <silent> <C-G> <Plug>GoldenViewSwitchToggle$/;"	m	language:Vim
+<C-H>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <silent> <C-H> <Plug>GoldenViewNext$/;"	m	language:Vim
+<C-J>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <C-J> <C-W>j$/;"	m	language:Vim
+<C-K>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <C-K> <C-W>k $/;"	m	language:Vim
+<C-L>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <silent> <C-L> <Plug>GoldenViewPrevious$/;"	m	language:Vim
+<C-O>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <silent> <C-O> <Plug>GoldenViewSplit$/;"	m	language:Vim
+<CR>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^inoremap <expr> <CR>       pumvisible() ? "\\<C-y>" : "\\<CR>"$/;"	m	language:Vim
+<Leader><Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader><Space> :set hlsearch!<CR>$/;"	m	language:Vim
+<Leader>a	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <Leader>a :Ack!<Space>$/;"	m	language:Vim
+<Leader>a	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <Leader>a :Ag<Space>$/;"	m	language:Vim
+<Leader>d	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>d :NERDTreeTabsToggle<CR>$/;"	m	language:Vim
+<leader>da	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^map <leader>da :DoxAuthor<CR>$/;"	m	language:Vim
+<leader>db	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^map <leader>db :DoxBlock<CR>$/;"	m	language:Vim
+<leader>dc	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^map <leader>dc a <LEFT><LEFT><LEFT>$/;"	m	language:Vim
+<leader>df	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^map <leader>df :Dox<CR>$/;"	m	language:Vim
+<Leader>f	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>f :NERDTreeFind<CR>$/;"	m	language:Vim
+<leader>gb	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent> <leader>gb :Gblame<CR>$/;"	m	language:Vim
+<leader>gc	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent> <leader>gc :Gcommit<CR>$/;"	m	language:Vim
+<leader>gd	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent> <leader>gd :Gdiff<CR>$/;"	m	language:Vim
+<leader>gd	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <leader>gd :YcmDiags<CR>$/;"	m	language:Vim
+<leader>gl	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent> <leader>gl :Glog<CR>$/;"	m	language:Vim
+<leader>gp	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent> <leader>gp :Git push<CR>$/;"	m	language:Vim
+<leader>gs	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent> <leader>gs :Gstatus<CR>$/;"	m	language:Vim
+<leader>jd	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>$/;"	m	language:Vim
+<Leader>m	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>m :Unite<Space>$/;"	m	language:Vim
+<Leader>n	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>n :call ToggleRelativenumber()<CR>$/;"	m	language:Vim
+<Leader>r	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>r :SingleCompileRun<CR>$/;"	m	language:Vim
+<Leader>s	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>s :Errors<CR>$/;"	m	language:Vim
+<Leader>t	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>t :TagbarToggle<CR>$/;"	m	language:Vim
+<Leader>u	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <Leader>u :GundoToggle<CR>$/;"	m	language:Vim
+<Leader>vc	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vc :VimuxClearRunnerHistory<CR>$/;"	m	language:Vim
+<Leader>vi	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vi :VimuxInspectRunner<CR>$/;"	m	language:Vim
+<Leader>vl	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vl :VimuxRunLastCommand<CR>$/;"	m	language:Vim
+<Leader>vp	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vp :VimuxPromptCommand<CR>$/;"	m	language:Vim
+<Leader>vq	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vq :VimuxCloseRunner<CR>$/;"	m	language:Vim
+<Leader>vs	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap <Leader>vs "vy :call VimuxRunCommand(@v . "\\n", 0)<CR>$/;"	m	language:Vim
+<Leader>vx	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vx :VimuxClosePanes<CR>$/;"	m	language:Vim
+<Leader>wq	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>wq :%s\/\\s\\+$\/\/<CR>:let @\/=''<CR>$/;"	m	language:Vim
+<Leader>x	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>x :tabedit $MYVIMRC<CR>$/;"	m	language:Vim
+<Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent><Space> @=(foldlevel('.')?'za':"\\<Space>")<CR>$/;"	m	language:Vim
+<Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap <Space> zf$/;"	m	language:Vim
+<Tab>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <Tab> %$/;"	m	language:Vim
+<Tab>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vmap <Tab> %$/;"	m	language:Vim
+>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap > >gv$/;"	m	language:Vim
+?	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap ? ?\\v$/;"	m	language:Vim
+?	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap ? ?\\v$/;"	m	language:Vim
+ChoosePythonCompiler	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    function! ChoosePythonCompiler()$/;"	f	language:Vim
+delimitMate_balance_matchpairs	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let delimitMate_balance_matchpairs=1$/;"	v	language:Vim
+delimitMate_expand_cr	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let delimitMate_expand_cr=1$/;"	v	language:Vim
+delimitMate_expand_space	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let delimitMate_expand_space=1$/;"	v	language:Vim
+DiffOrig	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_$/;"	c	language:Vim
+ft_json	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup ft_json$/;"	a	language:Vim
+ft_less	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup ft_less$/;"	a	language:Vim
+ft_markdown	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup ft_markdown$/;"	a	language:Vim
+ft_perl	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup ft_perl$/;"	a	language:Vim
+ft_python	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup ft_python$/;"	a	language:Vim
+ft_quickfix	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup ft_quickfix$/;"	a	language:Vim
+g#	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap g# g#zzzv$/;"	m	language:Vim
+g*	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap g* g*zzzv$/;"	m	language:Vim
+g,	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap g, g,zz$/;"	m	language:Vim
+g:ackprg	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let g:ackprg='ack-grep -H --nocolor --nogroup --column'$/;"	v	language:Vim
+g:ctrlp_cache_dir	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_cache_dir=$HOME.'\/.vim\/.cache\/ctrlp'$/;"	v	language:Vim
+g:ctrlp_clear_cache_on_exit	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_clear_cache_on_exit=0$/;"	v	language:Vim
+g:ctrlp_extensions	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_extensions=['tag', 'buffertag', 'quickfix', 'dir', 'rtscript']$/;"	v	language:Vim
+g:ctrlp_working_path_mode	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_working_path_mode=0$/;"	v	language:Vim
+g:DoxygenToolkit_authorName	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:DoxygenToolkit_authorName="Jiessie - jiessie.cao AT gmail DOT com"$/;"	v	language:Vim
+g:DoxygenToolkit_briefTag_funcName	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:DoxygenToolkit_briefTag_funcName="yes"$/;"	v	language:Vim
+g:easytags_include_members	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:easytags_include_members=1$/;"	v	language:Vim
+g:easytags_python_enabled	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:easytags_python_enabled=1$/;"	v	language:Vim
+g:easytags_python_script	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:easytags_python_script=1$/;"	v	language:Vim
+g:goldenview__enable_default_mapping	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:goldenview__enable_default_mapping=0$/;"	v	language:Vim
+g:indent_guides_auto_colors	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let g:indent_guides_auto_colors=0$/;"	v	language:Vim
+g:indent_guides_enable_on_vim_startup	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:indent_guides_enable_on_vim_startup=1$/;"	v	language:Vim
+g:indent_guides_guide_size	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:indent_guides_guide_size=1$/;"	v	language:Vim
+g:lt_height	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:lt_height = 10$/;"	v	language:Vim
+g:lt_location_list_toggle_map	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:lt_location_list_toggle_map = '<leader>l'$/;"	v	language:Vim
+g:lt_quickfix_list_toggle_map	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:lt_quickfix_list_toggle_map = '<leader>q'$/;"	v	language:Vim
+g:nerdtree_tabs_open_on_gui_startup	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:nerdtree_tabs_open_on_gui_startup=0$/;"	v	language:Vim
+g:Powerline_symbols	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^  let g:Powerline_symbols='unicode'$/;"	v	language:Vim
+g:SingleCompile_showquickfixiferror	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:SingleCompile_showquickfixiferror=1$/;"	v	language:Vim
+g:splitjoin_align	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_align=1$/;"	v	language:Vim
+g:splitjoin_join_mapping	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_join_mapping = ',j'$/;"	v	language:Vim
+g:splitjoin_normalize_whitespace	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_normalize_whitespace=1$/;"	v	language:Vim
+g:splitjoin_split_mapping	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_split_mapping = ',k'$/;"	v	language:Vim
+g:syntastic_auto_jump	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_auto_jump=1$/;"	v	language:Vim
+g:syntastic_check_on_open	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_check_on_open=1$/;"	v	language:Vim
+g:syntastic_cpp_check_header	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_check_header = 1$/;"	v	language:Vim
+g:syntastic_cpp_compiler	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_compiler = 'clang++'$/;"	v	language:Vim
+g:syntastic_cpp_compiler_options	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'$/;"	v	language:Vim
+g:syntastic_cpp_include_dirs	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_include_dirs = ['\/usr\/include\/']$/;"	v	language:Vim
+g:syntastic_cpp_remove_include_errors	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_remove_include_errors = 1$/;"	v	language:Vim
+g:syntastic_enable_balloons	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_enable_balloons = 1$/;"	v	language:Vim
+g:syntastic_error_symbol	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_error_symbol = '✗'$/;"	v	language:Vim
+g:syntastic_ignore_files	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_ignore_files=[".*\\.py$"]   "pylint for python$/;"	v	language:Vim
+g:syntastic_stl_format	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'$/;"	v	language:Vim
+g:syntastic_warning_symbol	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_warning_symbol = '⚠'$/;"	v	language:Vim
+g:tagbar_autofocus	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:tagbar_autofocus=1$/;"	v	language:Vim
+g:tagbar_autoshowtag	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:tagbar_autoshowtag=1$/;"	v	language:Vim
+g:tagbar_expand	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:tagbar_expand=1$/;"	v	language:Vim
+g:tagbar_foldlevel	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:tagbar_foldlevel=2$/;"	v	language:Vim
+g:tagbar_ironchars	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:tagbar_ironchars=['▾', '▸']$/;"	v	language:Vim
+g:Tex_completion_addcontentsline	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^let g:Tex_completion_addcontentsline = 'lof}{figure}{,lot}{table}{,toc}{chapter}{,toc}{part}{,'.$/;"	v	language:Vim
+g:Tex_completion_addtocontents	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^let g:Tex_completion_addtocontents = 'lof}{,lot}{,toc}{'$/;"	v	language:Vim
+g:Tex_completion_bibliographystyle	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^let g:Tex_completion_bibliographystyle = 'abbr,alpha,plain,unsrt'$/;"	v	language:Vim
+g:tex_flavor	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:tex_flavor='latex'$/;"	v	language:Vim
+g:unite_update_time	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:unite_update_time=4000$/;"	v	language:Vim
+g:vundle_default_git_proto	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:vundle_default_git_proto='git'$/;"	v	language:Vim
+g:ycm_cache_omnifunc	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_cache_omnifunc=0  "  forbid cache$/;"	v	language:Vim
+g:ycm_collect_identifiers_from_comments_and_strings	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_collect_identifiers_from_comments_and_strings = 0 $/;"	v	language:Vim
+g:ycm_collect_identifiers_from_tags_files	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_collect_identifiers_from_tags_files = 1$/;"	v	language:Vim
+g:ycm_complete_in_comments	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_complete_in_comments = 1$/;"	v	language:Vim
+g:ycm_complete_in_strings	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_complete_in_strings = 1$/;"	v	language:Vim
+g:ycm_confirm_extra_conf	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_confirm_extra_conf = 0$/;"	v	language:Vim
+g:ycm_seed_identifiers_with_syntax	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_seed_identifiers_with_syntax = 1$/;"	v	language:Vim
+g:ycm_seed_identifiers_with_syntax	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ycm_seed_identifiers_with_syntax=1$/;"	v	language:Vim
+g;	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap g; g;zz$/;"	m	language:Vim
+GetGooglePythonIndent	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    function! GetGooglePythonIndent(lnum)$/;"	f	language:Vim
+InitializeDirectories	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! InitializeDirectories()$/;"	f	language:Vim
+InitializeTagDirectory	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! InitializeTagDirectory()$/;"	f	language:Vim
+IsWhiteLine	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! IsWhiteLine()$/;"	f	language:Vim
+j	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap j gj$/;"	m	language:Vim
+J	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap J mzJ`z$/;"	m	language:Vim
+j	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap j gj$/;"	m	language:Vim
+jztj	/Volumes/WorkSpace/study.vim	/^normal jztj$/;"	m	language:Vim
+k	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap k gk$/;"	m	language:Vim
+k	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap k gk$/;"	m	language:Vim
+LatexSuite	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^augroup LatexSuite$/;"	a	language:Vim
+LatexSuite	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^augroup LatexSuite$/;"	a	language:Vim
+mapleader	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let mapleader=',' " Change the mapleader$/;"	v	language:Vim
+maplocalleader	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let maplocalleader='\\' " Change the maplocalleader$/;"	v	language:Vim
+MyFoldText	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyFoldText()$/;"	f	language:Vim
+MyTabLine	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyTabLine()$/;"	f	language:Vim
+n	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap n nzzzv$/;"	m	language:Vim
+N	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap N Nzzzv$/;"	m	language:Vim
+NERDCommentWholeLinesInVMode	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDCommentWholeLinesInVMode=2$/;"	v	language:Vim
+NERDRemoveExtraSpaces	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDRemoveExtraSpaces=1$/;"	v	language:Vim
+NERDSpaceDelims	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDSpaceDelims=1$/;"	v	language:Vim
+NERDTreeChDirMode	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDTreeChDirMode=2$/;"	v	language:Vim
+NERDTreeDirArrows	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDTreeDirArrows=1$/;"	v	language:Vim
+NERDTreeShowBookmarks	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDTreeShowBookmarks=1$/;"	v	language:Vim
+NERDTreeShowHidden	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDTreeShowHidden=1$/;"	v	language:Vim
+NERDTreeShowLineNumbers	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDTreeShowLineNumbers=1$/;"	v	language:Vim
+old_powerline	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let old_powerline=0$/;"	v	language:Vim
+old_powerline	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let old_powerline=1$/;"	v	language:Vim
+perl_extended_vars	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let perl_extended_vars=1$/;"	v	language:Vim
+perl_include_pod	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let perl_include_pod=1$/;"	v	language:Vim
+perl_sync_dist	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let perl_sync_dist=250$/;"	v	language:Vim
+pyindent_nested_paren	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let pyindent_nested_paren="&sw*2"$/;"	v	language:Vim
+pyindent_open_paren	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let pyindent_open_paren="&sw*2"$/;"	v	language:Vim
+s/	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^cnoremap s\/ s\/\\v$/;"	m	language:Vim
+s:maxoff	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let s:maxoff = 50 " maximum number of lines to look backwards.$/;"	v	language:Vim
+s:path	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^let s:path = expand('<sfile>:p:h')$/;"	v	language:Vim
+s?	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^cnoremap s? s?\\v$/;"	m	language:Vim
+SetTeXTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! SetTeXTarget(...)$/;"	f	language:Vim
+TClearCiteHist	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^com! -nargs=0 TClearCiteHist unlet! s:citeSearchHistory$/;"	c	language:Vim
+TCompileMainFile	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^command! -nargs=0 TCompileMainFile let b:fragmentFile = 0$/;"	c	language:Vim
+TCompileThis	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^command! -nargs=0 TCompileThis let b:fragmentFile = 1$/;"	c	language:Vim
+TCTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^com! -nargs=1 TCTarget :call Tex_SetTeXCompilerTarget('Compile', <f-args>)$/;"	c	language:Vim
+Tex_CloseSmallWindows	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_CloseSmallWindows()$/;"	f	language:Vim
+Tex_Common	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_Common(path1, path2)$/;"	f	language:Vim
+Tex_CompileLatex	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_CompileLatex()$/;"	f	language:Vim
+Tex_CompileMultipleTimes	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_CompileMultipleTimes()$/;"	f	language:Vim
+Tex_Complete	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_Complete(what, where)$/;"	f	language:Vim
+Tex_CompleteCiteEntry	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_CompleteCiteEntry()$/;"	f	language:Vim
+Tex_CompleteFileName	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_CompleteFileName(filename, ext, root)$/;"	f	language:Vim
+Tex_CompleteRefCiteCustom	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_CompleteRefCiteCustom(type)$/;"	f	language:Vim
+Tex_CompleteWord	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_CompleteWord(completeword, prefixlength)$/;"	f	language:Vim
+Tex_DisplayBibList	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_DisplayBibList()$/;"	f	language:Vim
+Tex_DoCompletion	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_DoCompletion(texcommand)$/;"	f	language:Vim
+Tex_EchoBibShortcuts	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_EchoBibShortcuts()$/;"	f	language:Vim
+Tex_FindBibFiles	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_FindBibFiles()$/;"	f	language:Vim
+Tex_FinishOutlineCompletion	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_FinishOutlineCompletion()$/;"	f	language:Vim
+Tex_ForwardSearchLaTeX	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_ForwardSearchLaTeX()$/;"	f	language:Vim
+Tex_GetAuxFile	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_GetAuxFile(auxFile)$/;"	f	language:Vim
+Tex_GotoErrorLocation	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_GotoErrorLocation(filename)$/;"	f	language:Vim
+Tex_GoToLocation	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_GoToLocation()$/;"	f	language:Vim
+Tex_GrepHelper	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_GrepHelper(prefix, what)$/;"	f	language:Vim
+Tex_HandleBibShortcuts	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_HandleBibShortcuts(command)$/;"	f	language:Vim
+Tex_NormalizePath	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_NormalizePath(path)$/;"	f	language:Vim
+Tex_PartCompile	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_PartCompile() range$/;"	f	language:Vim
+Tex_PositionPreviewWindow	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_PositionPreviewWindow(filename)$/;"	f	language:Vim
+Tex_PromptForCompletion	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_PromptForCompletion(texcommand,ask)$/;"	f	language:Vim
+Tex_RelPath	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_RelPath(explfilename,texfilename)$/;"	f	language:Vim
+Tex_RemoveTempFiles	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_RemoveTempFiles()$/;"	f	language:Vim
+Tex_RunLaTeX	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_RunLaTeX()$/;"	f	language:Vim
+Tex_ScanFileForCite	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_ScanFileForCite(prefix)$/;"	f	language:Vim
+Tex_ScanFileForLabels	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_ScanFileForLabels(prefix)$/;"	f	language:Vim
+Tex_SetCompilerMaps	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! <SID>Tex_SetCompilerMaps()$/;"	f	language:Vim
+Tex_SetTeXCompilerTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_SetTeXCompilerTarget(type, target)$/;"	f	language:Vim
+Tex_SetTexViewerMaps	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_SetTexViewerMaps()$/;"	f	language:Vim
+Tex_SetupBibSyntax	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_SetupBibSyntax()$/;"	f	language:Vim
+Tex_SetupCWindow	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_SetupCWindow(...)$/;"	f	language:Vim
+Tex_SetupErrorWindow	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_SetupErrorWindow()$/;"	f	language:Vim
+Tex_SetupFileCompletion	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_SetupFileCompletion(accept, reject, ext, dir, root)$/;"	f	language:Vim
+Tex_SetupOutlineSyntax	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_SetupOutlineSyntax()$/;"	f	language:Vim
+Tex_StartCiteCompletion	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_StartCiteCompletion()$/;"	f	language:Vim
+Tex_StartOutlineCompletion	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_StartOutlineCompletion()$/;"	f	language:Vim
+Tex_SwitchToInsertMode	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! Tex_SwitchToInsertMode()$/;"	f	language:Vim
+Tex_SyncPreviewWindow	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^function! s:Tex_SyncPreviewWindow()$/;"	f	language:Vim
+Tex_UpdatePreviewWindow	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_UpdatePreviewWindow(filename)$/;"	f	language:Vim
+Tex_ViewLaTeX	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! Tex_ViewLaTeX()$/;"	f	language:Vim
+TLook	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^command -nargs=1 TLook    call Tex_Complete(<q-args>, 'tex')$/;"	c	language:Vim
+TLookAll	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^command -nargs=1 TLookAll call Tex_Complete(<q-args>, 'all')$/;"	c	language:Vim
+TLookBib	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^command -nargs=1 TLookBib call Tex_Complete(<q-args>, 'bib')$/;"	c	language:Vim
+ToggleRelativenumber	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! ToggleRelativenumber()$/;"	f	language:Vim
+TPartCompile	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^command! -nargs=0 -range=% TPartCompile :<line1>, <line2> silent! call Tex_PartCompile()$/;"	c	language:Vim
+trailing	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup trailing$/;"	a	language:Vim
+TTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^com! -nargs=? TTarget :call SetTeXTarget(<f-args>)$/;"	c	language:Vim
+TVTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^com! -nargs=1 TVTarget :call Tex_SetTeXCompilerTarget('View', <f-args>)$/;"	c	language:Vim
+Vaa	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap Vaa ggVG$/;"	m	language:Vim
+vaa	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap vaa ggvGg_$/;"	m	language:Vim
+VSetSearch	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! s:VSetSearch()$/;"	f	language:Vim
+\<Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\<Space> :call IsWhiteLine()<CR>$/;"	m	language:Vim
+\h	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\h :colorscheme hybrid<CR>$/;"	m	language:Vim
+\j	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\j :colorscheme jellybeans<CR>$/;"	m	language:Vim
+\s	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent>\\s :colorscheme solarized<CR>$/;"	m	language:Vim
+\t	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent>\\t :colorscheme Tomorrow-Night<CR>$/;"	m	language:Vim
+\t	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\t :colorscheme Tomorrow-Night-Eighties<CR>$/;"	m	language:Vim

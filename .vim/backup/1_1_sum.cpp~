@@ -1,0 +1,87 @@
+#include<cstdio>
+#include<cstdlib>
+#include<algorithm>
+#include<vector>
+using namespace std;
+#define MAX_N 50
+int m=0, n=0, k[MAX_N]={0};
+int flag =0;
+int solve();
+
+bool bin_search(int x){
+    int l=0,r=n;
+    while(r-l>=1){
+        int i = (r+l)/2;
+        if(k[i] ==x) return true;
+        else if(k[i]<x) l=i+1;
+        else r=i;
+    }
+    return false;
+}
+
+void display(){
+    printf("begin display\n");
+    for(int i=0;i<n;i++)
+    {
+        printf("%d\n",k[i]);
+    }
+    printf("end display\n");
+}
+
+int main(int a)
+{
+    vector<int> st;
+    scanf("%d %d",&n,&m);
+    for (int i=0;i<n;i++)
+    {
+        scanf("%d",&k[i]);
+    }
+    solve(); 
+    return 0;
+}
+
+int solve()
+{
+    sort(k,k+n);
+    display();
+    for(int a=0;a<n;a++)
+        for(int b=0;b<n;b++)
+            for (int c=0;c<n; c++)
+                for (int d=0;d<n;d++)
+                {
+                    if(bin_search(m-k[a]-k[b]-k[c]))
+                    {
+                        flag =1;
+                        printf("%d+%d+%d+%d=%d\n",k[a],k[b],k[c],k[d],m);
+                    }
+                }
+    
+    if(flag ==0)
+    {
+        printf("NO\n");
+    }
+    return 0;
+}
+
+
+
+int solve1()
+{
+    for(int a=0;a<n;a++)
+        for(int b=0;b<n;b++)
+            for (int c=0;c<n; c++)
+                for (int d=0;d<n;d++)
+                {
+                    if(k[a]+k[b]+k[c]+k[d]==m)
+                    {
+                        printf("%d+%d+%d+%d=%d\n",k[a],k[b],k[c],k[d],m);
+                        flag = 1;
+                    }
+                }
+
+    if(flag ==0)
+    {
+        printf("NO");
+    }
+    return 0;
+}

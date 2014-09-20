@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABBREV_HASH	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^ABBREV_HASH=$(shell git log --oneline | head -n 1 | cut -d\\  -f 1)$/;"	m	language:Make
+BINDIR	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^BINDIR=$(PREFIX)\/bin$/;"	m	language:Make
+COMMIT_COUNT	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^COMMIT_COUNT=$(shell git log --oneline | wc -l)$/;"	m	language:Make
+DATE	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^DATE=$(shell date +%Y%m%d)$/;"	m	language:Make
+PREFIX	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^PREFIX=\/usr\/local$/;"	m	language:Make
+SNAPSHOTNAME	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^SNAPSHOTNAME=vim-latex-$(VERSION)-$(DATE).$(COMMIT_COUNT)-git$(ABBREV_HASH)$/;"	m	language:Make
+VERSION	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^VERSION=1.8.23$/;"	m	language:Make
+VIMDIR	/Volumes/WorkSpace/git-workspace/vim-latex/Makefile	/^VIMDIR=$(PREFIX)\/share\/vim$/;"	m	language:Make
