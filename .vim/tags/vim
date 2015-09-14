@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 #	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap # #zzzv$/;"	m	language:Vim
 #	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap # :<C-U>call <SID>VSetSearch()<CR>??<CR>$/;"	m	language:Vim
+$PATH	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/tex.vim	/^let $PATH .= ":\/usr\/texbin"$/;"	v	language:Vim
 &	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap & :&&<CR>$/;"	m	language:Vim
 *	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap * *zzzv$/;"	m	language:Vim
 *	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap * :<C-U>call <SID>VSetSearch()<CR>\/\/<CR>$/;"	m	language:Vim
@@ -54,6 +55,7 @@
 <Leader>vx	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>vx :VimuxClosePanes<CR>$/;"	m	language:Vim
 <Leader>wq	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>wq :%s\/\\s\\+$\/\/<CR>:let @\/=''<CR>$/;"	m	language:Vim
 <Leader>x	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <Leader>x :tabedit $MYVIMRC<CR>$/;"	m	language:Vim
+<Silent><LocalLeader>kk	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/tex.vim	/^map  <Silent><LocalLeader>kk :silent !\/Applications\/Skim.app\/Contents\/SharedSupport\/displayline$/;"	m	language:Vim
 <Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent><Space> @=(foldlevel('.')?'za':"\\<Space>")<CR>$/;"	m	language:Vim
 <Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap <Space> zf$/;"	m	language:Vim
 <Tab>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <Tab> %$/;"	m	language:Vim
@@ -89,6 +91,8 @@ g:goldenview__enable_default_mapping	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^l
 g:indent_guides_auto_colors	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let g:indent_guides_auto_colors=0$/;"	v	language:Vim
 g:indent_guides_enable_on_vim_startup	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:indent_guides_enable_on_vim_startup=1$/;"	v	language:Vim
 g:indent_guides_guide_size	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:indent_guides_guide_size=1$/;"	v	language:Vim
+g:LatexBox_latexmk_options	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/tex.vim	/^let g:LatexBox_latexmk_options = "-pdflatex='pdflatex -file-line-error -synctex=1'"$/;"	v	language:Vim
+g:LatexBox_viewer	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/tex.vim	/^let g:LatexBox_viewer = 'open -a \/Applications\/Skim.app'$/;"	v	language:Vim
 g:lt_height	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:lt_height = 10$/;"	v	language:Vim
 g:lt_location_list_toggle_map	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:lt_location_list_toggle_map = '<leader>l'$/;"	v	language:Vim
 g:lt_quickfix_list_toggle_map	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:lt_quickfix_list_toggle_map = '<leader>q'$/;"	v	language:Vim
@@ -99,11 +103,12 @@ g:splitjoin_align	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_alig
 g:splitjoin_join_mapping	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_join_mapping = ',j'$/;"	v	language:Vim
 g:splitjoin_normalize_whitespace	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_normalize_whitespace=1$/;"	v	language:Vim
 g:splitjoin_split_mapping	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:splitjoin_split_mapping = ',k'$/;"	v	language:Vim
+g:syntastic_always_populate_loc_list	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_always_populate_loc_list = 1$/;"	v	language:Vim
 g:syntastic_auto_jump	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_auto_jump=1$/;"	v	language:Vim
 g:syntastic_check_on_open	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_check_on_open=1$/;"	v	language:Vim
 g:syntastic_cpp_check_header	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_check_header = 1$/;"	v	language:Vim
 g:syntastic_cpp_compiler	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_compiler = 'clang++'$/;"	v	language:Vim
-g:syntastic_cpp_compiler_options	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'$/;"	v	language:Vim
+g:syntastic_cpp_compiler_options	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_compiler_options = '-Wall -std=c++11 -stdlib=libstdc++'$/;"	v	language:Vim
 g:syntastic_cpp_include_dirs	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_include_dirs = ['\/usr\/include\/']$/;"	v	language:Vim
 g:syntastic_cpp_remove_include_errors	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_cpp_remove_include_errors = 1$/;"	v	language:Vim
 g:syntastic_enable_balloons	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:syntastic_enable_balloons = 1$/;"	v	language:Vim
@@ -231,5 +236,6 @@ VSetSearch	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! s:VSetSearch()$/;
 \h	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\h :colorscheme hybrid<CR>$/;"	m	language:Vim
 \j	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\j :colorscheme jellybeans<CR>$/;"	m	language:Vim
 \s	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent>\\s :colorscheme solarized<CR>$/;"	m	language:Vim
+\s	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\s :colorscheme solarized<CR>$/;"	m	language:Vim
 \t	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    nnoremap <silent>\\t :colorscheme Tomorrow-Night<CR>$/;"	m	language:Vim
 \t	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\t :colorscheme Tomorrow-Night-Eighties<CR>$/;"	m	language:Vim

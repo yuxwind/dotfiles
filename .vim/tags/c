@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+and_count	/Volumes/WorkSpace/git-workspace/codeprac/bit/bitcount.cpp	/^int and_count(int a , int b){$/;"	f	language:C
 ar	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int n=0,ar[MAX_N]={0};$/;"	v	language:C
 arr	/Volumes/WorkSpace/git-workspace/codeprac/search/search.cpp	/^int arr[MAX] = {0,4,5,1,2,3,8,1,12,3,5,12,90};$/;"	v	language:C
 arr	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int arr[MAX] = {1,3,2,5,0,1,-1,8,9,10,11,12,13,14,15,16,17,18,19,20,1,23,45,11};$/;"	v	language:C
@@ -63,6 +64,7 @@ flag	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int flag =0;$/;"	v	lang
 FTOFF_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	262;"	d	language:C
 FTPLUGIN_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	256;"	d	language:C
 FTPLUGOF_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	265;"	d	language:C
+getHeight	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> int TreeNode<T,N>::getHeight(){$/;"	f	language:C	class:N
 getNextval	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^void getNextval(char *p, int next[]);$/;"	p	language:C	file:
 getNextval	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^void getNextval(char *p,int next[]){$/;"	f	language:C
 GVIMRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	373;"	d	language:C
@@ -83,6 +85,7 @@ heap_size	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int heap_siz
 INDENT_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	259;"	d	language:C
 INDOFF_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	268;"	d	language:C
 insert	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> void List<Type>::insert(int pos,Type t){$/;"	f	language:C	class:Type
+insertChild	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::insertChild(T value){$/;"	f	language:C	class:N
 insertsort	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void insertsort(pNode narr,int n){$/;"	f	language:C
 JMP_BUF	/Volumes/WorkSpace/vim74/src/os_unix.h	556;"	d	language:C
 JMP_BUF	/Volumes/WorkSpace/vim74/src/os_unix.h	560;"	d	language:C
@@ -90,12 +93,13 @@ k	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$
 k	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
 kmpSearch	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^int kmpSearch(const char *haystack, const char* needle);$/;"	p	language:C	file:
 kmpSearch	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^int kmpSearch(const char *s, const char *p)$/;"	f	language:C
-LEFT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	6;"	d	language:C	file:
+LEFT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	7;"	d	language:C	file:
 LONGJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	558;"	d	language:C
 LONGJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	562;"	d	language:C
 M	/Volumes/WorkSpace/git-workspace/codeprac/list/array.cpp	10;"	d	language:C	file:
 m	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
 m	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
+main	/Volumes/WorkSpace/git-workspace/codeprac/bit/bitcount.cpp	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/codeprac/list/array.cpp	/^int main(int argc, char *argv[]){$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/codeprac/list/linkedlist.cpp	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^int main()$/;"	f	language:C
@@ -107,12 +111,14 @@ main	/Volumes/WorkSpace/git-workspace/codeprac/string/hello.cpp	/^int main()$/;"
 main	/Volumes/WorkSpace/git-workspace/codeprac/string/rabin_karp.cpp	/^int main(int argc, char *argv[])$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^int main(){$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/codeprac/testenv.c	/^int main(int argc,char* argv[],char** envp)$/;"	f	language:C
+main	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/git-workspace/codeprac/yux/string_join.c	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/localtest/hello.c	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int main(){$/;"	f	language:C
 MAX	/Volumes/WorkSpace/git-workspace/codeprac/search/search.cpp	4;"	d	language:C	file:
-MAX	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	4;"	d	language:C	file:
+MAX	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	6;"	d	language:C	file:
 max	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	4;"	d	language:C	file:
 MAXNAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	166;"	d	language:C
 MAXNAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	170;"	d	language:C
@@ -139,12 +145,18 @@ mch_rmdir	/Volumes/WorkSpace/vim74/src/os_unix.h	105;"	d	language:C
 mch_setenv	/Volumes/WorkSpace/vim74/src/os_unix.h	521;"	d	language:C
 merge	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void merge(pNode narr, int left, int middle , int right){$/;"	f	language:C
 mergesort	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void mergesort(pNode narr, int left ,int right){$/;"	f	language:C
+midOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::midOrder_r()$/;"	f	language:C	class:N
 N	/Volumes/WorkSpace/git-workspace/codeprac/list/array.cpp	9;"	d	language:C	file:
 N	/Volumes/WorkSpace/git-workspace/codeprac/search/search.cpp	/^int N = 13;$/;"	v	language:C
 N	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int N = 24;$/;"	v	language:C
 n	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
 n	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
 n	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int n=0,ar[MAX_N]={0};$/;"	v	language:C
+N::getHeight	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> int TreeNode<T,N>::getHeight(){$/;"	f	language:C	class:N
+N::insertChild	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::insertChild(T value){$/;"	f	language:C	class:N
+N::midOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::midOrder_r()$/;"	f	language:C	class:N
+N::postOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::postOrder_r()$/;"	f	language:C	class:N
+N::preOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::preOrder_r()$/;"	f	language:C	class:N
 NAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	139;"	d	language:C
 NAMLEN	/Volumes/WorkSpace/vim74/src/os_unix.h	143;"	d	language:C
 next	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^int next[2*MAX_LEN];$/;"	v	language:C
@@ -154,10 +166,12 @@ Node::value	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^    int va
 NO_EXPANDPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	456;"	d	language:C
 operator	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> Type& List<Type>::operator[](int index){$/;"	f	language:C	class:Type
 ori_index	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^    unsigned int ori_index;$/;"	m	language:C	struct:Node	file:
-PARENT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	8;"	d	language:C	file:
+PARENT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	9;"	d	language:C	file:
 partition	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int partition(pNode narr, int left, int right){$/;"	f	language:C
 pNode	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^}*pNode;$/;"	t	language:C	typeref:struct:Node	file:
 pop_back	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> void List<Type>::pop_back(){$/;"	f	language:C	class:Type
+postOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::postOrder_r()$/;"	f	language:C	class:N
+preOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::preOrder_r()$/;"	f	language:C	class:N
 pre_gs	/Volumes/WorkSpace/git-workspace/codeprac/string/boyer_moore.cpp	/^static void pre_gs(const char pattern[],int gs[]){$/;"	f	language:C	file:
 pre_right	/Volumes/WorkSpace/git-workspace/codeprac/string/boyer_moore.cpp	/^static void pre_right(const char *pattern, int right[])$/;"	f	language:C	file:
 primeselect	/Volumes/WorkSpace/git-workspace/codeprac/list/array.cpp	/^void primeselect(int n)$/;"	f	language:C
@@ -169,7 +183,7 @@ qsort	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int qsort(pNode 
 R	/Volumes/WorkSpace/git-workspace/codeprac/string/rabin_karp.cpp	/^const int R = 256; \/\/ R进制$/;"	v	language:C
 rabin_carp_matcher	/Volumes/WorkSpace/git-workspace/codeprac/string/rabin_karp.cpp	/^static void rabin_carp_matcher(const char *T,const char *P,int d, long q)$/;"	f	language:C	file:
 remove	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> void List<Type>::remove(int pos){$/;"	f	language:C	class:Type
-RIGHT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	7;"	d	language:C	file:
+RIGHT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	8;"	d	language:C	file:
 selectsort	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void selectsort(pNode narr, int n)$/;"	f	language:C
 SETJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	557;"	d	language:C
 SETJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	561;"	d	language:C
@@ -199,11 +213,13 @@ std	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^using namespace st
 std	/Volumes/WorkSpace/git-workspace/codeprac/queue/queue.h	/^using namespace std;$/;"	v	language:C
 std	/Volumes/WorkSpace/git-workspace/codeprac/queue/queue.hpp	/^using namespace std;$/;"	v	language:C
 std	/Volumes/WorkSpace/git-workspace/codeprac/queue/quque.cpp	/^using namespace std;$/;"	v	language:C
+std	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^using namespace std;$/;"	v	language:C
 std	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^using namespace std;$/;"	v	language:C
 std	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^using namespace std;$/;"	v	language:C
 str	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char str[MAX_LEN];$/;"	v	language:C
 strcpy	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char *strcpy(char *to, const char *from){$/;"	f	language:C
 strcpy	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char* strcpy(char *to , const char *from);$/;"	p	language:C	file:
+stringJoin	/Volumes/WorkSpace/git-workspace/codeprac/yux/string_join.c	/^char* stringJoin(char* s1, char* s2)$/;"	f	language:C
 strlen	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^size_t strlen(const char* str);$/;"	p	language:C	file:
 strlen	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^size_t strlen(const char* str){$/;"	f	language:C
 strstr	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char* strstr(const char* haystack, const char* needle){$/;"	f	language:C
@@ -220,6 +236,18 @@ S_ISDIR	/Volumes/WorkSpace/vim74/src/os_unix.h	526;"	d	language:C
 S_ISFIFO	/Volumes/WorkSpace/vim74/src/os_unix.h	538;"	d	language:C
 S_ISREG	/Volumes/WorkSpace/vim74/src/os_unix.h	529;"	d	language:C
 S_ISSOCK	/Volumes/WorkSpace/vim74/src/os_unix.h	535;"	d	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> int TreeNode<T,N>::getHeight(){$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> int TreeNode<T,N>::getHeight(){$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::postOrder_r()$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::postOrder_r()$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::preOrder_r()$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> void TreeNode<T,N>::preOrder_r()$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::insertChild(T value){$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::insertChild(T value){$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::midOrder_r()$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::midOrder_r()$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.hpp	/^template <typename T> class BinTreeNode:public TreeNode<T,2>{$/;"	v	language:C
+T	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.hpp	/^template<typename T,int N> class TreeNode{$/;"	v	language:C
 TEMPDIRNAMES	/Volumes/WorkSpace/vim74/src/os_unix.h	437;"	d	language:C
 TEMPDIRNAMES	/Volumes/WorkSpace/vim74/src/os_unix.h	447;"	d	language:C
 TEMPNAME	/Volumes/WorkSpace/vim74/src/os_unix.h	444;"	d	language:C

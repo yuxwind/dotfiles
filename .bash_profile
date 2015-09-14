@@ -1,11 +1,20 @@
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# mainly in .bashrc
+if [ -f "$HOME/.bashrc"  ]; then
+    source "$HOME/.bashrc"
+fi
 
-#zsh utf-8 'ls -v' display chinese 
-alias ls='ls -v'
-alias vim='/usr/local/bin/vim'
+
+export EDITOR=vim
+export GCC_HOME=/usr/local/Cellar/gcc49/4.9.2_1/
+export GCC46_HOME=/usr/local/Cellar/gcc46/4.6.4/
+export PATH=$GCC_HOME/bin/:$PATH
+export C_INCLUDE_PATH=`find /usr/local/Cellar/gettext -type d -name 'include' | head -n 1`
 export
-PATH=/usr/local/bin/:/usr/local/share/npm/bin/:/usr/local/Cellar/subversion/1.8.0/bin/:$PATH
-#export C_INCLUDE_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/include
-#export LIBRARY_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib
-export C_INCLUDE_PATH = $C_INCLUDE_PATH:/usr/local/include
-export CPLUS_INCLUDE_PATH = $CPLUS_INCLUDE_PATH:/usr/local/include
+C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/include:$GCC_HOME/include/:$GCC46_HOME/include
+export
+CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/include:$GCC_HOME/include/:$GCC46_HOME/include
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:`find /usr/local/Cellar/gettext -type d -name 'include' |
+head -n 1`
+alias gcc=$GCC_HOME/bin/gcc-4.9
+alias g++=$GCC_HOME/bin/g++-4.9
+mdless() {pandoc -s -f markdown -t man "$@" | groff -T utf8 -man | less}

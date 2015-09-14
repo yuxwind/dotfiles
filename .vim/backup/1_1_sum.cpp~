@@ -28,7 +28,7 @@ void display(){
     printf("end display\n");
 }
 
-int main(int a)
+int main()
 {
     vector<int> st;
     scanf("%d %d",&n,&m);

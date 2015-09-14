@@ -3,37 +3,9 @@
 # with '#' will be ignored, and an empty message aborts the commit.
 # On branch master
 # Changes to be committed:
-#   (use "git reset HEAD <file>..." to unstage)
-#
-#	new file:   ex1.pdf
-#	new file:   ex2.pdf
-#	new file:   mlclass-ex1/computeCost.m
-#	new file:   mlclass-ex1/computeCostMulti.m
-#	new file:   mlclass-ex1/ex1.m
-#	new file:   mlclass-ex1/ex1_multi.m
-#	new file:   mlclass-ex1/ex1data1.txt
-#	new file:   mlclass-ex1/ex1data2.txt
-#	new file:   mlclass-ex1/featureNormalize.m
-#	new file:   mlclass-ex1/gradientDescent.m
-#	new file:   mlclass-ex1/gradientDescentMulti.m
-#	new file:   mlclass-ex1/ml_login_data.mat
-#	new file:   mlclass-ex1/normalEqn.m
-#	new file:   mlclass-ex1/plotData.m
-#	new file:   mlclass-ex1/submit.m
-#	new file:   mlclass-ex1/submitWeb.m
-#	new file:   mlclass-ex1/warmUpExercise.m
-#	new file:   mlclass-ex2/costFunction.m
-#	new file:   mlclass-ex2/costFunctionReg.m
-#	new file:   mlclass-ex2/ex2.m
-#	new file:   mlclass-ex2/ex2_reg.m
-#	new file:   mlclass-ex2/ex2data1.txt
-#	new file:   mlclass-ex2/ex2data2.txt
-#	new file:   mlclass-ex2/mapFeature.m
-#	new file:   mlclass-ex2/ml_login_data.mat
-#	new file:   mlclass-ex2/plotData.m
-#	new file:   mlclass-ex2/plotDecisionBoundary.m
-#	new file:   mlclass-ex2/predict.m
-#	new file:   mlclass-ex2/sigmoid.m
-#	new file:   mlclass-ex2/submit.m
-#	new file:   mlclass-ex2/submitWeb.m
+#	new file:   HADOOP-9648.v2.patch
+#	modified:   hadoop-common-project/hadoop-common/src/main/native/src/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMapping.c
+#	modified:   hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/native/container-executor/impl/configuration.c
+#	modified:   hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/native/container-executor/impl/container-executor.c
+#	modified:   hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/native/container-executor/test/test-container-executor.c
 #

@@ -1,0 +1,32 @@
+#include <cstdio>
+#include <iostream>
+#include <cstdlib>
+
+
+template<typename T> class TreeNode{
+private:
+    T value;
+    TreeNode *childs;
+    int childSize;
+
+public:
+    TreeNode():childs(NULL),childSize(0){}//default construct?
+    TreeNode(T value) { 
+        this->value = value; 
+        this->childs = NULL;
+        childSize = 0;
+    }
+    int getChildSize(){ return  childSize; }
+    void insertChild(T value);
+    void destory();
+    
+    void preOrder_r();
+    void postOrder_r();
+    void middleoOrder_r();
+
+    static void preorder(TreeNode *root);
+    static void postOrder(TreeNode *root);
+    static void middleOrder(TreeNode * root);
+
+
+};

@@ -475,6 +475,7 @@ endif
 "colorscheme hybrid " Load a colorscheme
 colorscheme  solarized " Load a colorscheme
 
+nnoremap <silent>\s :colorscheme solarized<CR>
 nnoremap <silent>\t :colorscheme Tomorrow-Night-Eighties<CR>
 nnoremap <silent>\j :colorscheme jellybeans<CR>
 nnoremap <silent>\h :colorscheme hybrid<CR>
@@ -812,15 +813,16 @@ nnoremap <Leader>s :Errors<CR>
 let g:syntastic_check_on_open=1
 let g:syntastic_auto_jump=1
 let g:syntastic_stl_format='[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
-
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_cpp_include_dirs = ['/usr/include/']
 let g:syntastic_cpp_remove_include_errors = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -stdlib=libstdc++'
+let g:syntastic_cpp_compiler_options = '-Wall -std=c++11 -stdlib=libstdc++'
 "set error or warning signs
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
+"let g:syntastic_warning_symbol = '!'
 "whether to show balloons
 let g:syntastic_enable_balloons = 1
 
@@ -1032,6 +1034,11 @@ map <leader>dc a <LEFT><LEFT><LEFT>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+
+"-----------------------------------------------------------------¬
+" "" plugin -LatexSuite¬
+"-----------------------------------------------------------------¬
+
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 " filetype plugin on
 "
@@ -1051,3 +1058,4 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+

@@ -1,0 +1,102 @@
+S = Wolf
+
+Unigrams: logprob(S) = -10.6569
+Bigrams: logprob(S) = undefined
+Smoothed Bigrams: logprob(S) = -23.1098
+
+S = Widespread panic
+
+Unigrams: logprob(S) = -26.9286
+Bigrams: logprob(S) = undefined
+Smoothed Bigrams: logprob(S) = -33.5335
+
+S = I don't trust horses . 
+
+Unigrams: logprob(S) = -42.7229
+Bigrams: logprob(S) = -15.1491
+Smoothed Bigrams: logprob(S) = -47.8546
+
+S = I swear I am not making this up . 
+
+Unigrams: logprob(S) = -74.1429
+Bigrams: logprob(S) = -28.6793
+Smoothed Bigrams: logprob(S) = -83.4036
+
+S = Never forget your froggy .
+
+Unigrams: logprob(S) = -51.1322
+Bigrams: logprob(S) = undefined
+Smoothed Bigrams: logprob(S) = -59.1811
+
+S = Little did I know that a treacherous lizard addressed 300,000 scientists . 
+
+Unigrams: logprob(S) = -119.3167
+Bigrams: logprob(S) = undefined
+Smoothed Bigrams: logprob(S) = -136.5352
+
+generate with seeds.txt
+Seed = I
+
+Sentence 1: I am not as possible .
+Sentence 2: I would assume that is completed later that all these little mats .
+Sentence 3: I were causing the program in a moving rose garden ceremony , president bush and sing increasingly high volume n of anabolic steroids , or don't break off of years old upright piano and they hated was courting mode ,
+Sentence 4: I promised at two hours , long section .
+Sentence 5: I will come from the deadly plutonium-powered space probe rex has ever land here it tends to the hospital physical-examination form , but moving rose garden ceremony was that .
+Sentence 6: I did , the place over the schools held by a moderate testosterone levels , marred by tonya harding thing went a-courting , comes to walk back against japan .
+Sentence 7: I am definitely should be boarded at the u.s. surgeon general population is no , you want to decapitate her husband , looking directly at my horse will remember this event that is minus 12 degrees fahrenheit at its food
+Sentence 8: I paid $ 17 strands of the event probably will thaw out to make the snow here that i would have been standing here someplace .
+Sentence 9: I occupied during a job piloting oil tankers for a recurring nightmare wherein the scenery , and loan industry's appalling stupidity , if .
+Sentence 10: I was : if it means , the airport for me just stay back to get back to the best kind of chinese students erect a song from wolves .
+
+Seed = the
+
+Sentence 1: the actor having bad guys are .
+Sentence 2: the train tracks here for the world book encyclopedia , but why the other instruments ; and premier gorbachev set fire to determine the inability to -- i am actually interview miss harding situation where two reliable sources that the
+Sentence 3: the size up watching olympic games themselves : smart cells : should serve as a damage that our hair style .
+Sentence 4: the tonya harding update today .
+Sentence 5: the downtown lillehammer area .
+Sentence 6: the newspaper of hair style .
+Sentence 7: the summer .
+Sentence 8: the government , and thousands of the newspaper office .
+Sentence 9: the actual civic slogan : what is expected .
+Sentence 10: the savings and declares a bucket of evolution .
+
+Seed = according
+
+Sentence 1: according to do not just charge you don't forget to represent greece in fact that there is familiar with a lot of the official opening ceremony .
+Sentence 2: according to keep a-rollin',' adds john unless this is expected .
+Sentence 3: according to bats and funky .
+Sentence 4: according to ropes that tofu turns out of the most public schools .
+Sentence 5: according to put it means , and declares a what to top 50 million by a neighbor's horse would freeze shut and just decided to print every time , , really the most aerodynamic shape , are insects are so
+Sentence 6: according to the u.s. bobsled .
+Sentence 7: according to prison immediately , the following exclusive photograph of religion from the woods to believe that they figured out our first , but my body up with the dress code .
+Sentence 8: according to -- i will gently but , hotel queen leona helmsley arrives at singing .
+Sentence 9: according to her some value , the bottom , east germany , as opposed to be selected solely on the list does life , 1943 , on this up and we regret that was dmitry that , on the pony
+Sentence 10: according to lose consciousness , ole couldn't stand around here i want , being : 1 .
+
+Seed = animals
+
+Sentence 1: animals that congressional hearings be a major new york times 32 feet .
+Sentence 2: animals that hot , we journalists are working all over the conclusion that it .
+Sentence 3: animals that the latest in my mottoes .
+Sentence 4: animals out he's also i'm staying and she loves horses , or a big and sentenced to migrate to the downhill skiing become a rental horse bareback , and try to hold it turns out if we can sit on-
+Sentence 5: animals out a newspaper and over and yanking on the hot flashes emitted by law .
+Sentence 6: animals whose sole reason for a hostess twinkie .
+Sentence 7: animals that is why , well , norway seem quite foreign to a whack .
+Sentence 8: animals you .
+Sentence 9: animals you about the norway .
+Sentence 10: animals that she loves horses .
+
+Seed = Zsa
+
+Sentence 1: Zsa gabor is cracking down .
+Sentence 2: Zsa zsa zsa gabor is translated -- admit that song for hours on the army , in lodi , so many explanations for security reasons she is ordered to be perfectly normal .
+Sentence 3: Zsa zsa gabor is a bunch of professionals we regret that fewer americans used steroids were frantically thumbing through it , so cold , as opposed to believe the place .
+Sentence 4: Zsa gabor is not fly into the luge practice one , this had the sled that comes after a long absence , he enclosed a country where that all ruddy-complexioned , and the four-minute mile of ordinary male physique has
+Sentence 5: Zsa gabor is heated .
+Sentence 6: Zsa gabor is a man came into the u.s. speed skaters here , almost entirely of the whole tonya harding .
+Sentence 7: Zsa gabor is finally fed up -- mayonnaise stains , the ground you steer .
+Sentence 8: Zsa zsa gabor is here left -- i stated that no longer any kind of the official olympic committee , try stepping on a judge for the october 1943 , which is that a grim-faced u. s. house sent the
+Sentence 9: Zsa zsa gabor is elected representatives and then he explained leon's concern is an overly lenient punishment , very small brains died .
+Sentence 10: Zsa gabor is not going to the ceremonies was not easy .
+

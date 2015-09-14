@@ -1,4 +1,81 @@
-这里的请打开word目录，或者视图-》导航
-比较多，请从目录TOP11-TPO25全部打印，如果一次太多，可以分批帮我打印，谢谢
-大概从第317页到最后，恐Mac和MS的排版有误，请以MS目录TPO11实际内容为开始点。
+For the latest information about Hadoop, please visit our website at:
+
+   http://hadoop.apache.org/core/
+
+and our wiki, at:
+
+   http://wiki.apache.org/hadoop/
+
+This distribution includes cryptographic software.  The country in 
+which you currently reside may have restrictions on the import, 
+possession, use, and/or re-export to another country, of 
+encryption software.  BEFORE using any encryption software, please 
+check your country's laws, regulations and policies concerning the
+import, possession, or use, and re-export of encryption software, to 
+see if this is permitted.  See <http://www.wassenaar.org/> for more
+information.
+
+The U.S. Government Department of Commerce, Bureau of Industry and
+Security (BIS), has classified this software as Export Commodity 
+Control Number (ECCN) 5D002.C.1, which includes information security
+software using or performing cryptographic functions with asymmetric
+algorithms.  The form and manner of this Apache Software Foundation
+distribution makes it eligible for export under the License Exception
+ENC Technology Software Unrestricted (TSU) exception (see the BIS 
+Export Administration Regulations, Section 740.13) for both object 
+code and source code.
+
+The following provides more details on the included cryptographic
+software:
+  Hadoop Core uses the SSL libraries from the Jetty project written 
+by mortbay.org.
+
+
+
+# Background
+  When secure hadoop want to access insecure hadoop, espeically for using distcp on hdfs,
+  the job (distcp) will try to get token for both source and destination FileSystem.
+  However, the insecure hadoop will return null token for disabled security option, which
+  let secure hadoop client(DFSClient) throw NPE and job failed. Hence, we need to upgrade
+  hadoop client code about getDelegationToken to work around this case.
+
+# Solution
+## Step 1. For null token received in DFSClient#getDelegationToken, not print it with stringifyToken
+  <pre>
+      // For insecure, result will be null, and throwing NPE by stringifyToken
+      if(result != null){
+        LOG.info("Created " + stringifyToken(result));
+      }else{
+        // for null token, handled by DistributedFileSystem for creating an dummy token.
+        LOG.info("Created null token!");
+      }
+  </pre>
+
+## Step 2.For null token received in DistributedFileSystem#getDelegationToken, return a new dummy Token
+   <pre>
+   result = new Token<DelegationTokenIdentifier>(identifier,password,kind,service);
+   </pre>
+
+## Step 3. Build new hadoop-core and deploy
+   <pre>
+      1. ant
+      2. scp build/hadoop-core-0.20.2-cdh3u1.jar xxxx@xxxxx:/yourpath/
+   </pre>
+
+## Step 4. Set CLASSPATH using this new hadoop client jar.
+   1. Only local support, let hadoop search HADOOP_CLASSPATH first for class loading.
+   <pre>
+       export HADOOP_CLASSPATH=/yourpath/hadoop-core-0.20.2-cdh3u1.jar
+       export HADOOP_USER_CLASSPATH_FIRST=true
+   </pre>
+
+   2. For every node in secure cluster using this new jar.
+   In most case, the job will get all required token, and set it into its Credential, which will make
+   any other nodes in this cluster share this token.  So usually there is no need for every node upgrades this new client,
+   which will also pollute the secure cluster. Please add the following code into the code of your hadoop job:
+   <pre>
+        job.getConfiguration().set("mapreduce.job.user.classpath.first", "true");
+   </pre>
+
+## Step 5. Just run your job as usually.
 

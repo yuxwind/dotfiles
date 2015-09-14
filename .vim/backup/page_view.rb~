@@ -97,12 +97,10 @@ module Jekyll
           return ''
         end
       end
-      p context.environments 
       pv = post['_pv']
       if pv == nil
         return ''
       end
-      p pv
       html = pv.to_s.reverse.gsub(/...(?=.)/,'\&,').reverse + ' hits'
       return html
     end #render

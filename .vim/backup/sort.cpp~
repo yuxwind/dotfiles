@@ -1,11 +1,14 @@
 #include<cstdio>
 #include<cstdlib>
 #include<algorithm>
+#include<iostream>
 #define MAX 100
 
 #define LEFT(i) 2*(i)
 #define RIGHT(i) 2*(i)+1
 #define PARENT ((i)-(i)%2)/2
+
+using namespace std;
 
 typedef struct Node{
     int value;

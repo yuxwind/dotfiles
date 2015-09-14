@@ -9,13 +9,17 @@ ask	/Volumes/WorkSpace/git-workspace/octopress/Rakefile	/^def ask(message, valid
 Date	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^  module Date$/;"	m	language:Ruby	class:Octopress
 datetime	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def datetime(date)$/;"	f	language:Ruby	class:Octopress.Date
 format_date	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def format_date(date, format)$/;"	f	language:Ruby	class:Octopress.Date
+generate	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^    def generate(site)$/;"	f	language:Ruby	class:Jekyll.GoogleAnalytics
 generate	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^    def generate(site)$/;"	f	language:Ruby	class:Jekyll.GoogleAnalytics
 generate	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^    def generate(site)$/;"	f	language:Ruby	class:Jekyll.GoogleAnalytics
 get_stdin	/Volumes/WorkSpace/git-workspace/octopress/Rakefile	/^def get_stdin(message)$/;"	f	language:Ruby
+GoogleAnalytics	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^  class GoogleAnalytics < Generator$/;"	c	language:Ruby	class:Jekyll
 GoogleAnalytics	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^  class GoogleAnalytics < Generator$/;"	c	language:Ruby	class:Jekyll
 GoogleAnalytics	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^  class GoogleAnalytics < Generator$/;"	c	language:Ruby	class:Jekyll
+initialize	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^    def initialize(name, marker, token)$/;"	f	language:Ruby	class:Jekyll.PageViewTag
 initialize	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def initialize(site, base, dir, name)$/;"	f	language:Ruby	class:Jekyll.Page
 initialize	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^    def initialize(name, marker, token)$/;"	f	language:Ruby	class:Jekyll.PageViewTag
+Jekyll	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^module Jekyll$/;"	m	language:Ruby
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^module Jekyll$/;"	m	language:Ruby
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^  class Jekyll::Post$/;"	c	language:Ruby	class:Jekyll
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^module Jekyll$/;"	m	language:Ruby
@@ -25,7 +29,9 @@ ok_failed	/Volumes/WorkSpace/git-workspace/octopress/Rakefile	/^def ok_failed(co
 ordinal	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def ordinal(number)$/;"	f	language:Ruby	class:Octopress.Date
 ordinalize	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def ordinalize(date)$/;"	f	language:Ruby	class:Octopress.Date
 Page	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^  class Page$/;"	c	language:Ruby	class:Jekyll
+PageViewTag	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^  class PageViewTag < Liquid::Tag$/;"	c	language:Ruby	class:Jekyll
 PageViewTag	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^  class PageViewTag < Liquid::Tag$/;"	c	language:Ruby	class:Jekyll
 Post	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^  class Post$/;"	c	language:Ruby	class:Jekyll
+render	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^    def render(context)$/;"	f	language:Ruby	class:Jekyll.PageViewTag
 render	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^    def render(context)$/;"	f	language:Ruby	class:Jekyll.PageViewTag
 to_liquid	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def to_liquid$/;"	f	language:Ruby	class:Jekyll.Post
