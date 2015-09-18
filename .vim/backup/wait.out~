@@ -1,0 +1,14 @@
+Terminate case 1: All labels in this tree are the same, stop splitting
+Terminate case 1: All labels in this tree are the same, stop splitting
+Terminate case 1: All labels in this tree are the same, stop splitting
+Terminate case 1: All labels in this tree are the same, stop splitting
+Terminate case 1: All labels in this tree are the same, stop splitting
+testVec: Yes,Yes,Full,Italian
+testVec: Yes,Yes,Full,Italian
+testVec: Yes,Yes,Full,Italian
+badcase: Yes,Yes,Full,Italian,No
+testVec: No,No,None,Thai
+testVec: Yes,Yes,Full,Chinese
+testVec: Yes,Yes,Full,Chinese
+testVec: Yes,Yes,Full,Chinese
+accuracy= 0.6667

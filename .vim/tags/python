@@ -8,16 +8,34 @@ aitem	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    aitem = 
 aitem	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    aitem = alfred.Item({'uid': 1, 'arg' : 'http:\/\/www.meituan.com\/'}, 'Not Found', '')$/;"	v	language:Python
 alfred	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfred,sys,os$/;"	i	language:Python
 alfred	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
-argparse	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
-bigram	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def bigram(sequence, **args):$/;"	m	language:Python	class:NGrams
+argparse	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
+bigram	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def bigram(sequence, **args):$/;"	m	language:Python	class:NGrams
 BuildMaxHeap	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def BuildMaxHeap(self):$/;"	m	language:Python	class:HeapArray
-chain	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^from itertools import chain$/;"	i	language:Python
+buildTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def buildTree(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
+buildTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def buildTree(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
+calcAccuracy	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def calcAccuracy(self,totalTrainingFile,testFile,bestK,splitToken=","):$/;"	m	language:Python	class:kNN
+calcAccuracyWithKFold	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def calcAccuracyWithKFold(self,fileSet,k,splitToken=','):$/;"	m	language:Python	class:kNN
+calcGini	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def calcGini(rootSet):$/;"	m	language:Python	class:DecisionTree
+calcGini	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def calcGini(rootSet):$/;"	m	language:Python	class:DecisionTree
+calcID3	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def calcID3(rootSet):$/;"	m	language:Python	class:DecisionTree
+calcID3	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def calcID3(rootSet):$/;"	m	language:Python	class:DecisionTree
+calcMisRate	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def calcMisRate(rootSet):$/;"	m	language:Python	class:DecisionTree
+calcMisRate	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def calcMisRate(rootSet):$/;"	m	language:Python	class:DecisionTree
+chain	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^from itertools import chain$/;"	i	language:Python
+chain	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^from itertools import chain$/;"	i	language:Python
+chain	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^from itertools import chain$/;"	i	language:Python
+chooseBestFeature	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def chooseBestFeature(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
+chooseBestFeature	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def chooseBestFeature(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
+classify	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def classify(self,testVec,dataSet,k):$/;"	m	language:Python	class:kNN
+collections	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 compilation_database_folder	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v	language:Python
 conn	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^conn = req_open.open(request)$/;"	v	language:Python
 database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = None$/;"	v	language:Python
 database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v	language:Python
 data_stream	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^data_stream = StringIO.StringIO(req_data)$/;"	v	language:Python
 datetime	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
+DecisionTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^class DecisionTree:$/;"	c	language:Python
+DecisionTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^class DecisionTree:$/;"	c	language:Python
 DirectoryOfThisScript	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	language:Python
 ET	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
 ET	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.ElementTree as ET$/;"	i	language:Python
@@ -31,13 +49,15 @@ ExchangeItem	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def E
 firstWord	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    firstWord = m.group('firstWord')$/;"	v	language:Python
 flags	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^flags = [$/;"	v	language:Python
 FlagsForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	language:Python
-generateBySeed	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def generateBySeed(self,n,seed,seedSeq,number):$/;"	m	language:Python	class:NGrams
-generateBySeeds	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def generateBySeeds(self,seedsFile):$/;"	m	language:Python	class:NGrams
+generateBySeed	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def generateBySeed(self,n,seed,seedSeq,number):$/;"	m	language:Python	class:NGrams
+generateBySeeds	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def generateBySeeds(self,seedsFile):$/;"	m	language:Python	class:NGrams
+getBestK	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def getBestK(self,fileSet):$/;"	m	language:Python	class:kNN
 GetCompilationInfoForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f	language:Python
-getProbOfSequence	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def getProbOfSequence(self,sequence,n,smooth=False):$/;"	m	language:Python	class:NGrams
-getSeqAndTest	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def getSeqAndTest(self,testSet,splitToken=" "):$/;"	m	language:Python	class:NGrams
+getProbOfSequence	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def getProbOfSequence(self,sequence,n,smooth=False):$/;"	m	language:Python	class:NGrams
+getSeqAndTest	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def getSeqAndTest(self,testSet,splitToken=" "):$/;"	m	language:Python	class:NGrams
 gzip	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 gzip_stream	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^gzip_stream = gzip.GzipFile(fileobj=data_stream)$/;"	v	language:Python
+hammingDist	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def hammingDist(self,vec1,vec2):$/;"	m	language:Python	class:kNN
 handle_data	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^    def handle_data(self, data):$/;"	m	language:Python	class:parseText
 HeapArray	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^class HeapArray:$/;"	c	language:Python
 heaparray	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^heaparray=HeapArray(a)$/;"	v	language:Python
@@ -46,39 +66,62 @@ HeapSort	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def HeapS
 HTMLParser	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^import HTMLParser$/;"	i	language:Python
 ideaFolder	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^ideaFolder = []$/;"	v	language:Python
 IDEAIndex	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^IDEAIndex =[]$/;"	v	language:Python
+impovedLpDist	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def impovedLpDist(self,vec1,vec2,p):$/;"	m	language:Python	class:kNN
+impurityFunc	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    impurityFunc = None $/;"	v	language:Python	class:DecisionTree
+impurityFunc	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    impurityFunc = None $/;"	v	language:Python	class:DecisionTree
 index	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    index = 0$/;"	v	language:Python
 indexFile	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        indexFile = open('IDEA.index','w')$/;"	v	language:Python
+InverseDictTuple	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^InverseDictTuple = collections.namedtuple('LabelTuple','value key')$/;"	v	language:Python
 IsHeaderFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	language:Python
 items	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^items = p.findall(actual_data)$/;"	v	language:Python
+kNN	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^class kNN:$/;"	c	language:Python
 label	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    label = m.group('label')$/;"	v	language:Python
 line_m	/Volumes/WorkSpace/mt.py	/^    line_m = p.match(line)$/;"	v	language:Python
+log	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^from math import log$/;"	i	language:Python
+log	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^from math import log$/;"	i	language:Python
 m	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    m = p.match(line)$/;"	v	language:Python
-main	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^def main(argv):$/;"	f	language:Python
+main	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^def main(argv):$/;"	f	language:Python
+main	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^def main(argv):$/;"	f	language:Python
+main	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^def main(argv):$/;"	f	language:Python
+main	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^def main(argv):$/;"	f	language:Python
 MakeRelativePathsInFlagsAbsolute	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	language:Python
-math	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
+matchTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def matchTree(self,treeModel,features,testVec):$/;"	m	language:Python	class:DecisionTree
+matchTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def matchTree(self,treeModel,features,testVec):$/;"	m	language:Python	class:DecisionTree
+math	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import thread,math$/;"	i	language:Python
+math	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 MaxHeapify	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def MaxHeapify(self, i):$/;"	m	language:Python	class:HeapArray
-n	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    n = 2$/;"	v	language:Python	class:NGrams
+n	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    n = 2$/;"	v	language:Python	class:NGrams
 nested_levels	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^                nested_levels = root.split('\/')$/;"	v	language:Python
-ngrams	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def ngrams(sequence,n,pad_left=True,pad_right=True,symbol_begin=None,symbol_end='\\n'):$/;"	m	language:Python	class:NGrams
-NGrams	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^class NGrams:$/;"	c	language:Python
-ngramsFreq	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    ngramsFreq = []$/;"	v	language:Python	class:NGrams
-ngramsSumFreq	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    ngramsSumFreq = []$/;"	v	language:Python	class:NGrams
+ngrams	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def ngrams(sequence,n,pad_left=True,pad_right=True,symbol_begin=None,symbol_end='\\n'):$/;"	m	language:Python	class:NGrams
+NGrams	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^class NGrams:$/;"	c	language:Python
+ngramsFreq	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    ngramsFreq = []$/;"	v	language:Python	class:NGrams
+ngramsSumFreq	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    ngramsSumFreq = []$/;"	v	language:Python	class:NGrams
 number	/Volumes/WorkSpace/mt.py	/^    number = string.atof(number_str)$/;"	v	language:Python
 number_str	/Volumes/WorkSpace/mt.py	/^    number_str = line_m.group('number')$/;"	v	language:Python
 originQuery	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^originQuery = '合利屋'$/;"	v	language:Python
 os	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import os$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfred,sys,os$/;"	i	language:Python
-os	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
+os	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 p	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^p = re.compile(r'\\<h3 class=\\"deal-tile__title\\"\\>.*?\\<\\\/h3\\>.*?\\<p class=\\"deal-tile__detail\\"\\>.*?\\<\\\/p\\>',re.S)$/;"	v	language:Python
 p	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^p = re.compile(r'(?P<label>.*?) \\((?P<firstWord>.*?),(?P<secondWord>.*?),.*\\)',re.S)$/;"	v	language:Python
 p	/Volumes/WorkSpace/mt.py	/^    p = re.compile(r'\\(.*?,.*?,(?P<number>.*?)\\)')$/;"	v	language:Python
-pad_left	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    pad_left= True$/;"	v	language:Python	class:NGrams
-pad_right	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    pad_right = True$/;"	v	language:Python	class:NGrams
+pad_left	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    pad_left= True$/;"	v	language:Python	class:NGrams
+pad_right	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    pad_right = True$/;"	v	language:Python	class:NGrams
 parseText	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^class parseText(HTMLParser.HTMLParser):$/;"	c	language:Python
+pdb	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+pdb	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+pdb	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
+pprint	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+pprint	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+pprint	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 PrintHeap	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def PrintHeap(self):$/;"	m	language:Python	class:HeapArray
+process	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def process(self,totalTrainingFile,testFile,fileSet=[]):$/;"	m	language:Python	class:kNN
 query	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    query= sys.argv[1]$/;"	v	language:Python
 query	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^query = ""$/;"	v	language:Python
-random	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
+random	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 re	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 re	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^import re,sys$/;"	i	language:Python
 re	/Volumes/WorkSpace/mt.py	/^import re,sys,string$/;"	i	language:Python
@@ -88,29 +131,42 @@ req_open	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^req_open = urllib2.b
 results	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^results = []$/;"	v	language:Python
 results	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^results = []$/;"	v	language:Python
 rootdir_levels	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^            rootdir_levels = rootdir.split('\/')$/;"	v	language:Python
+S2NDict	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^S2NDict= {'x':2,'b':1,'o':0}$/;"	v	language:Python
 secondWord	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    secondWord = m.group('secondWord')$/;"	v	language:Python
 SOURCE_EXTENSIONS	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v	language:Python
+splitSet	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def splitSet(self,rootSet,featureCol,value):$/;"	m	language:Python	class:DecisionTree
+splitSet	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def splitSet(self,rootSet,featureCol,value):$/;"	m	language:Python	class:DecisionTree
 string	/Volumes/WorkSpace/mt.py	/^import re,sys,string$/;"	i	language:Python
 StringIO	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 subtitle	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        subtitle = item$/;"	v	language:Python
 subtitle	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^                subtitle = 'test'$/;"	v	language:Python
-symbol_begin	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    symbol_begin = None$/;"	v	language:Python	class:NGrams
-symbol_end	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    symbol_end = '\\n'$/;"	v	language:Python	class:NGrams
+symbol_begin	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    symbol_begin = None$/;"	v	language:Python	class:NGrams
+symbol_end	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    symbol_end = '\\n'$/;"	v	language:Python	class:NGrams
 sys	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfred,sys,os$/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^import re,sys$/;"	i	language:Python
 sys	/Volumes/WorkSpace/mt.py	/^import re,sys,string$/;"	i	language:Python
-sys	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
+sys	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 theQuery	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^theQuery = urllib.quote_plus(originQuery)$/;"	v	language:Python
+thread	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import thread,math$/;"	i	language:Python
 title	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        title = os.path.split(item)[1]$/;"	v	language:Python
 title	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^                title = m.group('title')$/;"	v	language:Python
 title_re	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^title_re = re.compile(r'.*?\\<a href=\\"(?P<url>.*?)\\".*?title=\\"(?P<title>.*?)\\".*',re.S)$/;"	v	language:Python
-train	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def train(self,trainingCorpus,splitToken=" "):$/;"	m	language:Python	class:NGrams
-unigram	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def unigram(sequence, **args):$/;"	m	language:Python	class:NGrams
+train	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def train(self,trainingCorpus,splitToken=" "):$/;"	m	language:Python	class:NGrams
+trainTreeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def trainTreeModel(self,trainingFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
+trainTreeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def trainTreeModel(self,trainingFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
+treeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    treeModel = {}$/;"	v	language:Python	class:DecisionTree
+treeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    treeModel = {}$/;"	v	language:Python	class:DecisionTree
+unigram	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def unigram(sequence, **args):$/;"	m	language:Python	class:NGrams
 urllib	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^import urllib$/;"	i	language:Python
 urllib	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 urllib2	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
-vocabularySize	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    vocabularySize = 0$/;"	v	language:Python	class:NGrams
+validateModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def validateModel(self,testFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
+validateModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def validateModel(self,testFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
+vocabularySize	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    vocabularySize = 0$/;"	v	language:Python	class:NGrams
 workspaces	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^workspaces = []$/;"	v	language:Python
 xml	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
 xml	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.ElementTree as ET$/;"	i	language:Python
@@ -119,6 +175,8 @@ xml	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.cEle
 xml	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.ElementTree as ET$/;"	i	language:Python
 xml	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^xml = alfred.xml(results)$/;"	v	language:Python
 ycm_core	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import ycm_core$/;"	i	language:Python
-__init__	/Volumes/WorkSpace/Users/Jiessie/Desktop/Course/NLP/Assignment/ngrams/ngrams.py	/^    def __init__(self,n,pad_left,pad_right,symbol_begin,symbol_end):$/;"	m	language:Python	class:NGrams
+__init__	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def __init__(self,impurityFunc):$/;"	m	language:Python	class:DecisionTree
+__init__	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def __init__(self,impurityFunc):$/;"	m	language:Python	class:DecisionTree
 __init__	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def __init__(self, array):$/;"	m	language:Python	class:HeapArray
 __init__	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def __init__(self, key, value):$/;"	m	language:Python	class:HeapNode
+__init__	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def __init__(self,n,pad_left,pad_right,symbol_begin,symbol_end):$/;"	m	language:Python	class:NGrams

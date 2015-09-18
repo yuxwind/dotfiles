@@ -5,8 +5,7 @@ fi
 
 
 export EDITOR=vim
-export GCC_HOME=/usr/local/Cellar/gcc49/4.9.2_1/
-export GCC46_HOME=/usr/local/Cellar/gcc46/4.6.4/
+export GCC_HOME=/usr/local/Cellar/gcc49/4.9.3/
 export PATH=$GCC_HOME/bin/:$PATH
 export C_INCLUDE_PATH=`find /usr/local/Cellar/gettext -type d -name 'include' | head -n 1`
 export

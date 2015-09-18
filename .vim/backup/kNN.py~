@@ -1,0 +1,160 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import os, sys, pdb,pprint,collections
+import thread,math
+InverseDictTuple = collections.namedtuple('LabelTuple','value key')
+# x is better for the game, simply add limited domain knowledge
+S2NDict= {'x':2,'b':1,'o':0}
+
+class kNN:
+    def hammingDist(self,vec1,vec2):
+        length = len(vec1)
+        if len(vec2) != length:
+            return float("infinity")
+        hamDist = 0
+        for i in xrange(length):
+            if vec1[i]!=vec2[i]:
+                hamDist += 1
+        return hamDist
+    
+    def impovedLpDist(self,vec1,vec2,p):
+        length = len(vec1)
+        if len(vec2) != length:
+            return float("infinity")
+        dist = 0.0
+        for i in xrange(length):
+            dist += math.pow(abs(S2NDict[vec1[i]]-S2NDict[vec2[i]]),p)
+        return dist
+
+    def classify(self,testVec,dataSet,k):
+        featureCount = len(testVec)-1
+        labels = [row[-1] for row in dataSet]
+        rowCount = len(dataSet)
+        distanceDict = {}
+        for index in xrange(rowCount):
+            distanceDict[index] = self.hammingDist(testVec[:-1],dataSet[index][:-1])
+            #distanceDict[index] = self.impovedLpDist(testVec[:-1],dataSet[index][:-1],2)
+        knearIndex = sorted([InverseDictTuple(value,key) for(key,value) in distanceDict.items()])
+        labelVoteDict = {}
+        # vote 
+        m = 0
+        while m < k:
+            #pprint.pprint(knearIndex[m])
+            label = labels[knearIndex[m].key]
+            labelVoteDict[label] = labelVoteDict.setdefault(label,0)+1
+            m += 1
+        sortedLabel = sorted([InverseDictTuple(v,k) for (k,v) in labelVoteDict.items()],reverse=True)
+        return sortedLabel[0].key
+    
+    def calcAccuracy(self,totalTrainingFile,testFile,bestK,splitToken=","):
+        file = open(totalTrainingFile)
+        dataSet = []
+        while 1:
+            line = file.readline()
+            if not line:
+                break
+            vec = line.strip().split(splitToken)
+            dataSet.append(vec)
+        
+        testFile = open(testFile)
+        sum = 0
+        correctCount = 0
+        while 1:
+            testline = testFile.readline()
+            if not testline:
+                break
+            testVec = testline.strip().split(splitToken)
+            if testVec[-1] == self.classify(testVec,dataSet,bestK):
+                correctCount += 1
+            sum += 1
+        return correctCount/float(sum)
+
+    # calc the average accuracy for k-fold
+    def calcAccuracyWithKFold(self,fileSet,k,splitToken=','):
+        fileSetLength = len(fileSet)
+        sumAccuracy = 0.0
+        avgAccuracy =0.0
+        for i in xrange(fileSetLength):
+            #Load training data
+            dataSet = []
+            testSet = []
+            for j in xrange(fileSetLength):
+                file = open(fileSet[j])
+                while 1:
+                    line = file.readline()
+                    if not line: 
+                        break
+                    vec = line.strip().split(splitToken)
+                    if i==j:
+                        testSet.append(vec)
+                    else:
+                        dataSet.append(vec)
+            
+            totalTest = len(testSet)
+            correctCount = 0
+            for testVec in testSet:
+                label = self.classify(testVec,dataSet,k)
+                if label == testVec[-1]:
+                    correctCount += 1
+            currentAccuracy= correctCount / float(totalTest)
+            sumAccuracy += currentAccuracy
+            print "currentAccuracy_{i=%d,k=%d} is %f" %(i,k,currentAccuracy)
+        if fileSetLength!=0:
+            avgAccuracy = sumAccuracy/fileSetLength
+        return avgAccuracy
+
+    def getBestK(self,fileSet):
+        bestK = 0
+        bestAccuracy = 0
+        for k in [1,2,3,4,5]:
+            accuracy = self.calcAccuracyWithKFold(fileSet,k,splitToken=',')
+            if accuracy > bestAccuracy:
+                bestAccuracy = accuracy 
+                bestK = k
+        print "bestK = %d, bestAccuracy = %f" %(bestK,bestAccuracy)
+        return bestK
+
+    def process(self,totalTrainingFile,testFile,fileSet=[]):
+        bestK = self.getBestK(fileSet)
+        if bestK == 0:
+            bestK = 3
+            print 'some thing error or no cross mode, using bestK = %d' % bestK
+        accuracy = self.calcAccuracy(totalTrainingFile,testFile,bestK)
+        print 'training on the entire data with bestK = %d, accuracy=%f' %(bestK,accuracy)
+
+def main(argv):
+    fileSetFile = ""
+    trainingFile = ""
+    testFile = ""
+    fileSet = []
+    try:
+       if len(argv) < 3:
+           print "too few arguments"
+           exit(-1)
+       if len(argv) == 4:
+           fileSetFile = argv[3]
+           fileSet = []
+           file = open(fileSetFile)
+           while 1:
+               line = file.readline()
+               if not line: 
+                   break
+               fileSet.append(line.strip()) 
+       trainingFile = argv[1]
+       if os.path.isfile(trainingFile) == False:
+           print "trainingCorpus[%s] does not exist" % trainingCorpus
+           exit(-1)
+       testFile = argv[2]
+       if os.path.isfile(testFile) == False:
+           print "testFile[%s] does not exist" % testFile
+           exit(-1)
+       # number of features
+       knn = kNN()
+       knn.process(trainingFile,testFile,fileSet) 
+    except ValueError:
+        print "argument error %s" ",".join(argv)
+        exit(-1)
+
+if __name__ == "__main__":
+    main(sys.argv)
