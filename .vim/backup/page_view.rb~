@@ -11,11 +11,13 @@ module Jekyll
     priority :high
 
     def generate(site)
+      begin
+
       if !site.config['page-view']
         return
       end
 
-      puts "request ga"
+      #puts "request ga"
       pv = site.config['page-view']
       client = Google::APIClient.new(
         :application_name => 'octopress-page-view',
@@ -50,16 +52,16 @@ module Jekyll
       end
       p params
       response = client.execute(:api_method => analytics.data.ga.get, :parameters => params)
-      p response
+      #p response
       results = Hash[response.data.rows]
-      p results
+      #p results
       tot = 0
       # display per post page view
       site.posts.each { |post|
         url = (site.config['baseurl'] || '') + post.url
         hits = (results[url])? results[url].to_i : 0
         post.data.merge!("_pv" => hits)
-        puts url,results[url]
+        #puts url,results[url]
         tot += hits
       }
 
@@ -74,7 +76,10 @@ module Jekyll
       site.pages.each { |page|
         page.data.merge!("_pv" => tot)
       }
+      rescue => err
+          puts err
     end
+  end
   end
 
   class PageViewTag < Liquid::Tag

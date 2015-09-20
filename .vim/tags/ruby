@@ -6,6 +6,7 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 <=>	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^    def <=>(other)$/;"	f	language:Ruby	class:Jekyll.Jekyll
 ask	/Volumes/WorkSpace/git-workspace/octopress/Rakefile	/^def ask(message, valid_options)$/;"	f	language:Ruby
+convert	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/pandoc.rb	/^    def convert(content)$/;"	f	language:Ruby	class:Jekyll.MarkdownConverter
 Date	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^  module Date$/;"	m	language:Ruby	class:Octopress
 datetime	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def datetime(date)$/;"	f	language:Ruby	class:Octopress.Date
 format_date	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def format_date(date, format)$/;"	f	language:Ruby	class:Octopress.Date
@@ -20,10 +21,12 @@ initialize	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view
 initialize	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def initialize(site, base, dir, name)$/;"	f	language:Ruby	class:Jekyll.Page
 initialize	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^    def initialize(name, marker, token)$/;"	f	language:Ruby	class:Jekyll.PageViewTag
 Jekyll	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/page_view.rb	/^module Jekyll$/;"	m	language:Ruby
+Jekyll	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/pandoc.rb	/^module Jekyll$/;"	m	language:Ruby
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^module Jekyll$/;"	m	language:Ruby
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^  class Jekyll::Post$/;"	c	language:Ruby	class:Jekyll
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/jekyll-ga.rb	/^module Jekyll$/;"	m	language:Ruby
 Jekyll	/Volumes/WorkSpace/git-workspace/octopress/plugins/page_view.rb	/^module Jekyll$/;"	m	language:Ruby
+MarkdownConverter	/Volumes/WorkSpace/git-workspace/jiessie.github.com/plugins/pandoc.rb	/^class MarkdownConverter$/;"	c	language:Ruby	class:Jekyll
 Octopress	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^module Octopress$/;"	m	language:Ruby
 ok_failed	/Volumes/WorkSpace/git-workspace/octopress/Rakefile	/^def ok_failed(condition)$/;"	f	language:Ruby
 ordinal	/Volumes/WorkSpace/git-workspace/octopress/plugins/date.rb	/^    def ordinal(number)$/;"	f	language:Ruby	class:Octopress.Date

@@ -1,31 +1,11 @@
 Host github.com
-    IdentityFile ~/.ssh/id_rsa.github
+    IdentityFile ~/.ssh/id_rsa
     User jiessie.cao@gmail.com
 
 Host do-vps
-    IdentityFile ~/.ssh/id_rsa.github
+    IdentityFile ~/.ssh/id_rsa
     User root
 
-Host master
-    IdentityFile ~/.ssh/id_rsa.github
-    User root
-
-Host spark-yarn-online
-    HostName 10.31.72.101
-    IdentityFile ~/.ssh/id_rsa.sohu
-    User root
-
-Host 10.2.177.5
-    IdentityFile ~/.ssh/id_rsa.sohu
-    User jiessiecao@sohu-inc.com
-
-Host vip
-    HostName 10.31.73.48
-    IdentityFile ~/.ssh/id_rsa.sohu
-    User root
-
-Host localhost
-    HostName 127.0.0.1
-    IdentityFile ~/.ssh/id_rsa.sohu
-    User Jiessie
-
+Host lab1-1.eng.utah.edu
+    IdentityFile ~/.ssh/id_rsa
+    User jiec

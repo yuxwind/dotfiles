@@ -6,8 +6,8 @@ comments: true
 categories: Mac 
 ---
 
-After the Apple make the Mavericks free, I upgrade my os into Mac OS X
-Mavericks.But I found that some basic header files such as "stdio.h" and some
+After the Apple Inc. make the Mavericks free, I upgrade my os of MBP into Mac OS X
+Mavericks.But I found that some basic header files such as "stdio.h" are gone and some
 tools can not be build normally.
 
 So the problem is the Command Line Tools which has not be installed right, .

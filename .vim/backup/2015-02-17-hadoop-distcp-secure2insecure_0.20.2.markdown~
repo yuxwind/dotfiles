@@ -6,17 +6,19 @@ comments: true
 categories: hadoop 
 
 ---
-#   Background
-=========================================
-  When secure hadoop 0.20.2 want to access insecure hadoop 0.20.2, espeically for using distcp on hdfs,
+# Background
+
+When secure hadoop 0.20.2 want to access insecure hadoop 0.20.2, espeically for using distcp on hdfs,
   the job (distcp) will try to get token for both source and destination FileSystem.
   However, the insecure hadoop will return null token for disabled security option, which
   let secure hadoop client(DFSClient) throw NPE and job failed. Hence, we need to upgrade
-  hadoop client code about getDelegationToken to work around this case.
+  hadoop client code about getDelegationToken to work around this case. <!-- more -->
 
-#   Solution
-=========================================
-## Step 1. For null token received in DFSClient#getDelegationToken, not print it with stringifyToken
+# Solution
+
+## Step 1
+
+For null token received in DFSClient#getDelegationToken, not print it with stringifyToken
 
   <pre>
   <code>
@@ -31,7 +33,9 @@ categories: hadoop
   </pre>
   
 
-## Step 2.For null token received in DistributedFileSystem#getDelegationToken, return a new dummy Token
+## Step 2
+
+For null token received in DistributedFileSystem#getDelegationToken, return a new dummy Token
    <pre>
    <code>
    result = new Token<DelegationTokenIdentifier>(identifier,password,kind,service);
@@ -39,14 +43,17 @@ categories: hadoop
    </pre>
    
 
-## Step 3. Build new hadoop-core and deploy
+## Step 3 
+
+Build new hadoop-core and deploy
    <pre>
       1. ant
       2. scp build/hadoop-core-0.20.2-cdh3u1.jar xxxx@xxxxx:/yourpath/
    </pre>
 
-## Step 4. Set CLASSPATH using this new hadoop client jar.
+## Step 4
 
+Set CLASSPATH using this new hadoop client jar.
 
    1. Only local support, let hadoop search HADOOP_CLASSPATH first for class loading.
    <pre>
@@ -63,7 +70,7 @@ categories: hadoop
    </pre>
 
 
-## Step 5. Just run your job as usually.
-
+## Step 5
+Just run your job as usually.
 
 

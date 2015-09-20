@@ -14,7 +14,7 @@ tag:
 
 ---
 
-近期在研究[_HandlerSocket_](https://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL)的相关源码，其命名也正是因为handler这一重要的数据结构，handlerSocket的简单点说就是越过mysql的SQL层，直接通过handler操作底层的存储引擎，由于减少了SQL Parse，Opentable等消耗，并且直接利用handler通过索引index进行查询和更新操作，因此有较高的性能，近期在公司组内做了一次关于handlerSocket调研的分享，主要包括handler协议解析，handlerSocket关键代码和原理，innoDB关键特性等主题内容，当然mysql的系统架构和关键数据结构也是该次分享的基础内容之一，也因为这次分享，本人很荣幸的拿到starbucks的消费券以资奖励.本文主要讲下理解HandlerSocket原理以及mysql的必须知晓的相关系统架构和关键数据结构。
+近期在研究[_HandlerSocket_](https://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL)的相关源码，其命名也正是因为handler这一重要的数据结构，handlerSocket的简单点说就是越过mysql的SQL层，直接通过handler操作底层的存储引擎，由于减少了SQL Parse，Opentable等消耗，并且直接利用handler通过索引index进行查询和更新操作，因此有较高的性能，近期在公司组内做了一次关于handlerSocket调研的分享，主要包括handler协议解析，handlerSocket关键代码和原理，innoDB关键特性等主题内容，当然mysql的系统架构和关键数据结构也是该次分享的基础内容之一，也因为这次分享，本人很荣幸的拿到starbucks的消费券以资奖励.本文主要讲下理解HandlerSocket原理以及mysql的必须知晓的相关系统架构和关键数据结构。<!-- more -->
 
  
 

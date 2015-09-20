@@ -1,0 +1,95 @@
+---
+layout: post
+title: "Note3-AofA: Recurrence"
+date: 2015-09-19 16:31
+comments: true
+categories: 
+---
+
+The notes will introduce the types of recurrence, and the
+corresponding solution for all these recurrence, including some general
+telescoping methods and Master Theorem etc.
+
+# Telescoping a (linear first-order) recurrence
+
+Linear first-order recurrence telescope to a sum.
+## When the coeffients are 1
+
+Just telescope it.
+$\alpha_n = \alpha_n+n$ with $a_0=1$
+
+### Elementary discrete sums
+    * geometric series
+    * arthimetic series
+    * bionmial (upper)
+    * bionmial theorem
+    * Harmonic numbers
+    * vandermonde convolution 
+
+<!-- more-->
+
+## When the coffeients are not 1
+
+Multiply/divid by a summation factor.
+$\alpha_n = 2\alpha_n + 2^n$ with $a_0=0$
+Divide by $2^n$
+
+$$\frac {\alpha_n}{2^n} = \frac {\alpha_{n-1}}{2^{n-1}} +1$$
+
+### why 2^n? summation factor
+
+For $\alpha_n =x_n\alpha_{n-1}+....$
+
+=> Divid by $x_n \cdot x_{n-1} \cdot x_{n-2}.....x_1$
+    
+$\alpha =(1+1/n)\alpha_{n-1}+2$
+Then summation factor:
+$\frac {n+1}{n} \cdot \frac {n}{n-1}....\frac {2}{1} = n+1$
+therefore,
+$$\frac {\alpha_n}{n+1} = \frac {\alpha_{n-1}}{n}+ \frac {2}{n+1}$$
+
+# Types of recurrences
+
+## First Order
+
+### linear:   $\alpha_n = n\alpha_{n-1} - 1$
+summation factor + telescoping
+
+### nolinear: $\alpha_n = \frac {1}{\alpha_{n-1}}$
+Newton's method
+
+## Second Order
+
+### linear $\alpha_n = \alpha_{n-1}+2\alpha_{n-2}$
+1. GF
+2. Operate(Multiple roots $x^n$)
+
+### nolinear: $\alpha_n = \alpha_{n-1} \alpha_{n-2} + \sqrt [2]{\alpha_{n-2}}$
+
+### variable coefficients: $\alpha_n = n\alpha_{n-1}+ (n-1)\alpha_{n-2} + 1$
+
+
+## Higher Order
+
+$\alpha_n = f\(\alpha_{n-1},\alpha_{n-2},\alpha_{n-t}\)$
+
+
+## Full History
+
+$\alpha_n = n+\alpha_{n-1}+\alpha_{n-2}+...\alpha_{1}$
+
+## Divide-and-Conquer
+
+$\alpha_n = n+\alpha_{\rfloor{n/2}}+\alpha_{\lceil{n/2}}+n$
+### Classic examples:
+    * Binary search
+    * Mergesort
+    * Bather network
+    * Karatsuba multiplication
+    * Strassen matrix multiplication
+
+### Pattern:
+    * Dividing into \alpha parts of size about N/\beta
+    * Solving recuresively
+    * Combining solutions with extra cost $\Theta(N^{\gamma}(logN)^\delta)$
+

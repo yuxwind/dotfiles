@@ -4,8 +4,8 @@
 
 url: http://jiessie.github.io
 title: Action Right Now
-subtitle: Debug The World
-author: Jiessie
+subtitle: Learning The World
+author: Jie
 simple_search: http://google.com/search
 description:
 
@@ -33,7 +33,13 @@ destination: public
 plugins: plugins
 code_dir: downloads/code
 category_dir: blog/categories
-markdown: rdiscount
+# markdown: rdiscount
+# markdown: kramdown
+markdown: pandoc
+pandoc:
+    skip: false
+    flags: '--smart  --mathjax'
+
 rdiscount:
   extensions:
     - autolink
@@ -41,7 +47,7 @@ rdiscount:
     - smart
 pygments: false # default python pygments have been replaced by pygments.rb
 
-paginate: 10          # Posts per page on the blog index
+paginate: 3          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
 recent_posts: 5       # Posts in the sidebar Recent Posts section
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
@@ -69,7 +75,7 @@ github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: jiessie
+twitter_user: ijiessie
 twitter_tweet_button: true
 
 # Google +1
@@ -107,5 +113,5 @@ page-view:
     start: 3 years ago        # Beginning of report
     end: now                  # End of report
     metric: ga:pageviews      # Metric code
-    segment: gaid::-1         # all visits
+    segment:          # all visits
     filters:                  # optional

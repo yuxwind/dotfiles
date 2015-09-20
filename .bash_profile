@@ -16,4 +16,4 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:`find /usr/local/Cellar/gettext -type d -n
 head -n 1`
 alias gcc=$GCC_HOME/bin/gcc-4.9
 alias g++=$GCC_HOME/bin/g++-4.9
-mdless() {pandoc -s -f markdown -t man "$@" | groff -T utf8 -man | less}
+mdless() {pandoc -s -f markdown -t man "$@"  | groff -T utf8 -man | less}

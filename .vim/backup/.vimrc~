@@ -863,6 +863,11 @@ let g:lt_height = 10
 "--------------------------------------------------
 " => delimitMate
 "--------------------------------------------------
+let g:delimitMate_autoclose = 0
+augroup my_delimitmate
+    autocmd!
+    autocmd FileType cpp let b:delimitMate_autoclose = 1
+augroup END
 
 let delimitMate_expand_cr=1
 let delimitMate_expand_space=1

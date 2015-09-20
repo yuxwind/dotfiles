@@ -82,6 +82,7 @@ g:ctrlp_cache_dir	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_cache_di
 g:ctrlp_clear_cache_on_exit	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_clear_cache_on_exit=0$/;"	v	language:Vim
 g:ctrlp_extensions	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_extensions=['tag', 'buffertag', 'quickfix', 'dir', 'rtscript']$/;"	v	language:Vim
 g:ctrlp_working_path_mode	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:ctrlp_working_path_mode=0$/;"	v	language:Vim
+g:delimitMate_autoclose	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:delimitMate_autoclose = 0$/;"	v	language:Vim
 g:DoxygenToolkit_authorName	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:DoxygenToolkit_authorName="Jiessie - jiessie.cao AT gmail DOT com"$/;"	v	language:Vim
 g:DoxygenToolkit_briefTag_funcName	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:DoxygenToolkit_briefTag_funcName="yes"$/;"	v	language:Vim
 g:easytags_include_members	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let g:easytags_include_members=1$/;"	v	language:Vim
@@ -152,6 +153,7 @@ mapleader	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let mapleader=',' " Change t
 maplocalleader	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let maplocalleader='\\' " Change the maplocalleader$/;"	v	language:Vim
 MyFoldText	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyFoldText()$/;"	f	language:Vim
 MyTabLine	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyTabLine()$/;"	f	language:Vim
+my_delimitmate	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup my_delimitmate$/;"	a	language:Vim
 n	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap n nzzzv$/;"	m	language:Vim
 N	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap N Nzzzv$/;"	m	language:Vim
 NERDCommentWholeLinesInVMode	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDCommentWholeLinesInVMode=2$/;"	v	language:Vim

@@ -15,7 +15,7 @@ already an Octopress plugin called jekyll-ga, which can sort blog posts by
 certain metrics of GA and another improved plugin called octopress-page-view. After trying these plugins, I jogged down some understandings and steps for how to
 using GA for Octopress as following:
 
-
+<!-- more -->
 ---
 
 # 1. What is Google Analytics
@@ -94,17 +94,18 @@ Go to API Access on the left sidebar menu, create a new oauth 2.0 client ID, giv
 see more. http://jhshi.me/2013/11/10/page-view-plugin-for-octopress/
 <p>
 <code>
-#octopress-page-view   
-page-view:   
-  service_account_email:    #XXXXXX@developer.gserviceaccount.com    
-  key_file: privatekey.p12  #service account private key file   
-  key_secret: notasecret    #service account private key's password   
-  profileID:                #ga:XXXXXXXX   
-  start: 3 years ago        #Beginning of report   
-  end: now                  #End of report  
-  metric: ga:pageviews      #Metric code  
-  segment:                  #All visits optional  
-  filters:                  #optional  
+#octopress-page-view </br>
+page-view: </br>
+  service_account_email:    #XXXXXX@developer.gserviceaccount.com </br>
+  key_file: privatekey.p12  #service account private key file </br>
+  key_file: privatekey.p12  #service account private key file </br>
+  key_secret: notasecret    #service account private key's password </br>
+  profileID:                #ga:XXXXXXXX </br>
+  start: 3 years ago        #Beginning of report </br>
+  end: now                  #End of report</br>
+  metric: ga:pageviews      #Metric code </br>
+  segment: 			         #All visits optional </br>
+  filters:                  #optional </br>
 </code>
 </p>
 
@@ -128,7 +129,8 @@ As we all known, the github page only support the static pages, which means the 
 
 So <code> rake generate</code> will invoke this fechtin process in the pageview.rb written in ruby. You can read the code and add some debug code such as <code>p results</code> to print the request and the result in the console and to check whether the api request is right.
 
-Here are some ways to check the rightness:
+Here are some ways to check the rightness:  
+
 1. GA API console(https://console.developers.google.com/project) will show the request and the count of the error
 2. Your debug code or some threw out excpetion info
 3. watch your arguments and check in https://developers.google.com/analytics/devguides/reporting/

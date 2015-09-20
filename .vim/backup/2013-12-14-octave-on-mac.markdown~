@@ -16,9 +16,11 @@ For learning the [online machine learning course on coursera](https://class.cour
 brew doctor
 brew update
 brew search octave
-brew tap 
+brew tap homebrew/science
 </code>
 </pre>
+
+<!-- more -->
 
 # 0.Before using brew
  Before using brew, I have tried to download the octave pkg on its official site. But this drag-and-drop version pkg is always crashed on my Mac OS 10.9. So maybe installed by compling source through homebrew is good idea. And then you will find you will get the following compiler not found error as following:
