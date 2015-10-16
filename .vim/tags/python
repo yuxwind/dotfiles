@@ -1,6 +1,7 @@
 !_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
 a	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^a = [HeapNode(1, "node1"), HeapNode(9, "node2"), HeapNode(4,"node3"), $/;"	v	language:Python
 actual_data	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^actual_data = gzip_stream.read()$/;"	v	language:Python
+AddDiagnosticSyntaxMatch	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def AddDiagnosticSyntaxMatch( line_num,$/;"	f	language:Python
 aitem	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        aitem = alfred.Item({'uid': -1, 'arg' : ""},"IOError", "Please Check Configuration")$/;"	v	language:Python
 aitem	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        aitem = alfred.Item({'uid': -1, 'arg' : ""},"Workspaces.conf not found", "Please open workflow folder and configure your workspaces.conf")$/;"	v	language:Python
 aitem	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        aitem = alfred.Item({'uid': index, 'arg' : item}, title, subtitle)$/;"	v	language:Python
@@ -10,6 +11,10 @@ alfred	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfr
 alfred	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 argparse	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 bigram	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def bigram(sequence, **args):$/;"	m	language:Python	class:NGrams
+BufferIsUsable	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def BufferIsUsable( buffer_object ):$/;"	f	language:Python
+BufferIsVisible	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def BufferIsVisible( buffer_number ):$/;"	f	language:Python
+BufferModified	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def BufferModified( buffer_object ):$/;"	f	language:Python
+BUFFER_COMMAND_MAP	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^BUFFER_COMMAND_MAP = { 'same-buffer'      : 'edit',$/;"	v	language:Python
 BuildMaxHeap	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def BuildMaxHeap(self):$/;"	m	language:Python	class:HeapArray
 buildTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def buildTree(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
 buildTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def buildTree(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
@@ -23,13 +28,22 @@ calcMisRate	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def cal
 calcMisRate	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def calcMisRate(rootSet):$/;"	m	language:Python	class:DecisionTree
 chain	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^from itertools import chain$/;"	i	language:Python
 chain	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^from itertools import chain$/;"	i	language:Python
+chain	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^from itertools import chain$/;"	i	language:Python
 chain	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^from itertools import chain$/;"	i	language:Python
 chooseBestFeature	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def chooseBestFeature(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
 chooseBestFeature	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def chooseBestFeature(self,rootSet,features):$/;"	m	language:Python	class:DecisionTree
 classify	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def classify(self,testVec,dataSet,k):$/;"	m	language:Python	class:kNN
+ClearYcmSyntaxMatches	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def ClearYcmSyntaxMatches():$/;"	f	language:Python
 collections	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 compilation_database_folder	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^compilation_database_folder = ''$/;"	v	language:Python
+Confirm	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def Confirm( message ):$/;"	f	language:Python
 conn	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^conn = req_open.open(request)$/;"	v	language:Python
+ConvertDiagnosticsToQfList	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def ConvertDiagnosticsToQfList( diagnostics ):$/;"	f	language:Python
+ConvertDiagnosticToQfFormat	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^  def ConvertDiagnosticToQfFormat( diagnostic ):$/;"	f	language:Python	function:ConvertDiagnosticsToQfList
+CurrentColumn	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentColumn():$/;"	f	language:Python
+CurrentFiletypes	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentFiletypes():$/;"	f	language:Python
+CurrentLineAndColumn	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentLineAndColumn():$/;"	f	language:Python
+CurrentLineContents	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentLineContents():$/;"	f	language:Python
 database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = None$/;"	v	language:Python
 database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v	language:Python
 data_stream	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^data_stream = StringIO.StringIO(req_data)$/;"	v	language:Python
@@ -37,6 +51,12 @@ datetime	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzi
 DecisionTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^class DecisionTree:$/;"	c	language:Python
 DecisionTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^class DecisionTree:$/;"	c	language:Python
 DirectoryOfThisScript	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	language:Python
+doViterbi	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def doViterbi(self,W):$/;"	m	language:Python	class:Viterbi
+EchoLine	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^  def EchoLine( text ):$/;"	f	language:Python	function:EchoText
+EchoText	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def EchoText( text, log_as_message = True ):$/;"	f	language:Python
+EchoTextVimWidth	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def EchoTextVimWidth( text ):$/;"	f	language:Python
+EscapedFilepath	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def EscapedFilepath( filepath ):$/;"	f	language:Python
+EscapeForVim	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def EscapeForVim( text ):$/;"	f	language:Python
 ET	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
 ET	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.ElementTree as ET$/;"	i	language:Python
 ET	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
@@ -46,15 +66,25 @@ etree	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import x
 etree	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
 etree	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.ElementTree as ET$/;"	i	language:Python
 ExchangeItem	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def ExchangeItem(self, index1, index2):$/;"	m	language:Python	class:HeapArray
+FiletypesForBuffer	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def FiletypesForBuffer( buffer_object ):$/;"	f	language:Python
 firstWord	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    firstWord = m.group('firstWord')$/;"	v	language:Python
 flags	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^flags = [$/;"	v	language:Python
 FlagsForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	language:Python
 generateBySeed	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def generateBySeed(self,n,seed,seedSeq,number):$/;"	m	language:Python	class:NGrams
 generateBySeeds	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def generateBySeeds(self,seedsFile):$/;"	m	language:Python	class:NGrams
 getBestK	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def getBestK(self,fileSet):$/;"	m	language:Python	class:kNN
+GetBoolValue	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetBoolValue( variable ):$/;"	f	language:Python
+GetBufferFilepath	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetBufferFilepath( buffer_object ):$/;"	f	language:Python
+GetBufferNumberForFilename	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetBufferNumberForFilename( filename, open_file_if_needed = True ):$/;"	f	language:Python
+GetBufferOption	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetBufferOption( buffer_object, option ):$/;"	f	language:Python
 GetCompilationInfoForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def GetCompilationInfoForFile( filename ):$/;"	f	language:Python
+GetCurrentBufferFilepath	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetCurrentBufferFilepath():$/;"	f	language:Python
+GetIntValue	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetIntValue( variable ):$/;"	f	language:Python
 getProbOfSequence	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def getProbOfSequence(self,sequence,n,smooth=False):$/;"	m	language:Python	class:NGrams
+GetReadOnlyVimGlobals	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetReadOnlyVimGlobals( force_python_objects = False ):$/;"	f	language:Python
 getSeqAndTest	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def getSeqAndTest(self,testSet,splitToken=" "):$/;"	m	language:Python	class:NGrams
+GetUnsavedAndCurrentBufferData	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetUnsavedAndCurrentBufferData():$/;"	f	language:Python
+GetVariableValue	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def GetVariableValue( variable ):$/;"	f	language:Python
 gzip	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 gzip_stream	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^gzip_stream = gzip.GzipFile(fileobj=data_stream)$/;"	v	language:Python
 hammingDist	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def hammingDist(self,vec1,vec2):$/;"	m	language:Python	class:kNN
@@ -63,6 +93,7 @@ HeapArray	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^class HeapAr
 heaparray	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^heaparray=HeapArray(a)$/;"	v	language:Python
 HeapNode	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^class HeapNode:$/;"	c	language:Python
 HeapSort	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def HeapSort(self):$/;"	m	language:Python	class:HeapArray
+HiddenEnabled	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def HiddenEnabled( buffer_object ):$/;"	f	language:Python
 HTMLParser	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^import HTMLParser$/;"	i	language:Python
 ideaFolder	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^ideaFolder = []$/;"	v	language:Python
 IDEAIndex	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^IDEAIndex =[]$/;"	v	language:Python
@@ -74,20 +105,27 @@ indexFile	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        
 InverseDictTuple	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^InverseDictTuple = collections.namedtuple('LabelTuple','value key')$/;"	v	language:Python
 IsHeaderFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	language:Python
 items	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^items = p.findall(actual_data)$/;"	v	language:Python
+json	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import json$/;"	i	language:Python
+JumpToLocation	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def JumpToLocation( filename, line, column ):$/;"	f	language:Python
 kNN	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^class kNN:$/;"	c	language:Python
 label	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    label = m.group('label')$/;"	v	language:Python
+LineAndColumnNumbersClamped	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def LineAndColumnNumbersClamped( line_num, column_num ):$/;"	f	language:Python
 line_m	/Volumes/WorkSpace/mt.py	/^    line_m = p.match(line)$/;"	v	language:Python
+LoadDictIntoVimGlobals	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def LoadDictIntoVimGlobals( new_globals, overwrite = True ):$/;"	f	language:Python
+loadProbFile	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def loadProbFile(self,probFile):$/;"	m	language:Python	class:Viterbi
 log	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^from math import log$/;"	i	language:Python
 log	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^from math import log$/;"	i	language:Python
 m	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    m = p.match(line)$/;"	v	language:Python
 main	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^def main(argv):$/;"	f	language:Python
 main	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^def main(argv):$/;"	f	language:Python
 main	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^def main(argv):$/;"	f	language:Python
+main	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^def main(argv):$/;"	f	language:Python
 main	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^def main(argv):$/;"	f	language:Python
 MakeRelativePathsInFlagsAbsolute	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def MakeRelativePathsInFlagsAbsolute( flags, working_directory ):$/;"	f	language:Python
 matchTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def matchTree(self,treeModel,features,testVec):$/;"	m	language:Python	class:DecisionTree
 matchTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def matchTree(self,treeModel,features,testVec):$/;"	m	language:Python	class:DecisionTree
 math	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import thread,math$/;"	i	language:Python
+math	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^import os,sys,math,random$/;"	i	language:Python
 math	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 MaxHeapify	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def MaxHeapify(self, i):$/;"	m	language:Python	class:HeapArray
 n	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    n = 2$/;"	v	language:Python	class:NGrams
@@ -98,12 +136,15 @@ ngramsFreq	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    ngrams
 ngramsSumFreq	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    ngramsSumFreq = []$/;"	v	language:Python	class:NGrams
 number	/Volumes/WorkSpace/mt.py	/^    number = string.atof(number_str)$/;"	v	language:Python
 number_str	/Volumes/WorkSpace/mt.py	/^    number_str = line_m.group('number')$/;"	v	language:Python
+NumLinesInBuffer	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def NumLinesInBuffer( buffer_object ):$/;"	f	language:Python
 originQuery	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^originQuery = '合利屋'$/;"	v	language:Python
 os	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import os$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfred,sys,os$/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import os$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^import os,sys,math,random$/;"	i	language:Python
 os	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 p	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^p = re.compile(r'\\<h3 class=\\"deal-tile__title\\"\\>.*?\\<\\\/h3\\>.*?\\<p class=\\"deal-tile__detail\\"\\>.*?\\<\\\/p\\>',re.S)$/;"	v	language:Python
 p	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^p = re.compile(r'(?P<label>.*?) \\((?P<firstWord>.*?),(?P<secondWord>.*?),.*\\)',re.S)$/;"	v	language:Python
@@ -114,13 +155,22 @@ parseText	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^class parseT
 pdb	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 pdb	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 pdb	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
+PlaceDummySign	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PlaceDummySign( sign_id, buffer_num, line_num ):$/;"	f	language:Python
+PlaceSign	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PlaceSign( sign_id, line_num, buffer_num, is_error = True ):$/;"	f	language:Python
+PostMultiLineNotice	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PostMultiLineNotice( message ):$/;"	f	language:Python
+PostVimMessage	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PostVimMessage( message ):$/;"	f	language:Python
 pprint	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 pprint	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 pprint	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
+predict	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def predict(self,probFile,sentenceFile):$/;"	m	language:Python	class:Viterbi
+PresentDialog	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PresentDialog( message, choices, default_choice_index = 0 ):$/;"	f	language:Python
 PrintHeap	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def PrintHeap(self):$/;"	m	language:Python	class:HeapArray
 process	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def process(self,totalTrainingFile,testFile,fileSet=[]):$/;"	m	language:Python	class:kNN
+Pt_t	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    Pt_t = [{}] # for phi tag$/;"	v	language:Python	class:Viterbi
+Pw_t	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    Pw_t = [{}] # for phi tag$/;"	v	language:Python	class:Viterbi
 query	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    query= sys.argv[1]$/;"	v	language:Python
 query	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^query = ""$/;"	v	language:Python
+random	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^import os,sys,math,random$/;"	i	language:Python
 random	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 re	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 re	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^import re,sys$/;"	i	language:Python
@@ -133,6 +183,7 @@ results	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^results = []$/;"	v	la
 rootdir_levels	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^            rootdir_levels = rootdir.split('\/')$/;"	v	language:Python
 S2NDict	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^S2NDict= {'x':2,'b':1,'o':0}$/;"	v	language:Python
 secondWord	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    secondWord = m.group('secondWord')$/;"	v	language:Python
+SetLocationList	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def SetLocationList( diagnostics ):$/;"	f	language:Python
 SOURCE_EXTENSIONS	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v	language:Python
 splitSet	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def splitSet(self,rootSet,featureCol,value):$/;"	m	language:Python	class:DecisionTree
 splitSet	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def splitSet(self,rootSet,featureCol,value):$/;"	m	language:Python	class:DecisionTree
@@ -147,25 +198,38 @@ sys	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb
 sys	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^import os,sys,math,random$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^import re,sys$/;"	i	language:Python
 sys	/Volumes/WorkSpace/mt.py	/^import re,sys,string$/;"	i	language:Python
 sys	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
+T	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    T = ('phi','noun','verb','inf','prep')$/;"	v	language:Python	class:Viterbi
+tempfile	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import tempfile$/;"	i	language:Python
+TextAfterCursor	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def TextAfterCursor():$/;"	f	language:Python
 theQuery	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^theQuery = urllib.quote_plus(originQuery)$/;"	v	language:Python
 thread	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import thread,math$/;"	i	language:Python
 title	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        title = os.path.split(item)[1]$/;"	v	language:Python
 title	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^                title = m.group('title')$/;"	v	language:Python
 title_re	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^title_re = re.compile(r'.*?\\<a href=\\"(?P<url>.*?)\\".*?title=\\"(?P<title>.*?)\\".*',re.S)$/;"	v	language:Python
+ToUtf8IfNeeded	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^from ycmd.utils import ToUtf8IfNeeded$/;"	i	language:Python
 train	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def train(self,trainingCorpus,splitToken=" "):$/;"	m	language:Python	class:NGrams
 trainTreeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def trainTreeModel(self,trainingFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
 trainTreeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def trainTreeModel(self,trainingFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
 treeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    treeModel = {}$/;"	v	language:Python	class:DecisionTree
 treeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    treeModel = {}$/;"	v	language:Python	class:DecisionTree
+T_map	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    T_map = {'phi':0,'noun':1,'verb':2,'inf':3,'prep':4}$/;"	v	language:Python	class:Viterbi
 unigram	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def unigram(sequence, **args):$/;"	m	language:Python	class:NGrams
+UnPlaceDummySign	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def UnPlaceDummySign( sign_id, buffer_num ):$/;"	f	language:Python
+UnplaceSignInBuffer	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def UnplaceSignInBuffer( buffer_number, sign_id ):$/;"	f	language:Python
 urllib	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^import urllib$/;"	i	language:Python
 urllib	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 urllib2	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
+user_options_store	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^from ycmd import user_options_store$/;"	i	language:Python
 validateModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def validateModel(self,testFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
 validateModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def validateModel(self,testFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
+vim	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import vim$/;"	i	language:Python
+VimExpressionToPythonType	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def VimExpressionToPythonType( vim_expression ):$/;"	f	language:Python
+VimVersionAtLeast	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def VimVersionAtLeast( version_string ):$/;"	f	language:Python
+Viterbi	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^class Viterbi:$/;"	c	language:Python
 vocabularySize	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    vocabularySize = 0$/;"	v	language:Python	class:NGrams
 workspaces	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^workspaces = []$/;"	v	language:Python
 xml	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
@@ -177,6 +241,7 @@ xml	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^xml = alfred.xml(results)
 ycm_core	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import ycm_core$/;"	i	language:Python
 __init__	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def __init__(self,impurityFunc):$/;"	m	language:Python	class:DecisionTree
 __init__	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def __init__(self,impurityFunc):$/;"	m	language:Python	class:DecisionTree
+__init__	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def __init__(self):$/;"	m	language:Python	class:Viterbi
 __init__	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def __init__(self, array):$/;"	m	language:Python	class:HeapArray
 __init__	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def __init__(self, key, value):$/;"	m	language:Python	class:HeapNode
 __init__	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def __init__(self,n,pad_left,pad_right,symbol_begin,symbol_end):$/;"	m	language:Python	class:NGrams

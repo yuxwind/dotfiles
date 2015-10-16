@@ -1,11 +1,10 @@
-%-*- Mode:LaTeX; -*-      
+I%-*- Mode:LaTeX; -*-      
 \documentclass[11pt]{article}
 \usepackage{vmargin}		% Force narrower margins
 \setpapersize{USletter}
 \setmarginsrb{1.0in}{1.0in}{1.0in}{0.6in}{0pt}{0pt}{0pt}{0.4in}
 \setlength{\parskip}{.1in}  % removed space between paragraphs
 \setlength{\parindent}{0in}
-\usepackage{pdfsyn}
 
 \usepackage{epsfig}
 \usepackage{graphicx}

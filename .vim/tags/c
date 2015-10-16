@@ -54,10 +54,14 @@ dirent	/Volumes/WorkSpace/vim74/src/os_unix.h	142;"	d	language:C
 display	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void display(pNode narr,int n)$/;"	f	language:C
 display	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void display(pNode narr,int start,int end)$/;"	f	language:C
 display	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^void display(){$/;"	f	language:C
+edge	/Volumes/WorkSpace/Users/Jiessie/test/4-side/4-side.c	/^int edge[4];$/;"	v	language:C
 empty	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> int List<Type>::empty(){$/;"	f	language:C	class:Type
 enqueue	/Volumes/WorkSpace/git-workspace/codeprac/queue/queue.cpp	/^template <class Type> void Queue<Type>::enqueue(const Type &item){$/;"	f	language:C	class:Type
+evensum	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	/^int evensum = 0;$/;"	v	language:C
+evensum	/Volumes/WorkSpace/Users/Jiessie/test/t.c	/^int evensum = 0;$/;"	v	language:C
 EVIM_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	344;"	d	language:C
 EXRC_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	364;"	d	language:C
+factorial	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.cpp	/^int factorial(int n){$/;"	f	language:C
 FILETYPE_FILE	/Volumes/WorkSpace/vim74/src/os_unix.h	253;"	d	language:C
 flag	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int flag =0;$/;"	v	language:C
 flag	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int flag =0;$/;"	v	language:C
@@ -117,6 +121,15 @@ main	/Volumes/WorkSpace/git-workspace/localtest/hello.c	/^int main()$/;"	f	langu
 main	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int main()$/;"	f	language:C
 main	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/Users/Jiessie/test/4-side/4-side.c	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/Users/Jiessie/test/4-side/4-side.cpp	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.cpp	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/Users/Jiessie/test/t.c	/^int main(){$/;"	f	language:C
+main	/Volumes/WorkSpace/Users/Jiessie/test/test.cpp	/^int main() {$/;"	f	language:C
+map	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	/^int map[256];$/;"	v	language:C
+map	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.cpp	/^int map[256];$/;"	v	language:C
+map	/Volumes/WorkSpace/Users/Jiessie/test/t.c	/^int map[256];$/;"	v	language:C
 MAX	/Volumes/WorkSpace/git-workspace/codeprac/search/search.cpp	4;"	d	language:C	file:
 MAX	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	6;"	d	language:C	file:
 max	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	4;"	d	language:C	file:
@@ -152,6 +165,11 @@ N	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int N = 24;$/;"	v	la
 n	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.c	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
 n	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^int m=0, n=0, k[MAX_N]={0};$/;"	v	language:C
 n	/Volumes/WorkSpace/git-workspace/pc/1/1_6_tri.c	/^int n=0,ar[MAX_N]={0};$/;"	v	language:C
+N	/Volumes/WorkSpace/Users/Jiessie/test/4-side/4-side.c	/^int N = 0;$/;"	v	language:C
+N	/Volumes/WorkSpace/Users/Jiessie/test/4-side/4-side.cpp	/^int N = 0;$/;"	v	language:C
+N	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	4;"	d	language:C	file:
+N	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.cpp	4;"	d	language:C	file:
+N	/Volumes/WorkSpace/Users/Jiessie/test/t.c	4;"	d	language:C	file:
 N::getHeight	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T, int N> int TreeNode<T,N>::getHeight(){$/;"	f	language:C	class:N
 N::insertChild	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::insertChild(T value){$/;"	f	language:C	class:N
 N::midOrder_r	/Volumes/WorkSpace/git-workspace/codeprac/tree/tree.cpp	/^template <typename T,int N> void TreeNode<T,N>::midOrder_r()$/;"	f	language:C	class:N
@@ -164,6 +182,8 @@ Node	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^typedef struct No
 Node::ori_index	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^    unsigned int ori_index;$/;"	m	language:C	struct:Node	file:
 Node::value	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^    int value;$/;"	m	language:C	struct:Node	file:
 NO_EXPANDPATH	/Volumes/WorkSpace/vim74/src/os_unix.h	456;"	d	language:C
+oddsum	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	/^int oddsum = 0;$/;"	v	language:C
+oddsum	/Volumes/WorkSpace/Users/Jiessie/test/t.c	/^int oddsum = 0;$/;"	v	language:C
 operator	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> Type& List<Type>::operator[](int index){$/;"	f	language:C	class:Type
 ori_index	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^    unsigned int ori_index;$/;"	m	language:C	struct:Node	file:
 PARENT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	9;"	d	language:C	file:
@@ -183,6 +203,8 @@ qsort	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^int qsort(pNode 
 R	/Volumes/WorkSpace/git-workspace/codeprac/string/rabin_karp.cpp	/^const int R = 256; \/\/ R进制$/;"	v	language:C
 rabin_carp_matcher	/Volumes/WorkSpace/git-workspace/codeprac/string/rabin_karp.cpp	/^static void rabin_carp_matcher(const char *T,const char *P,int d, long q)$/;"	f	language:C	file:
 remove	/Volumes/WorkSpace/git-workspace/codeprac/list/list.cpp	/^template <class Type> void List<Type>::remove(int pos){$/;"	f	language:C	class:Type
+remove	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	/^int remove[256];$/;"	v	language:C
+remove	/Volumes/WorkSpace/Users/Jiessie/test/t.c	/^int remove[256];$/;"	v	language:C
 RIGHT	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	8;"	d	language:C	file:
 selectsort	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^void selectsort(pNode narr, int n)$/;"	f	language:C
 SETJMP	/Volumes/WorkSpace/vim74/src/os_unix.h	557;"	d	language:C
@@ -216,7 +238,11 @@ std	/Volumes/WorkSpace/git-workspace/codeprac/queue/quque.cpp	/^using namespace 
 std	/Volumes/WorkSpace/git-workspace/codeprac/sort/sort.cpp	/^using namespace std;$/;"	v	language:C
 std	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^using namespace std;$/;"	v	language:C
 std	/Volumes/WorkSpace/git-workspace/pc/1/1_1_sum.cpp	/^using namespace std;$/;"	v	language:C
+std	/Volumes/WorkSpace/Users/Jiessie/test/test.cpp	/^using namespace std;$/;"	v	language:C
 str	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char str[MAX_LEN];$/;"	v	language:C
+str	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.c	/^char str[N]; $/;"	v	language:C
+str	/Volumes/WorkSpace/Users/Jiessie/test/Pa/t.cpp	/^char str[N]; $/;"	v	language:C
+str	/Volumes/WorkSpace/Users/Jiessie/test/t.c	/^char str[N]; $/;"	v	language:C
 strcpy	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char *strcpy(char *to, const char *from){$/;"	f	language:C
 strcpy	/Volumes/WorkSpace/git-workspace/codeprac/string/string.cpp	/^char* strcpy(char *to , const char *from);$/;"	p	language:C	file:
 stringJoin	/Volumes/WorkSpace/git-workspace/codeprac/yux/string_join.c	/^char* stringJoin(char* s1, char* s2)$/;"	f	language:C

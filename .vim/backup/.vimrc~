@@ -325,6 +325,7 @@ Bundle 'LaTeX-Box-Team/LaTeX-Box'
 Bundle 'juvenn/mustache.vim'
 Bundle 'elzr/vim-json'
 Bundle 'groenewege/vim-less'
+Bundle 'iamcco/markdown-preview.vim'
 
 " Others
 if executable('ctags')
@@ -1063,4 +1064,7 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
+
+" markdown-preview
+let vim_markdown_preview_browser='Google Chrome'
 

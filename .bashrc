@@ -20,27 +20,27 @@ export LANG=en_US.UTF-8
 unset LC_ALL
 
 #If vim compiled with clientserver
-cs=`command vim --version | grep "clientserver"`
-if [ $cs  ]
-then
-    #Only use one instance of vim
-    function vim()
-    {
-        if [ $@  ]
-        then
-            command vim --servername vim --remote-silent $@
-        else
-            pss=`ps`
-            temp=`echo $pss | grep -w "vim"`
-            if [ $temp   ]
-            then
-                echo "vim already open"
-            else
-                command vim
-                --servername vim
-            fi
-        fi
-    }
-else
-    command vim $@
-fi
+#cs=`command vim --version | grep "clientserver"`
+#if [ $cs  ]
+#then
+#    #Only use one instance of vim
+#    function vim()
+#    {
+#        if [ $@  ]
+#        then
+#            command vim --servername vim --remote-silent $@
+#        else
+#            pss=`ps`
+#            temp=`echo $pss | grep -w "vim"`
+#            if [ $temp   ]
+#            then
+#                echo "vim already open"
+#            else
+#                command vim
+#                --servername vim
+#            fi
+#        fi
+#    }
+#else
+#    command vim $@
+#fi

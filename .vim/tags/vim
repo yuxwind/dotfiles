@@ -63,6 +63,7 @@ $PATH	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/tex.vim	/^let $PAT
 >	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap > >gv$/;"	m	language:Vim
 ?	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap ? ?\\v$/;"	m	language:Vim
 ?	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap ? ?\\v$/;"	m	language:Vim
+b:loaded_markdown_preview	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/vim-markdown-preview/ftplugin/markdown.vim	/^let b:loaded_markdown_preview = 1$/;"	v	language:Vim
 ChoosePythonCompiler	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    function! ChoosePythonCompiler()$/;"	f	language:Vim
 delimitMate_balance_matchpairs	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let delimitMate_balance_matchpairs=1$/;"	v	language:Vim
 delimitMate_expand_cr	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let delimitMate_expand_cr=1$/;"	v	language:Vim
@@ -151,6 +152,8 @@ LatexSuite	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/c
 LatexSuite	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^augroup LatexSuite$/;"	a	language:Vim
 mapleader	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let mapleader=',' " Change the mapleader$/;"	v	language:Vim
 maplocalleader	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let maplocalleader='\\' " Change the maplocalleader$/;"	v	language:Vim
+MarkdownPreview	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/vim-markdown-preview/ftplugin/markdown.vim	/^command! -range=% MarkdownPreview call s:ShowMarkdownPreview(<line1>, <line2>)$/;"	c	language:Vim
+MdP	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/vim-markdown-preview/ftplugin/markdown.vim	/^command! -range=% MdP call s:ShowMarkdownPreview(<line1>, <line2>)$/;"	c	language:Vim
 MyFoldText	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyFoldText()$/;"	f	language:Vim
 MyTabLine	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyTabLine()$/;"	f	language:Vim
 my_delimitmate	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup my_delimitmate$/;"	a	language:Vim
@@ -176,6 +179,7 @@ s:maxoff	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^    let s:maxoff = 50 " maxim
 s:path	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^let s:path = expand('<sfile>:p:h')$/;"	v	language:Vim
 s?	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^cnoremap s? s?\\v$/;"	m	language:Vim
 SetTeXTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^function! SetTeXTarget(...)$/;"	f	language:Vim
+ShowMarkdownPreview	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/vim-markdown-preview/ftplugin/markdown.vim	/^function! s:ShowMarkdownPreview(line1, line2)$/;"	f	language:Vim
 TClearCiteHist	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/texviewer.vim	/^com! -nargs=0 TClearCiteHist unlet! s:citeSearchHistory$/;"	c	language:Vim
 TCompileMainFile	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^command! -nargs=0 TCompileMainFile let b:fragmentFile = 0$/;"	c	language:Vim
 TCompileThis	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^command! -nargs=0 TCompileThis let b:fragmentFile = 1$/;"	c	language:Vim
@@ -233,6 +237,7 @@ TTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/comp
 TVTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^com! -nargs=1 TVTarget :call Tex_SetTeXCompilerTarget('View', <f-args>)$/;"	c	language:Vim
 Vaa	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap Vaa ggVG$/;"	m	language:Vim
 vaa	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap vaa ggvGg_$/;"	m	language:Vim
+vim_markdown_preview_browser	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let vim_markdown_preview_browser='Google Chrome'$/;"	v	language:Vim
 VSetSearch	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! s:VSetSearch()$/;"	f	language:Vim
 \<Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\<Space> :call IsWhiteLine()<CR>$/;"	m	language:Vim
 \h	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\h :colorscheme hybrid<CR>$/;"	m	language:Vim
