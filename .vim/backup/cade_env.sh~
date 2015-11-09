@@ -1,0 +1,3 @@
+#!/bin/tcsh
+
+setenv JAVA_HOME /usr/local/apps/jdk/jdk1.8.0_40/

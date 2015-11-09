@@ -1,0 +1,8 @@
+#!/bin/bash
+pdflatex interim
+bibtex interim
+pdflatex interim
+pdflatex interim
+# open the pdf
+#open interim.pdf
+

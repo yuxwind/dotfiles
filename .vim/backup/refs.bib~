@@ -1,0 +1,237 @@
+@inproceedings{Clarkson:1997,
+    author = {Clarkson, Kenneth L.},
+    title = {Nearest Neighbor Queries in Metric Spaces},
+    booktitle = {Proceedings of the Twenty-ninth Annual ACM Symposium on
+        Theory of Computing},
+    series = {STOC '97},
+    year = {1997},
+    isbn = {0-89791-888-6},
+    location = {El Paso, Texas, USA},
+    pages = {609--617},
+    numpages = {9},
+    url = {http://doi.acm.org/10.1145/258533.258655},
+    doi = {10.1145/258533.258655},
+    acmid = {258655},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+}
+
+@article{Dobkin:1976,
+    title={Multidimensional searching problems},
+    author={Dobkin, David and Lipton, Richard J},
+    journal={SIAM Journal on Computing},
+    volume={5},
+    number={2},
+    pages={181--186},
+    year={1976},
+    publisher={SIAM}
+}
+
+@inproceedings{Agarwal:1992,
+    author = {Agarwal, Pankaj K. and Matou\v{s}ek, Ji\v{r}\'{\i}},
+    title = {Ray Shooting and Parametric Search},
+    booktitle = {Proceedings of the Twenty-fourth Annual ACM Symposium on
+        Theory of Computing},
+    series = {STOC '92},
+    year = {1992},
+    isbn = {0-89791-511-9},
+    location = {Victoria, British Columbia, Canada},
+    pages = {517--526},
+    numpages = {10},
+    url = {http://doi.acm.org/10.1145/129712.129763},
+    doi = {10.1145/129712.129763},
+    acmid = {129763},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+} 
+
+@inproceedings{Matousek:1991,
+    author = {Matou\v{s}ek, Ji\v{r}\'{\i}},
+    title = {Reporting Points in Halfspaces},
+    booktitle = {Proceedings of the 32Nd Annual Symposium on Foundations of
+        Computer Science},
+    series = {SFCS '91},
+    year = {1991},
+    isbn = {0-8186-2445-0},
+    location = {San Juan, Puerto Rico},
+    pages = {207--215},
+    numpages = {9},
+    url = {http://dx.doi.org/10.1109/SFCS.1991.185370},
+    doi = {10.1109/SFCS.1991.185370},
+    acmid = {123288},
+    publisher = {IEEE Computer Society},
+    address = {Washington, DC, USA},
+    keywords = {query time, halfspace range reporting, query
+        halfspace, linear storage, simplex range searching
+            problem, data structure, deterministic preprocessing
+            time},
+} 
+
+@inproceedings{Yao:1985,
+    author = {Yao, A C and Yao, F F},
+    title = {A General Approach to D-dimensional Geometric Queries},
+    booktitle = {Proceedings of the Seventeenth Annual ACM Symposium on
+        Theory of Computing},
+    series = {STOC '85},
+    year = {1985},
+    isbn = {0-89791-151-2},
+    location = {Providence, Rhode Island, USA},
+    pages = {163--168},
+    numpages = {6},
+    url = {http://doi.acm.org/10.1145/22145.22163},
+    doi = {10.1145/22145.22163},
+    acmid = {22163},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+} 
+
+@article{Bentley:1975,
+    author = {Bentley, Jon Louis},
+    title = {Multidimensional Binary Search Trees Used for Associative
+        Searching},
+    journal = {Commun. ACM},
+    issue_date = {Sept. 1975},
+    volume = {18},
+    number = {9},
+    month = sep,
+    year = {1975},
+    issn = {0001-0782},
+    pages = {509--517},
+    numpages = {9},
+    url = {http://doi.acm.org/10.1145/361002.361007},
+    doi = {10.1145/361002.361007},
+    acmid = {361007},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {associative retrieval, attribute, binary
+        search trees, binary tree insertion, information
+            retrieval system, intersection queries, key,
+        nearest neighbor queries, partial match queries},
+} 
+
+@book{Samet:1990,
+ author = {Samet, Hanan},
+ title = {The Design and Analysis of Spatial Data Structures},
+ year = {1990},
+ isbn = {0-201-50255-0},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ address = {Boston, MA, USA},
+}
+
+@article{Friedman:1977,
+ author = {Friedman, Jerome H. and Bentley, Jon Louis and Finkel, Raphael Ari},
+ title = {An Algorithm for Finding Best Matches in Logarithmic Expected Time},
+ journal = {ACM Trans. Math. Softw.},
+ issue_date = {Sept. 1977},
+ volume = {3},
+ number = {3},
+ month = sep,
+ year = {1977},
+ issn = {0098-3500},
+ pages = {209--226},
+ numpages = {18},
+ url = {http://doi.acm.org/10.1145/355744.355745},
+ doi = {10.1145/355744.355745},
+ acmid = {355745},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+} 
+
+@inproceedings{Kleinberg:1997,
+ author = {Kleinberg, Jon M.},
+ title = {Two Algorithms for Nearest-neighbor Search in High Dimensions},
+ booktitle = {Proceedings of the Twenty-ninth Annual ACM Symposium on Theory of Computing},
+ series = {STOC '97},
+ year = {1997},
+ isbn = {0-89791-888-6},
+ location = {El Paso, Texas, USA},
+ pages = {599--608},
+ numpages = {10},
+ url = {http://doi.acm.org/10.1145/258533.258653},
+ doi = {10.1145/258533.258653},
+ acmid = {258653},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@techreport{Welch:1971,
+ author = {Welch, T. A.},
+ title = {BOUNDS ON INFORMATION RETRIEVAL EFFICIENCY IN STATIC FILE STRUCTURES.},
+ year = {1971},
+ source = {http://www.ncstrl.org:8900/ncstrl/servlet/search?formname=detail\&id=oai%3Ancstrlh%3Amitai%3AMIT-LCS%2F%2FMIT%2FLCS%2FTR-88},
+ publisher = {Massachusetts Institute of Technology},
+ address = {Cambridge, MA, USA},
+} 
+
+@inproceedings{Broder:1997,
+ author = {Broder, Andrei Z. and Glassman, Steven C. and Manasse, Mark S. and Zweig, Geoffrey},
+ title = {Syntactic Clustering of the Web},
+ booktitle = {Selected Papers from the Sixth International Conference on World Wide Web},
+ year = {1997},
+ location = {Santa Clara, California, USA},
+ pages = {1157--1166},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=283554.283370},
+ acmid = {283370},
+ publisher = {Elsevier Science Publishers Ltd.},
+ address = {Essex, UK},
+ keywords = {Web search, duplication resemblance, fingertips, signatures, similarity},
+}
+@Misc{freund,
+    author =   {Robert M. Freund},
+    title =      {Introduction to Semidefinite Programming (SDP)},
+    howpublished =
+    {\url{http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-251j-introduction-to-mathematical-programming-fall-2009/readings/MIT6_251JF09_SDP.pdf}}}
+
+    @article{goemans,
+        title={Improved approximation algorithms for maximum cut and
+            satisfiability problems using semidefinite programming},
+        author={Goemans, Michel X and Williamson, David P},
+        journal={Journal of the ACM (JACM)},
+        volume={42},
+        number={6},
+        pages={1115--1145},
+        year={1995},
+        publisher={ACM}
+    }
+
+@inproceedings{3sat,
+    title={A 7/8-approximation algorithm for MAX 3SAT?},
+    author={Karloff, Howard and Zwick, Uri},
+    booktitle={Foundations of Computer Science, 1997. Proceedings., 38th
+        Annual Symposium on},
+    pages={406--415},
+    year={1997},
+    organization={IEEE}
+}
+
+@Misc{rothvoss,
+    author =   {Thomas Rothvoss},
+    title =      {The {L}aserre hierarch in Approximation algorithms},
+    howpublished =
+    {\url{https://www.math.washington.edu/~rothvoss/lecturenotes/lasserresurvey.pdf}},
+    year =   2013}
+
+    @article{krivelevich,
+        title={Approximating coloring and maximum independent sets in
+            3-uniform hypergraphs},
+        author={Krivelevich, Michael and Nathaniel, Ram and
+            Sudakov, Benny},
+        journal={Journal of Algorithms},
+        volume={41},
+        number={1},
+        pages={99--113},
+        year={2001},
+        publisher={Elsevier}
+    }
+
+@inproceedings{chlamtac,
+    title={Approximation algorithms using hierarchies of semidefinite
+        programming relaxations},
+    author={Chlamtac, Eden},
+    booktitle={Foundations of Computer Science, 2007. FOCS'07. 48th
+        Annual IEEE Symposium on},
+    pages={691--701},
+    year={2007},
+    organization={IEEE}
+}

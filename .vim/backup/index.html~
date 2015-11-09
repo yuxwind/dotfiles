@@ -1,875 +1,128 @@
-
-
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Action Right Now</title>
-  <meta name="author" content="Jiessie">
-  <link rel="author" href="humans.txt">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Point on a map D3</title>
 
-  
-    
-  
-  <meta name="description" content=" ">
-  
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
 
-  
-  <link rel="canonical" href="https://jiessie.github.io/">
-  <link href="/favicon.png" rel="icon">
-  <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Action Right Now" type="application/atom+xml">
-  <meta name="og:type" content="website" />
-  <meta name="og:site_name" content="Action Right Now" />
-  <meta name="og:title" content="Action Right Now" />
-  <meta name="og:description" content=" " />
-  <meta name="og:url" content="https://jiessie.github.io/index.html"/>
-  <meta name="url" content="https://jiessie.github.io/index.html">
-  
-  <meta name="distribution" content="global">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="https://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <div id="front-wrapper">
-  <div id="hero">
-    <div id="hero-inner" class="container">
-      <div class="span10 offset1">
-  <h1>
-    Action Right Now
-  </h1>
-    <h1>
-    I&#8217;m <em>Jiessie Cao</em>,<br/>
-    a <em>fake geek</em><br/>
-    from <em>China</em>
-    </h1>
-</div>
-
-    </div>
-  </div>
-  <section id="sub-hero">
-    <div class="container">
-      <div class="row">
-  <div class="span4">
-    <h2>about me</h2>
-<p>Nothing is impossible! <br/>Just do it!</p>
-
-  </div>
-  <div class="span4">
-    <h2>reading</h2>
-<div>
-<script type="text/javascript" src="https://www.douban.com/service/badge/jiessie/?show=dolist&amp;n=4&amp;columns=4&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book|music"></script>
-</div>
-
-  </div>
-  <div class="span2">
-    <h2>found on</h2>
-
-<a href="https://github.com/jiessie/" rel="tooltip" title="Github"><img class="social_icon" title="Github" alt="github icon" src="/images/glyphicons_381_github.png"></a>
+        <style type="text/css">
+    .feature {
+                fill: none;
+                            stroke: grey;
+                                        stroke-width: 1px;
+                                                    stroke-linejoin: round;
+                                                            }
+        .mesh {
+                    fill: none;
+                                stroke: lightgrey;
+                                            stroke-width: 2px;
+                                                        stroke-linejoin: round;
+                                                                }
+            h1 {
+                        font-family: sans-serif;
+                                }
+        </style>
+    </head>
+    <body>
+            <h1>Point in the north west part of SF</h1>
 
 
+            <script type="text/javascript">
 
+var width = 950,
+        height = 550;
 
-
-
-
-<a href="https://twitter.com/jiessie" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="/images/glyphicons_391_twitter_t.png"></a>
-
-
-
-
-
-
-
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  <div class="container">
-    <div class="row" id="post-container">
-    
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/09/raspberry-wifi/">Raspberry 无线网卡无法使用问题</a></h1>
-    
-    
-      <p class="meta">
+// set projection
+var projection = d3.geo.mercator(;
         
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-09T00:25:00+08:00" pubdate data-updated="true">Jul 9<span>th</span>, 2013</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/tech/'>tech</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>最近入手了Raspberry Pi玩下，一起也买了推荐的免驱的EDUP N8508GS, 买回来用了几天，
-实测确实免驱，不用自己折腾驱动了，刚开始使用的时候是将无线网卡接在HUB上的，使用
-没有什么问题，但是用了几天，突然wifi突然不能自动获取到IP了，设置静态的IP也不能访
-问网关，于是我试着重新切换到其他的系统，NOOBS确实是个入门尝鲜的好工具，可以很方
-便的安装各种raspberry pi的系统进行尝试，我依次尝试了raspbmc，raspbian,Pidora都不
-行。。。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/09/raspberry-wifi/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/03/raspberry-gpio/">Raspberry-GPIO试用</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-03T22:14:00+08:00" pubdate data-updated="true">Jul 3<span>rd</span>, 2013</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/tech/'>tech</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>Raspberry pi GPIO 试用</h1>
-
-<p>最近入手了Raspberry Pi,安装了Raspxbmc系统 一个很漂亮的多媒体系统，在树莓派的论坛
-和博客上也看到了用Raspberry Pi制作fm收音机的帖子，比较简单，只需要一根杜邦线和一
-个调频的收音机即可。然后github上也有python版本的收音机的代码，因此可以很容易的实
-践和研究，这篇介绍下Raspberry Pi GPIO和RPI.GPIO控制LED灯测试.</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/03/raspberry-gpio/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/07/01/octopress-custom/">Octopress-custom</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-01T03:45:00+08:00" pubdate data-updated="true">Jul 1<span>st</span>, 2013</time> - 
-        
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h1>设置网站的description 和keywords</h1>
-
-<p>在网页的head部分设置name 为description 和keywords 的meta元素可以让网页更容易被搜索引擎搜索到,在Octopress中设置首页(source/index.html)和每篇blog的description和keywords即可。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/07/01/octopress-custom/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/23/octopress-plus-github/">Octopress+Github</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-06-23T02:23:00+08:00" pubdate data-updated="true">Jun 23<span>rd</span>, 2013</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/tech/'>tech</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>网上在github上搭建Octopress的资料和博客有很多，本文是自己的系统环境（Mac OS 10.8.3）安装中遇到的一些问题，记录在此，少走弯路。</p>
-
-<h2>0.  初识Octopress</h2>
-
-<p>   认识Octopress是希望能通过markdown语法方便的写一些文章，一直在Mac使用的Mou，然后就想是否有用markdown语法直接写博客的系统和程序，然后就发现了Octopress，当然还有Hexo，后续有时间会再补充，基于node.js的Hexo比Octopress速度要快一些，但是文章不多，而且Hexo当时还不成熟，就暂时选用这个Octopress的方式来练习markdown语法写博客文章，本文也是第一篇，简单介绍下今天折腾Octopress的过程和遇到的问题。第一部分先介绍些Octopress相关的几个概念</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/06/23/octopress-plus-github/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/08/Mysql/">MySQL概览&#8211;系统架构和关键数据结构</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie.Cao</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-08T23:49:04+08:00" pubdate data-updated="true">Dec 8<span>th</span>, 2010</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/large-scale-data-process/'>Large-Scale Data Process</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>近期在研究<a href="https://github.com/ahiguti/HandlerSocket-Plugin-for-MySQL"><em>HandlerSocket</em></a>的相关源码，其命名也正是因为handler这一重要的数据结构，handlerSocket的简单点说就是越过mysql的SQL层，直接通过handler操作底层的存储引擎，由于减少了SQL Parse，Opentable等消耗，并且直接利用handler通过索引index进行查询和更新操作，因此有较高的性能，近期在公司组内做了一次关于handlerSocket调研的分享，主要包括handler协议解析，handlerSocket关键代码和原理，innoDB关键特性等主题内容，当然mysql的系统架构和关键数据结构也是该次分享的基础内容之一，也因为这次分享，本人很荣幸的拿到starbucks的消费券以资奖励.本文主要讲下理解HandlerSocket原理以及mysql的必须知晓的相关系统架构和关键数据结构。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/12/08/Mysql/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/08/10/android-blog/">LBS餐饮系统和Android餐厅随想</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie.Cao</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-10T10:49:08+08:00" pubdate data-updated="true">Aug 10<span>th</span>, 2010</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/brainstorm/'>BrainStorm</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><blockquote><h3><strong>首届Google暑期大学生博客分享大赛——2010 Andriod篇</strong></h3></blockquote>
-
-<h3><strong>需求分析</strong></h3>
-
-<p>移动互联网作为当前互联网发展的趋势，其移动特性和餐饮服务业的地理区域性有其天然的切合优势。本idea是基于android的开放模式从而引发在餐饮业上的联想，其在原来推广展示传统基础层面上继续沿用电子商务传统的网店经营，但是网店展示和买卖的不仅仅是自己的相关菜肴商品，还包括各商家特有的服务，比如订餐、外卖、拼餐、优惠等，以及本文还会提到的open dining和open cooking模式 。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/08/10/android-blog/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/08/06/chip-smp/">《片上多处理器体系结构》浏览收获</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie.Cao</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-06T18:35:05+08:00" pubdate data-updated="true">Aug 6<span>th</span>, 2010</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/computer-architecture/'>Computer Architecture</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>本文记录了《片上多处理器体系结构》浏览过程中学习到的一些笔记内容</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/08/06/chip-smp/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/08/04/Xenmon-mechnism/">XenMon工作机制</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie.Cao</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-08-04T22:48:04+08:00" pubdate data-updated="true">Aug 4<span>th</span>, 2010</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/computer-architecture/'>Computer Architecture</a>, <a class='category' href='/blog/categories/xen-virtualization/'>Xen Virtualization</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>一、 背景：</p>
-
-<p>XenMon是一个支持资源分配和功能配置部件，它可以精确地监视和展现分析结果的基础部件，它报告在不同VMs资源利用率，而且还提供一个对Xen的共享内部资源接口和资源安排。</p>
-
-<p>以下为XenMon的架构图：</p>
-
-<p>  <img src="/images/post/xenmon.jpeg"></p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/08/04/Xenmon-mechnism/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/27/Google-Intern/">Google产品经理笔试题、面试题（转）</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie.Cao</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-27T11:07:05+08:00" pubdate data-updated="true">Jul 27<span>th</span>, 2010</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/brainstorm/'>BrainStorm</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>以下是一些很久前看过的一些有趣的面试题，内容整理于网路，可能有些问题并不是来自Google,但是很值得思考。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/07/27/Google-Intern/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/21/xenoprof-usage/">Xenoprof 安装和使用</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Jiessie.Cao</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-21T23:32:35+08:00" pubdate data-updated="true">Jul 21<span>st</span>, 2010</time> - 
-        
-
-posted in
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/xen-virtualization/'>Xen Virtualization</a>
-  
-</span>
-
-
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><blockquote><p>关于Xenoprof的功能简介这里不详细介绍，可以查看<a href="http://xenoprof.sourceforge.net/">这里</a>，而其前身Oprofile的安装和使用可以看<a href="http://oprofile.sourceforge.net/news/">这里</a>。       <br/>
-本文主要记录本人关于Xenoprof的安装和使用，以及在其中可能曾经遇到的问题。</p></blockquote>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/07/21/xenoprof-usage/">Read on &rarr;</a>
-    </footer>
-  
-
-
-</div>
-
-      </article>
-    
-    </div>
-      <div class="row">
-        <ul class="pager">
-          
-            <li class="previous">
-              <a href="/blog/page/2/">&larr; Older</a>
-            </li>
-          
-          
-        </ul>
-      </div>
-  </div>
-</div>
-
-
-  <div id="footer-widgets">
-  <div class="container">
-    <div class="row">
-  <div class="span3">
-    <h2>recent posts</h2>
-    <ul class="recent_posts">
-      
-        <li>
-          <a href="/blog/2013/07/09/raspberry-wifi/">Raspberry 无线网卡无法使用问题</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/07/03/raspberry-gpio/">Raspberry-GPIO试用</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/07/01/octopress-custom/">octopress-custom</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2013/06/23/octopress-plus-github/">Octopress+Github</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2010/12/08/Mysql/">MySQL概览--系统架构和关键数据结构</a>
-        </li>
-      
-    </ul>
-    <h2><a href="/blog/archives">archives</a></h2>
-  </div>
-  <div class="span4">
-      <h2>categories</h2>
-    <ul id="category-list"><li><a href='/blog/categories/brainstorm/'>BrainStorm (2)</a></li><li><a href='/blog/categories/computer-architecture/'>Computer Architecture (3)</a></li><li><a href='/blog/categories/large-scale-data-process/'>Large-Scale Data Process (1)</a></li><li><a href='/blog/categories/linux/'>Linux (1)</a></li><li><a href='/blog/categories/tech/'>tech (3)</a></li><li><a href='/blog/categories/xen-virtualization/'>Xen Virtualization (2)</a></li></ul>
-
-  </div>
-  <div class="span3">
-    
-
-  </div>
-  <div class="span4">
-    
-<h2>twitter</h2>
-<a href="https://twitter.com/jiessie" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @jiessie</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<div class="tweet" data-twitter-user="jiessie">
-</div>
-
-
-  </div>
-  <div class="span2">
-    <h2>found on</h2>
-
-<a href="https://github.com/jiessie/" rel="tooltip" title="Github"><img class="social_icon" title="Github" alt="github icon" src="/images/glyphicons_381_github.png"></a>
-
-
-
-
-
-
-
-<a href="http://twitter.com/jiessie" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="/images/glyphicons_391_twitter_t.png"></a>
-
-
-
-
-
-
-
-
-  </div>
-</div>
-
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-left">
-  <a href="/">Action Right Now</a>
-  - Copyright &copy; 2013 - Jiessie
-</p>
-<p class="pull-right">
-  <span>Powered by <a href="http://octopress.org/">Octopress</a>.</span>
-  
-    <span>Designed by <a href="http://www.AdrianArtiles.com">Adrian Artiles</a>.</span>
-  
-</p>
-
-  </div>
-</footer>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript"><\/script>')</script>
-<script src="/javascripts/libs/bootstrap.min.js" type="text/javascript"></script>
-<script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
-<script src="/javascripts/jquery.instagram.js" type="text/javascript"></script>
-<script src="/javascripts/libs/jquery.masonry.min.js" type="text/javascript"></script>
-<script src="/javascripts/custom.js" type="text/javascript"></script>
-
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'https://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-</body>
+        // create path variable
+        var path = d3.geo.path()
+            .projection(projection);
+
+
+            d3.json("us.json", function(error, topo) { console.log(topo);
+
+                    states = topojson.feature(topo,
+                            topo.objects.states).features
+
+                            // set projection parameters
+                            projection
+                                  .scale(1000)
+                                        .center([-106, 37.5])
+
+                                            // create svg variable
+                                            var svg =
+                                            d3.select("body").append("svg")
+                                                                .attr("width",
+                                                                        width)
+                                                                                   .attr("height",
+                                                                                           height);
+
+                        // points
+                        aa = [-122.490402, 37.786453];
+                            bb = [-122.389809, 37.72728];
+
+                                console.log(projection(aa),projection(bb));
+
+                                    // add states from topojson
+                                    svg.selectAll("path")
+                                              .data(states).enter(
+                                                            .append("path")
+                                                                  .attr("class",
+                                                                      "feature")
+                                                                        .style("fill",
+                                                                            "steelblue")
+                                                                              .attr("d",
+                                                                                  path);
+
+                                                                                  //
+                                                                              put
+                                                                              boarder
+                                                                              around
+                                                                              states 
+                                                                                   svg.append("path")
+                                                                                         .datum(topojson.mesh(topo,
+                                                                                                 topo.objects.states,
+                                                                                                 function(a,
+                                                                                                     b)
+                                                                                                 {
+                                                                                                      return
+                                                                                                          a
+                                                                                                          !==
+                                                                                                          b;
+                                                                                                  }))
+                                          .attr("class", "mesh")
+                                                    .attr("d", path);
+
+                                              // add circles to svg
+                                              svg.selectAll("circle")
+                                                        .data([aa,bb]).enter(
+                                                                        .append("circle")
+                                                                               .attr("cx",
+                                                                                   function
+                                                                                   (d)
+                                                                                   {
+                                                                                        console.log(projection(d));
+                                                                                        return
+                                                                                            projection(d)[0];
+                                                                                    })
+                                                                                       .attr("cy",
+                                                                                           function
+                                                                                           (d)
+                                                                                           {
+                                                                                                return
+                                                                                                    projection(d)[1];
+                                                                                            })
+                                                                                               .attr("r",
+                                                                                                   "8px")
+                                                                                                       .attr("fill",
+                                                                                                           "red")
+
+            });
+
+            </script>
+                
+    </body>
 </html>

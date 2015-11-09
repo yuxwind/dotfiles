@@ -1,0 +1,10 @@
+#!/bin/bash
+# image for LASCO C2
+wget -cS -vvv -O test.jp2 "http://helioviewer.org/api/v1/getJP2Image/?date=2014-01-01T23:59:59Z&sourceId=4"
+
+open test.jp2
+
+# movie for LASCO C3
+wget -cS -vvv -O test.jpx "http://helioviewer.org/api/v1/getJPX/?startTime=2014-01-01T00:00:00Z&endTime=2014-01-01T00:45:00Z&sourceId=5"
+
+open test.jpx

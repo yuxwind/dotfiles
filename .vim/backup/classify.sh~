@@ -1,0 +1,23 @@
+grep -B1 "[Hh]ow " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > How
+grep -B1 "[Ww]hen " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > When
+grep -B1 "[Ww]here " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > Where
+grep -B1 "[Ww]hich " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > Which
+grep -B1 "[Ww]ho " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > Who
+grep -B1 "[Ww]hose " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > Whose
+grep -B1 "[Ww]hy " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > Why
+grep -B1 "[Ww]hat " ../developset/*.questions | grep -oOp "QuestionID: .*" | cut -d' ' -f2 > What
+wc -l {How,When,Where,Which,Who,Whose,Why,What}
+echo "total QuestionsID:"
+cat ../developset/*.questions | grep -oOp "QuestionID: .*"| cut -d' ' -f2 > all_QuestionID
+wc -l all_QuestionID
+
+echo "total unique QuestionsID:"
+cat all_QuestionID| uniq -c | awk '{printf("%s\n",$3)}' >unique_QuestionID
+wc -l unique_QuestionID
+
+cat {How,When,Where,Which,Who,Whose,Why,What} > all_in_all
+
+cat unique_QuestionID >> all_in_all
+cat all_in_all | sort | uniq -c | sort -k1 |awk 'BEGIN{sum=0} {if($1>2)
+{printf("%d %s\n",$0-2,$0);sum=sum+$0-2}}END{printf("Duplicate %d\n",sum)}' |tee special_list
+

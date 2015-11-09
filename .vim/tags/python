@@ -11,6 +11,18 @@ alfred	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfr
 alfred	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 argparse	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 bigram	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def bigram(sequence, **args):$/;"	m	language:Python	class:NGrams
+blob_dog	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_dog	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_dog	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_dog	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_doh	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_doh	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_doh	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_doh	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_log	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_log	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_log	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
+blob_log	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.feature import blob_dog, blob_log, blob_doh$/;"	i	language:Python
 BufferIsUsable	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def BufferIsUsable( buffer_object ):$/;"	f	language:Python
 BufferIsVisible	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def BufferIsVisible( buffer_number ):$/;"	f	language:Python
 BufferModified	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def BufferModified( buffer_object ):$/;"	f	language:Python
@@ -44,13 +56,23 @@ CurrentColumn	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteM
 CurrentFiletypes	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentFiletypes():$/;"	f	language:Python
 CurrentLineAndColumn	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentLineAndColumn():$/;"	f	language:Python
 CurrentLineContents	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def CurrentLineContents():$/;"	f	language:Python
+data	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+data	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage import data, io, filter, exposure$/;"	i	language:Python
+data	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+data	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
 database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = None$/;"	v	language:Python
 database	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^  database = ycm_core.CompilationDatabase( compilation_database_folder )$/;"	v	language:Python
 data_stream	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^data_stream = StringIO.StringIO(req_data)$/;"	v	language:Python
 datetime	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 DecisionTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^class DecisionTree:$/;"	c	language:Python
 DecisionTree	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^class DecisionTree:$/;"	c	language:Python
+denoise_bilateral	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.restoration import denoise_tv_chambolle, denoise_bilateral$/;"	i	language:Python
+denoise_tv_chambolle	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.restoration import denoise_tv_chambolle, denoise_bilateral$/;"	i	language:Python
 DirectoryOfThisScript	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def DirectoryOfThisScript():$/;"	f	language:Python
+disk	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage.morphology import disk$/;"	i	language:Python
+disk	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage.morphology import disk$/;"	i	language:Python
+disk	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage.morphology import disk$/;"	i	language:Python
+disk	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.morphology import disk$/;"	i	language:Python
 doViterbi	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def doViterbi(self,W):$/;"	m	language:Python	class:Viterbi
 EchoLine	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^  def EchoLine( text ):$/;"	f	language:Python	function:EchoText
 EchoText	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def EchoText( text, log_as_message = True ):$/;"	f	language:Python
@@ -66,10 +88,19 @@ etree	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    import x
 etree	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.cElementTree as ET$/;"	i	language:Python
 etree	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^    import xml.etree.ElementTree as ET$/;"	i	language:Python
 ExchangeItem	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def ExchangeItem(self, index1, index2):$/;"	m	language:Python	class:HeapArray
+exposure	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+exposure	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage import data, io, filter, exposure$/;"	i	language:Python
+exposure	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+exposure	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
 FiletypesForBuffer	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def FiletypesForBuffer( buffer_object ):$/;"	f	language:Python
+filter	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage import data, io, filter, exposure$/;"	i	language:Python
+filters	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+filters	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+filters	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
 firstWord	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    firstWord = m.group('firstWord')$/;"	v	language:Python
 flags	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^flags = [$/;"	v	language:Python
 FlagsForFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def FlagsForFile( filename, **kwargs ):$/;"	f	language:Python
+folderName	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^folderName = ".\/tmp\/"$/;"	v	language:Python
 generateBySeed	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def generateBySeed(self,n,seed,seedSeq,number):$/;"	m	language:Python	class:NGrams
 generateBySeeds	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def generateBySeeds(self,seedsFile):$/;"	m	language:Python	class:NGrams
 getBestK	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def getBestK(self,fileSet):$/;"	m	language:Python	class:kNN
@@ -93,18 +124,28 @@ HeapArray	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^class HeapAr
 heaparray	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^heaparray=HeapArray(a)$/;"	v	language:Python
 HeapNode	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^class HeapNode:$/;"	c	language:Python
 HeapSort	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def HeapSort(self):$/;"	m	language:Python	class:HeapArray
+HelioviewerClient	/Volumes/WorkSpace/git-workspace/lasco/dlImage.py	/^from sunpy.net.helioviewer import HelioviewerClient$/;"	i	language:Python
 HiddenEnabled	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def HiddenEnabled( buffer_object ):$/;"	f	language:Python
 HTMLParser	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^import HTMLParser$/;"	i	language:Python
+hv	/Volumes/WorkSpace/git-workspace/lasco/dlImage.py	/^hv = HelioviewerClient()$/;"	v	language:Python
 ideaFolder	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^ideaFolder = []$/;"	v	language:Python
 IDEAIndex	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^IDEAIndex =[]$/;"	v	language:Python
+img_as_ubyte	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+img_as_ubyte	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+img_as_ubyte	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
 impovedLpDist	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def impovedLpDist(self,vec1,vec2,p):$/;"	m	language:Python	class:kNN
 impurityFunc	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    impurityFunc = None $/;"	v	language:Python	class:DecisionTree
 impurityFunc	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    impurityFunc = None $/;"	v	language:Python	class:DecisionTree
 index	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^    index = 0$/;"	v	language:Python
 indexFile	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        indexFile = open('IDEA.index','w')$/;"	v	language:Python
 InverseDictTuple	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^InverseDictTuple = collections.namedtuple('LabelTuple','value key')$/;"	v	language:Python
+io	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+io	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage import data, io, filter, exposure$/;"	i	language:Python
+io	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
+io	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage import data, io, filters, exposure,img_as_ubyte$/;"	i	language:Python
 IsHeaderFile	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^def IsHeaderFile( filename ):$/;"	f	language:Python
 items	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^items = p.findall(actual_data)$/;"	v	language:Python
+jp2	/Volumes/WorkSpace/git-workspace/lasco/dlImage.py	/^jp2 = hv.download_jp2('2012\/07\/03 14:30:00', "image-test", sourceId = 4,observatory='SOHO', instrument='LASCO', detector='C2', measurement='white-light')$/;"	v	language:Python
 json	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import json$/;"	i	language:Python
 JumpToLocation	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def JumpToLocation( filename, line, column ):$/;"	f	language:Python
 kNN	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^class kNN:$/;"	c	language:Python
@@ -113,9 +154,13 @@ LineAndColumnNumbersClamped	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundl
 line_m	/Volumes/WorkSpace/mt.py	/^    line_m = p.match(line)$/;"	v	language:Python
 LoadDictIntoVimGlobals	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def LoadDictIntoVimGlobals( new_globals, overwrite = True ):$/;"	f	language:Python
 loadProbFile	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def loadProbFile(self,probFile):$/;"	m	language:Python	class:Viterbi
+load_image	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^def load_image(filename):$/;"	f	language:Python
 log	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^from math import log$/;"	i	language:Python
 log	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^from math import log$/;"	i	language:Python
 m	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    m = p.match(line)$/;"	v	language:Python
+main	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^def main(argv):$/;"	f	language:Python
+main	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^def main(argv):$/;"	f	language:Python
+main	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^def main(argv):$/;"	f	language:Python
 main	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^def main(argv):$/;"	f	language:Python
 main	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^def main(argv):$/;"	f	language:Python
 main	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^def main(argv):$/;"	f	language:Python
@@ -128,6 +173,10 @@ math	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import thread,math$/;"	i
 math	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^import os,sys,math,random$/;"	i	language:Python
 math	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^import os,sys,argparse,math,random$/;"	i	language:Python
 MaxHeapify	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def MaxHeapify(self, i):$/;"	m	language:Python	class:HeapArray
+median	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage.filters.rank import median$/;"	i	language:Python
+median	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage.filters.rank import median$/;"	i	language:Python
+median	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage.filters.rank import median$/;"	i	language:Python
+median	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.filters.rank import median$/;"	i	language:Python
 n	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    n = 2$/;"	v	language:Python	class:NGrams
 nested_levels	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^                nested_levels = root.split('\/')$/;"	v	language:Python
 ngrams	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def ngrams(sequence,n,pad_left=True,pad_right=True,symbol_begin=None,symbol_end='\\n'):$/;"	m	language:Python	class:NGrams
@@ -141,6 +190,10 @@ originQuery	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^originQuery = 'Âê
 os	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^import os$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfred,sys,os$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import os$/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^import os,sys $/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^import os,sys $/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^import os,sys $/;"	i	language:Python
+os	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^import os,sys $/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 os	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
@@ -157,12 +210,17 @@ pdb	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^impor
 pdb	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 PlaceDummySign	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PlaceDummySign( sign_id, buffer_num, line_num ):$/;"	f	language:Python
 PlaceSign	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PlaceSign( sign_id, line_num, buffer_num, is_error = True ):$/;"	f	language:Python
+plt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from matplotlib import pyplot as plt$/;"	i	language:Python
+plt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from matplotlib import pyplot as plt$/;"	i	language:Python
+plt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from matplotlib import pyplot as plt$/;"	i	language:Python
+plt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from matplotlib import pyplot as plt$/;"	i	language:Python
 PostMultiLineNotice	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PostMultiLineNotice( message ):$/;"	f	language:Python
 PostVimMessage	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PostVimMessage( message ):$/;"	f	language:Python
 pprint	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 pprint	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 pprint	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
 predict	/Volumes/WorkSpace/git-workspace/nlp/python-nlp/viterbi/viterbi.py	/^    def predict(self,probFile,sentenceFile):$/;"	m	language:Python	class:Viterbi
+preprocess	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^def preprocess(argv):$/;"	f	language:Python
 PresentDialog	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^def PresentDialog( message, choices, default_choice_index = 0 ):$/;"	f	language:Python
 PrintHeap	/Volumes/WorkSpace/Users/Jiessie/Downloads/heap_sort.py	/^    def PrintHeap(self):$/;"	m	language:Python	class:HeapArray
 process	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^    def process(self,totalTrainingFile,testFile,fileSet=[]):$/;"	m	language:Python	class:kNN
@@ -180,6 +238,10 @@ req_data	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^req_data = conn.read
 req_open	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^req_open = urllib2.build_opener()$/;"	v	language:Python
 results	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^results = []$/;"	v	language:Python
 results	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^results = []$/;"	v	language:Python
+rgb2gray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from skimage.color import rgb2gray$/;"	i	language:Python
+rgb2gray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from skimage.color import rgb2gray$/;"	i	language:Python
+rgb2gray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from skimage.color import rgb2gray$/;"	i	language:Python
+rgb2gray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from skimage.color import rgb2gray$/;"	i	language:Python
 rootdir_levels	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^            rootdir_levels = rootdir.split('\/')$/;"	v	language:Python
 S2NDict	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^S2NDict= {'x':2,'b':1,'o':0}$/;"	v	language:Python
 secondWord	/Volumes/WorkSpace/git-workspace/xiny/mt.py	/^    secondWord = m.group('secondWord')$/;"	v	language:Python
@@ -187,6 +249,10 @@ SetLocationList	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouComplet
 SOURCE_EXTENSIONS	/Volumes/WorkSpace/git-workspace/.ycm_extra_conf.py	/^SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]$/;"	v	language:Python
 splitSet	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def splitSet(self,rootSet,featureCol,value):$/;"	m	language:Python	class:DecisionTree
 splitSet	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def splitSet(self,rootSet,featureCol,value):$/;"	m	language:Python	class:DecisionTree
+sqrt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^from math import sqrt$/;"	i	language:Python
+sqrt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^from math import sqrt$/;"	i	language:Python
+sqrt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^from math import sqrt$/;"	i	language:Python
+sqrt	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^from math import sqrt$/;"	i	language:Python
 string	/Volumes/WorkSpace/mt.py	/^import re,sys,string$/;"	i	language:Python
 StringIO	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 subtitle	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        subtitle = item$/;"	v	language:Python
@@ -194,6 +260,10 @@ subtitle	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^                subt
 symbol_begin	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    symbol_begin = None$/;"	v	language:Python	class:NGrams
 symbol_end	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    symbol_end = '\\n'$/;"	v	language:Python	class:NGrams
 sys	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^import alfred,sys,os$/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^import os,sys $/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^import os,sys $/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^import os,sys $/;"	i	language:Python
+sys	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^import os,sys $/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^import os, sys, pdb,pprint$/;"	i	language:Python
 sys	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import os, sys, pdb,pprint,collections$/;"	i	language:Python
@@ -210,6 +280,21 @@ thread	/Volumes/WorkSpace/git-workspace/mlia/kNN/kNN.py	/^import thread,math$/;"
 title	/Volumes/WorkSpace/git-workspace/alfred/IDEA-alfred/IDEA.py	/^        title = os.path.split(item)[1]$/;"	v	language:Python
 title	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^                title = m.group('title')$/;"	v	language:Python
 title_re	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^title_re = re.compile(r'.*?\\<a href=\\"(?P<url>.*?)\\".*?title=\\"(?P<title>.*?)\\".*',re.S)$/;"	v	language:Python
+toBlob	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^def toBlob(image):$/;"	f	language:Python
+toBlob	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^def toBlob(image):$/;"	f	language:Python
+toBlob	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^def toBlob(image):$/;"	f	language:Python
+toGray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^def toGray(img):$/;"	f	language:Python
+toGray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^def toGray(img):$/;"	f	language:Python
+toGray	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^def toGray(img):$/;"	f	language:Python
+toRemoveNoise	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^def toRemoveNoise(noisy_img):$/;"	f	language:Python
+toRemoveNoise	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^def toRemoveNoise(img):$/;"	f	language:Python
+toRemoveNoise	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^def toRemoveNoise(img):$/;"	f	language:Python
+toRescaleIntensity	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^def toRescaleIntensity(img,in_range=(0,2**10-1)):$/;"	f	language:Python
+toRescaleIntensity	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^def toRescaleIntensity(img,in_range=(0,2**10-1)):$/;"	f	language:Python
+toRescaleIntensity	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^def toRescaleIntensity(img,in_range=(0,2**10-1)):$/;"	f	language:Python
+toThreshold	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threadhold.py	/^def toThreshold(img):$/;"	f	language:Python
+toThreshold	/Volumes/WorkSpace/git-workspace/lasco/explore-features/threshold.py	/^def toThreshold(img):$/;"	f	language:Python
+toThreshold	/Volumes/WorkSpace/git-workspace/lasco/explore-features/utils.py	/^def toThreshold(img):$/;"	f	language:Python
 ToUtf8IfNeeded	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^from ycmd.utils import ToUtf8IfNeeded$/;"	i	language:Python
 train	/WorkSpace/git-workspace/nlp/python-nlp/ngrams/ngrams.py	/^    def train(self,trainingCorpus,splitToken=" "):$/;"	m	language:Python	class:NGrams
 trainTreeModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def trainTreeModel(self,trainingFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
@@ -224,6 +309,7 @@ urllib	/Volumes/WorkSpace/git-workspace/fly-qunar/low-price.py	/^import urllib$/
 urllib	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 urllib2	/Volumes/WorkSpace/git-workspace/mt-alfred/mt.py	/^import StringIO, gzip, alfred, urllib, urllib2, datetime, re,sys$/;"	i	language:Python
 user_options_store	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^from ycmd import user_options_store$/;"	i	language:Python
+utils	/Volumes/WorkSpace/git-workspace/lasco/explore-features/find.py	/^import utils$/;"	i	language:Python
 validateModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees.py	/^    def validateModel(self,testFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
 validateModel	/Volumes/WorkSpace/git-workspace/mlia/DecisionTrees/DecisionTrees.py	/^    def validateModel(self,testFile,features,splitToken=','):$/;"	m	language:Python	class:DecisionTree
 vim	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/YouCompleteMe/python/ycm/vimsupport.py	/^import vim$/;"	i	language:Python
