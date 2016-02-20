@@ -1,12 +1,13 @@
+/Volumes/WorkSpace/Users/Jiessie/.vimrc
+/Users/Jiessie/.vimrc
+/Volumes/WorkSpace/Users/Jiessie/dotfiles/README.md
 /Volumes/WorkSpace/git-workspace/jamr/scripts/smatch_2.0.2/smatch.py
 /Volumes/WorkSpace/git-workspace/jamr/data/AMR-Bank-v1.4/amr-bank-struct-v1.4-test.txt.aligned.no_opN
 /Volumes/WorkSpace/git-workspace/jamr/models/Little_Prince/v_2/test.decode.stage2only
 /Volumes/WorkSpace/git-workspace/jamr/scripts/amr.py
 /Volumes/WorkSpace/git-workspace/jamr/models/Little_Prince/conceptTable.train
 /Volumes/WorkSpace/git-workspace/jamr/models/Little_Prince/v_2/smatch_err_new
-/Volumes/WorkSpace/Users/Jiessie/.vimrc
 /Volumes/WorkSpace/Users/Jiessie/.Xauthority
-/Users/Jiessie/.vimrc
 /Users/Jiessie/.vim/bundle/vim-easymotion/doc/easymotion.txt
 /Users/Jiessie/.bash_profile
 /Users/Jiessie/.bashrc
@@ -247,4 +248,3 @@
 /Volumes/WorkSpace/git-workspace/talking-geckos/data/test/all-stories_2.reponse
 /Volumes/WorkSpace/git-workspace/talking-geckos/testset1
 /Volumes/WorkSpace/git-workspace/talking-geckos/data/test/commands.md
-/Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/Who_1235.report

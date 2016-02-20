@@ -316,7 +316,7 @@ Bundle 'kien/ctrlp.vim'
 if executable('ag')
     Bundle 'rking/ag.vim'
 elseif executable('ack-grep') || executable('ack')
-    bundle 'mileszs/ack.vim'
+    Bundle 'mileszs/ack.vim'
 endif
 
 if executable('git')
@@ -341,12 +341,9 @@ Bundle 'tpope/vim-surround'
 " for alignment
 Bundle 'godlygeek/tabular'
 
-
-Bundle 'AndrewRadev/splitjoin.vim'
 if has('python')
     Bundle 'mutewinter/swap-parameters'
 endif
-Bundle 'xuhdev/SingleCompile'
 
 " Automatic Helper
 Bundle 'Raimondi/delimitMate'
@@ -1011,14 +1008,6 @@ let g:easytags_include_members=1
 highlight cMember gui=italic
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"--------------------------------------------------
-" => SingleCompile
-"--------------------------------------------------
-
-nnoremap <Leader>r :SingleCompileRun<CR>
-let g:SingleCompile_showquickfixiferror=1
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 "--------------------------------------------------
@@ -1031,26 +1020,6 @@ nmap <silent> <C-O> <Plug>GoldenViewSplit
 nmap <silent> <C-G> <Plug>GoldenViewSwitchToggle
 nmap <silent> <C-H> <Plug>GoldenViewNext
 nmap <silent> <C-L> <Plug>GoldenViewPrevious
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"--------------------------------------------------
-" => Splitjoin
-"--------------------------------------------------
-
-let g:splitjoin_split_mapping = ',k'
-let g:splitjoin_join_mapping = ',j'
-let g:splitjoin_normalize_whitespace=1
-let g:splitjoin_align=1
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-"--------------------------------------------------
-" => Unite
-"--------------------------------------------------
-
-nnoremap <Leader>m :Unite<Space>
-let g:unite_update_time=4000
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "--------------------------------------------------

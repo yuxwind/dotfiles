@@ -151,8 +151,8 @@ MdP	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/bundle/vim-markdown-preview/f
 MyFoldText	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyFoldText()$/;"	f	language:Vim
 MyTabLine	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! MyTabLine()$/;"	f	language:Vim
 my_delimitmate	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^augroup my_delimitmate$/;"	a	language:Vim
-N	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap N Nzzzv$/;"	m	language:Vim
 n	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap n nzzzv$/;"	m	language:Vim
+N	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap N Nzzzv$/;"	m	language:Vim
 NERDCommentWholeLinesInVMode	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDCommentWholeLinesInVMode=2$/;"	v	language:Vim
 NERDRemoveExtraSpaces	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDRemoveExtraSpaces=1$/;"	v	language:Vim
 NERDSpaceDelims	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let NERDSpaceDelims=1$/;"	v	language:Vim

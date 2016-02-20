@@ -316,7 +316,7 @@ Bundle 'kien/ctrlp.vim'
 if executable('ag')
     Bundle 'rking/ag.vim'
 elseif executable('ack-grep') || executable('ack')
-    bundle 'mileszs/ack.vim'
+    Bundle 'mileszs/ack.vim'
 endif
 
 if executable('git')
