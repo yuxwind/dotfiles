@@ -1,6 +1,6 @@
+/Volumes/WorkSpace/Users/Jiessie/dotfiles/README.md
 /Volumes/WorkSpace/Users/Jiessie/.vimrc
 /Users/Jiessie/.vimrc
-/Volumes/WorkSpace/Users/Jiessie/dotfiles/README.md
 /Volumes/WorkSpace/git-workspace/jamr/scripts/smatch_2.0.2/smatch.py
 /Volumes/WorkSpace/git-workspace/jamr/data/AMR-Bank-v1.4/amr-bank-struct-v1.4-test.txt.aligned.no_opN
 /Volumes/WorkSpace/git-workspace/jamr/models/Little_Prince/v_2/test.decode.stage2only

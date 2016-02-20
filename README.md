@@ -7,6 +7,6 @@ Jiessie's dotfiles
 <pre>
 <code>
 git clone git@github.com:jiessie/dotfiles.git
-just using snow
+just using stow
 </code>
 </pre>
