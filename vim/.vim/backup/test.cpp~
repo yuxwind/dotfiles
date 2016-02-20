@@ -1,0 +1,23 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int N= 0;
+    cin>>N;
+    int gz = 0;
+    int zz = 0;
+    for(int i=0;i<N;i++){
+            int tmp = 0;
+            cin>>tmp;
+            if(tmp==0) zz++;
+            else if(tmp>0) gz++;
+    }
+    printf("%.3f\n%.3f\n%.3f\n",gz/N,(N-gz-zz)/N,zz/N);
+    return 0;
+}

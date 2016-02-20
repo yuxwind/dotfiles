@@ -1,0 +1,48 @@
+#!/bin/bash
+# This script is for previously running Perceptron, it also works for SVM. 
+# Pay Attention to the following point.
+# 1. As the program will generate plot using X-forwading to display the graph in your desktop,and importantly from which you use 'ssh -X compute1.eng.utah.edu'
+# 2. As the program using BLAS, which is not easily supported in Centos 7, but it works fine on Centos 6.5, which is compute[1-3].eng.utah.edu. So please run my program in the above machine.
+# 3. This program will finish all 1,2,3,4 experiments sequently by just the
+# following command    
+
+
+# data0 and data1 folder.
+# I don't support to change the folder by arguments, as the experiment 3 and 4
+# are highly reuseable for "data*" pattern. So I just hardcode the path "table2" "data0"
+# "data1" in the code. Hence,
+#./Perceptron
+#├── build.sbt
+#├── data0
+#├── data1
+#├── images
+#├── project
+#├── run.sh
+#├── src
+#├── table2
+#└── target
+# `sbt "run 0"` will compile and run the program. 
+# case 2 => println("it will generate plot, and show the graph in X11")
+# case 1 => println("For running program with -X to forward x11 
+# from cade machine to your machine, it will generate the plot but without
+# visibility")
+# case 0 => println("For running program in shell without X11, 
+# you can use this one for no plot at all.")
+# By default, it will not gengerate graphs in ssh remote model.
+
+export LD_LIBRARY_PATH=`pwd`/atlas/
+if [ ! -x $LD_LIBRARY_PATH ];then
+    echo $LD_LIBRARY_PATH " not exist, download atlas package and unzip"
+    wget -c http://107.170.251.66/atlas.tgz -O atlas.tgz
+    tar zxvf atlas.tgz
+fi
+sbt "run 0"
+
+if [ $? -ne 0 ]; then
+    echo "Please Read README.md.Someting wrong with envionment, please using ssh -X compute1.eng.uth.edu thanks."
+    less README.md
+fi
+
+# Pay attention to the console output and image generation in images folder.
+# when run.sh as 'sbt run 0', it will not generate graphs.
+# You can use ssh -X login, and use `sbt run 2` to enjoy all the graphs.

@@ -1,0 +1,7 @@
+#!/bin/zsh
+java -jar ../../target/talking-geckos-1.0-jar-with-dependencies.jar "testset1" 2&>err.log | tee testset1.response
+perl score-answers.pl testset1.response testset1.answers > score_testset1
+
+java -jar ../../target/talking-geckos-1.0-jar-with-dependencies.jar "testset2" 2&>err.log | tee testset2.response
+perl score-answers.pl testset2.response testset2.answers > score_testset2
+

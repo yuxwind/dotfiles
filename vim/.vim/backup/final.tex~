@@ -1,0 +1,166 @@
+\documentclass[11pt,fullpage,letterpaper]{article}
+\usepackage{url}
+\usepackage{amsmath,amsthm,enumitem}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\graphicspath{ {./image/} }
+
+\newcommand{\var}{\text{Var}}
+\newtheorem*{claim}{Claim}
+\newcommand{\dueDate}{Dec 18, 2015}
+\newcommand{\bx}{{\bf x}}
+
+\title{Fall 2015 CS 6350: Machine Learining Final Report \\ Discovering New Comets in SOHO Images}
+
+\author{Guannan Wei \and Jie Cao}
+\begin{document}
+\maketitle
+
+\abstract
+Despite the large number of SOHO comets that are discovered (an average of more than 100 a year since the spacecraft's launched in 1995) and the impressive totals racked up by experienced hunters, it is not easy to be the first to report one, particularly for newcomers. (Even the most skilled hunters sometimes go for months without finding one.) In this project we try to develop a program that can automatically detect possible comets which appears in the field of LASCO C3. 
+
+However, there are some difficulties to extract features of faint and low-contrast objects such as early SOHO comet. After some attempts with variant methods, we may cloud extract and filter out a small set of potential stars and comets. We will show ideas what we have tried, experiments and workable solutions for problems, and future work to improve the project.
+
+\section{Background}
+SOHO (Solar and Heliospheric Observatory) is a spacecraft lunched in December 2, 1995 by ESA and NASA, aimed to study the Sun from its deep core to the outer corona and the solar wind. One of the instruments onboard SOHO is called LASCO (Large Angle and Spectrometric Coronagraph) telescope, which is a three-coronagraph package (C1, C2, \& C3) with nested field of views of 1.1-3, 2.5-6, and 4-32 solar radii, respectively \cite{url1}. Although LASCO was designed to observe hot coronal emission, in the meantime, we could observe comets in its filed. 
+
+In our solar system, there are some comets very small and faint, thus hardly can be observed by ground-based telescope, however until they are enough close to the Sun, the tail of comet come out by the force of solar wind, then they will be captured by LASCO C2 or C3 telescope. Usually these comets are called \textit{Sungrazer Comets} because they eventually will probably hit the Sun. That's the basic principle of discovering new comets by LASCO images. Since 1995, professionals and amateurs have discovered more than 3000 comets accumulatively through LASCO C2 and C3 telescope's images \cite{url3000}, mostly by the way of manually reviewing images sent back from SOHO.
+
+The cameras providing the images were designed to study the corona of the sun. This means that the emphasis is of course put in showing the details of the evolution of the corona and not in the stars in the background. What happens in SOHO comet hunting is totally the opposite: the corona is some noise that needs to be get ridden off while the stars might be a comet. These could be in fact stars, asteroids, comets or, in most cases, simply cosmic noise. Once the objects presented in the images are detected, our program will consider all the possible combinations of object aprears in a series of images, for each object and filter out the non plausible ones. The whole process can be summarized in 3 steps:
+
+\section{Data}
+
+In this paper we find a possible method to narrow down the potential comets into a small set of objects.  First, in Section 2, we will give the background knowledge of how to finding a comets in the LASCO C3 images, including how to collect and understand the images and reports. Then in Section 3,  we will show our problems on object dectection and feature extraction, and how we solved them. Section 5 shows the methods we use to solve the path tracing problem and  how to  narrow down the potential comets into a small set of objects.  Section 6 shows our parameters tuning and the results. Finally, we will give the conclusion and our future plan to continue this project.
+
+\subsection{Data Preparation}
+We will use confirmed comets and its images as training and testing data.
+
+In the home page of Sungrazer Project\cite{reportArchive}, we can find all reports of comets reported by astronomy amateurs from year 2000. These reports can be roughly classified into six categories: potential comet, correction of previous report, retraction of previous report, confirmation a report (by administrator), known comet entering, possible fragment. To collect the training data, what we need to focus on is potential comet report and confirmation of report.
+
+A potential comet report is like this\cite{comets201509}:
+
+\begin{lstlisting}[basicstyle=\small, frame=shadowbox]
+Sep 02 2015 01:58:52
+Potential comet:
+Images: C3; 1024x1024 images.
+(0,0) Upper Left.
+2015-09-02
+Kreutz group comet.
+04:30  623  570
+04:42  621  568
+04:54  619  567
+05:06  617  566
+--Vladimir Bezugly
+\end{lstlisting}
+
+A potential report has a lot of useful information. For example, the date and time of images, the telescope which take the image, the size of image, and most importantly, the coordinates potential comet in the image with a timestamp.
+
+A confirming comet report by the administrator is like this\cite{comets201509}:
+ 
+\begin{lstlisting}[basicstyle=\small, frame=shadowbox]
+Confirming comet of:
+Images: C3; 20150828     06:55:03
+Kreutz group comet.
+--Peiyuan Sun
+\end{lstlisting}
+
+Firstly, we extract all confirmation of report from web pages. Since only the potential report have the coordinates of comet, we need to find the original report by the confirmation report date. From the original report, we parse it and extract all coordinates and time of image as the user reported, then we can assemble these information as a url to download the image from SOHO's image repository website.
+
+We have wrote a Python script to automatically download all confirmed comets in year 2015.
+
+\subsection{Object Detection and Feature Extraction}
+In one LASCO C3 image, there are many objects in it, including stars, asteroids, comets or, in most cases, simply cosmic noise or artificial satellites. We have tries several image preprocessint method to extract objects or stars from image. Firstly, before any processing, we transform the original RGB image into grey image, other processing are based on grey image.
+
+\begin{enumerate}
+\item Denoise
+
+Since the there are a lot of noise point in the image, we also tried to denoise the image using Rank filter. Rank filters are non-linear filters using the local gray-level ordering to compute the filtered value, what we used is Median Filter, but since our comets is to small and dark, it's easily erase the comet after denoise, so in our final code we do not use it.
+
+\item Blob Detection and Difficulty
+
+Blob detection can detect regions in an image that are differs in brightness or color compare with surrounding regions. There are mainly two blob detection methods we have tried: Laplacian of Gaussian (LoG) and Difference of Gaussians (DoG).
+
+Laplacian of Gaussian computes the images with successively increasing standard deviation and stacks them up in a cube. Blobs are local maximas in this cube. Using LoG ti detect larger blobs is especially slower because of larger kernel sizes during convolution, and only bright blobs on dark backgrounds are detected.
+
+Difference of Gaussian is another way which is a faster approximation of LoG approach. In this case the image is blurred with increasing standard deviations and the difference between two successively blurred images are stacked up in a cube. This method suffers from the same disadvantage as LoG approach for detecting larger blobs, and blobs are assumed to be bright on dark. 
+
+We have tried both two method with varity parameter combinations, and finally we use Laplacian of Gaussian method with parameter $min \sigma = 1$, $max \sigma = 30$, number of $\sigma = 10$, and $threshold=0.1$, which can detect out about 200 to 300 objects from a single \texttt{1024x1024} image. 
+
+\item Enhance Contrast and Dilation
+
+Unfortunately, our comets are too small, too faint to detection just using Laplacian of Gaussian method, so we firstly do an enhancement of contrast on image, to make bright object more bright and dark area more dark, and then do dilation on the image. Dilation sets a pixel at $(i,j)$ to the maximum over all pixels in the neighborhood centered at $(i,j)$, and enlarges bright regions and shrinks dark regions.
+
+Enhance contrast and dilation have side effect which would also make the noise much bigger and much obvious, but, to make our detection algorithm cloud find these object, it is worth, after all we will use other filters (describe in next section) to filter out wired object combinations.
+
+\end {enumerate}
+
+Finally, our preprocessing combination is firstly enhance contrast, then do dilation, and detect objects by Laplacian of Gaussian method. Using this way of three preprocess, we can find very dark object in the image which has a high possibility to be a comet.
+
+\subsection{Path Tracing and Filter}
+
+\subsection{Path Tracing and Pre-Filter}
+After object detection, we can found every possible "stars" in each images, but some of them are noises, background stars and comets. By only those features we extract for static features in each images, we cann't figure out which object is belongs stars or comets, or something else. Hence we need to use the path tracing by combine those stars in different continous images, then we can get a path for every "star". Now our learning job can be reduced into predicting whether the combined path belongs to a possible comet.  Then we can first extract features from those combined path, and filter most of the invalid combined path, and leaving others to the SVM learning model to classify those path.
+
+\begin{enumerate}
+\item \textbf{Date, Coordinates, Moving Path [RegionFilter]}
+
+Different time of the year,  the position of comets shown in the image satisfy some specified pattern \cite{comets_pattern}. For example, in Oct and Nov, comets will show in the four quadrant of the image, but in June and July, they will show in the third quadrant. What' more, comets will always move towards the sun in the image because of the gravity. In our project, as we are not sure the correct and precise rule for every month, we only use the rough estimation that "most comets starts at the half bottom of the image(under the sun), then go towards the sun." 
+
+By this rule, we designed a filter called "regionFilter", which remove all points at the top of sun. Then, as the sun is always in the center of the image, it means we need $y > \frac{1024}{2}$ for all comets.  As this feature is not easy to scale into a double value workable for SVM training, we only use this feature to filter before learning.
+In our experiments, this filter can remove almost half of the total combined paths, we also found few mistakes for this filter especially in May. For this mistake, we can solve it by using more precise month related rules in our future work.
+
+In addition, for engineering reason, now we haven't filter out those zig-zag paths here, this invalid case may also occupy a large proportion in our combined data  . But I believe that this issue can be removed in the later part of SVM classifier. In future work, we can 
+
+\item \textbf{The Moving Speed:[VelocityFilter]}
+
+Additionally, in different direction X,Y, comets will have different speed. For background stars, they usually will not move along the Y direction, and move very slow along the X direction. However, for a comet, it will move fast almost in both direction, usually they have a fast speed of 1pixal/min in both direction. Hence, for this useful feature to distinguish the comets from stars.  We first extract a velocity feature, and roughly using a velocity in Euclide distance to filter all the nearly stationary stars. 
+
+By using this rule, we can remove those invalid combined path with fast moving  or nearly no moving.  We use these real value velocity features in our training model to classify those detected objects. See more details in Section 3.
+
+\item \textbf{The Intensity:[IntensityFilter]}
+
+For above features, some comets may be recognized. But some of the noise point may occurrently satisify the same pattern.  Then we can use the changing of intensity to distinguish them. What's more, real comets often blur, but noise point often shine or in high intensity. In addition to that, when a comet move towards the sun, the intensity of the comet will also increase a little, at least it should not reduce a lot. For pre-filtering, we add a IntesityFilter to filter those stars with intense change, we simply using a absolute delta value 0.2 for intensity change(We have rescale the intensity of all the objects into range(0,1) ). Because when we try to use a relative percentage change, sometimes we may remove the comets with blur and low intensity. As this absolute value can be learned by the SVM model, then we also adding these intensity change values into our models in next section.
+
+\item \textbf{The shape:[RadiusFilter]}
+
+It is obvious that to found that we cannot combine those objects with huge different radius into a moving path. Hence, we simply add a RadiusFilter to filter out those path combined by obvious different objects. What's more, the radiu of a comet usually will not exceed 5 pixals. We haven't add this feature into our SVM model for with a filtered radius less than 5,  this feature do a little contribution to distinguish the comets, stars and other objects.
+
+\end{enumerate}
+
+\section{Experiment and Result}
+
+In this part, we use all the features we mentioned in the section 2.3, which are roughly used in the pre-filtering process. Now we can 
+\subsection{ Generate Training Dataset and Testing Dataset}
+
+\begin{enumerate}
+\item \textbf{Label} \\
+The label of every record is present whether it is a comet.  This label comes from confirmed comets and its corrsponding images and reports. As described in Section 2, we can get the coordinates in continuous images. Then for this point, we can make a 
+
+\item \textbf{Feature Design} \\
+
+\begin {enumerate}
+\item $\frac {dx}{dt}$
+\item $\frac {dy}{dt}$
+\item intensity
+\end{enumerate}
+\item \textbf{Training and Testing Data Sampling}
+\end{enumerate}
+
+\subsection{Training SVM Model}
+\begin{enumerate}
+\item Crossvalidation
+\item Prediction and Result
+\end{enumerate}
+
+\section{Conclusion and Future Work}
+
+\renewcommand\refname{Reference}
+\bibliographystyle{plain}
+\bibliography{ref}
+\nocite{*}
+\end{document}
+
+\end{document}
+

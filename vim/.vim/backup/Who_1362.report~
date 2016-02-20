@@ -1,0 +1,854 @@
+QuestionID: 1999-W02-5-2
+Question: Who is the principal of South Queens Junior High School?
+Answer: Betty Jean Aucoin
+SentenceSize: 1
+CorrectSentence: [11.0]Principal [+0.5] Betty Jean Aucoin says the club is a first for a Nova Scotia public school [+0.5] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: South Queens Junior High School is taking aim at the fitness market.
+MyAnswerSentence: [16.5]South [+0.5] Queens [+strike1+0.5] Junior [+strike1+0.5] High [+strike1+0.5] School [+strike1+0.5] is taking aim at the fitness market . []
+Difficulty: Easy
+
+QuestionID: 1999-W02-5-5
+Question: Who runs the club?
+Answer: a non-profit society | school and community volunteers
+SentenceSize: 1
+CorrectSentence: [0.5]The club [+0.5] , operated by a non-profit society made up of school and community volunteers , has sold more than 30 memberships and hired a full-time co-ordinator . []
+MyAnswer: Betty Jean Aucoin
+MyAnswerSentence: [10.5]Principal Betty Jean Aucoin says the club [+0.5] is a first for a Nova Scotia public school . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W03-5-9
+Question: Who was Babe's husband?
+Answer: Ian MacLean
+SentenceSize: 1
+CorrectSentence: [11.0]Babe [+0.5] Belanger married Ian MacLean , who [+0.5] continued the family sports tradition . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: You may not know her name, but Noella "Babe" MacLean, who died this week at age 87, was one of Canada's biggest sports stars.
+MyAnswerSentence: [11.5]You may not know her name , but Noella `` Babe [+0.5] '' MacLean , who [+0.5] died this week at age 87 , was one of Canada 's [+0.5] biggest sports stars . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W04-5-3
+Question: Who does Alexi Yashin play for?
+Answer: Ottawa Senators
+SentenceSize: 1
+CorrectSentence: [10.0]The government has been looking at a charitable donation by Ottawa Senators hockey star Alexi [+0.5] Yashin [+strike1+0.5+3] . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: The government has been looking at a charitable donation by Ottawa Senators hockey star Alexi Yashin.
+MyAnswerSentence: [10.0]The government has been looking at a charitable donation by Ottawa Senators hockey star Alexi [+0.5] Yashin [+strike1+0.5+3] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W06-2-1
+Question: Who is Wiarton Willie?
+Answer: the famous Canadian groundhog who predicted the arrival of spring
+SentenceSize: 1
+CorrectSentence: [7.5]Wiarton [+0.5] Willie [+strike1+0.5] , the famous Canadian groundhog who [+0.5] predicted the arrival of spring , died in his sleep of natural causes on Sunday , two days before Groundhog 's Day . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: the famous Canadian groundhog who predicted the arrival of spring
+MyAnswerSentence: [7.5]Wiarton [+0.5] Willie [+strike1+0.5] , the famous Canadian groundhog who [+0.5] predicted the arrival of spring , died in his sleep of natural causes on Sunday , two days before Groundhog 's Day . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W06-2-3
+Question: Who took care of Willie?
+Answer: Sam Brouwer
+SentenceSize: 1
+CorrectSentence: [4.5]`` We did n't really know what to do , '' said Sam Brouwer , who [+0.5] was been the rodent 's caretaker over the last 10 years . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: who will take over Willie's duties and home -- a hutch in the front yard of a motel south of Wiarton.
+MyAnswerSentence: [8.5]A search will begin to find Willie [+0.5] 's son , who [+0.5] will take [+3] over Willie [+0.5] 's duties and home -- a hutch in the front yard of a motel south of Wiarton . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W06-2-8
+Question: Who claims to have received a message from Willie's spirit?
+Answer: Al Given | the mayor of South Bruce Peninsula | Al Given, the mayor of South Bruce Peninsula
+SentenceSize: 1
+CorrectSentence: [10.5]Al Given , mayor of South Bruce Peninsula , said that Willie [+0.5] 's [+strike1+0.5] spirit [+strike1+0.5] told him that it would be an early spring . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: mayor of South Bruce Peninsula
+MyAnswerSentence: [10.5]Al Given , mayor of South Bruce Peninsula , said that Willie [+0.5] 's [+strike1+0.5] spirit [+strike1+0.5] told him that it would be an early spring . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+Included: Yes
+
+QuestionID: 1999-W06-3-1
+Question: Who plans to institute a common code of conduct for students?
+Answer: the Ontario government
+SentenceSize: 1
+CorrectSentence: [10.5]It 's part of the Ontario government 's plan [+0.5+6] to introduce a common [+0.5] code [+strike1+0.5] of conduct [+0.5] by next September for the province 's 2.1 million students [+0.5] from kindergarten to Grade 12 . []
+MyAnswer: It's part of the Ontario government's plan to introduce a common code of conduct by next September for the province's 2.1 million students from kindergarten to Grade 12.
+MyAnswerSentence: [10.5]It 's part of the Ontario government 's plan [+0.5+6] to introduce a common [+0.5] code [+strike1+0.5] of conduct [+0.5] by next September for the province 's 2.1 million students [+0.5] from kindergarten to Grade 12 . []
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W06-3-3
+Question: Under the code, what could happen to a student who swears at a teacher?
+Answer: suspension | they might get suspended
+SentenceSize: 1
+CorrectSentence: [3.5]Swearing [+3] at a teacher [+0.5] , for example , might mean suspension , Harris said . []
+MyAnswer: The code would also deal with acceptable language and set out the punishment for students who smoke, destroy property, steal, distribute hate material or carry a weapon.
+MyAnswerSentence: [3.5]The code [+0.5] would also deal with acceptable language and set out the punishment for students [+0.5] who [+strike1+0.5] smoke , destroy property , steal , distribute hate material or carry a weapon . []
+Difficulty: Easy
+
+QuestionID: 1999-W06-4-2
+Question: Who are the nomadic natives of Oman?
+Answer: the Bedouin
+SentenceSize: 1
+CorrectSentence: [1.0]But after two days into the 1,200 kilometre journey , the caravan has won celebrity status among the native [+0.5] Bedouin people and government officials of Oman [+0.5] . []
+MyAnswer: Mr. Clarke and his companions met with Mr. Thesiger, who is now 88, in London, England on their way to the Middle East from Canada.
+MyAnswerSentence: [10.5]Mr. Clarke and his companions met with Mr. Thesiger , who [+0.5] is now 88 , in London , England on their way to the Middle East from Canada . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W07-4-8
+Question: Who was known as one of the toughest players in the NHL in the 1950s?
+Answer: Bill Juzda
+SentenceSize: 1
+CorrectSentence: [25.5]Winnipeger Bill Juzda was known [+6] as one [+0.5+2.0] of the toughest [+0.5+0.5] players [+strike1+0.5+1.0] in the NHL [+0.5+0.5] when he played for the Leafs in the 1950s [+0.5+1.0] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Winnipeger Bill Juzda
+MyAnswerSentence: [25.5]Winnipeger Bill Juzda was known [+6] as one [+0.5+2.0] of the toughest [+0.5+0.5] players [+strike1+0.5+1.0] in the NHL [+0.5+0.5] when he played for the Leafs in the 1950s [+0.5+1.0] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W08-3-8
+Question: Who published Dewis's obituary?
+Answer: the National Post
+SentenceSize: 1
+CorrectSentence: [14.625]This week the National Post newspaper published [+6] an obituary [+0.5+2.0] of Geoffrey Dewis [+0.5+1.0] , a man who [+0.5+0.125] died in Vancouver at the age of 69 . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: a man who died in Vancouver at the age of 69.
+MyAnswerSentence: [14.625]This week the National Post newspaper published [+6] an obituary [+0.5+2.0] of Geoffrey Dewis [+0.5+1.0] , a man who [+0.5+0.125] died in Vancouver at the age of 69 . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W08-4-1
+Question: Who is Abdullah Ocalan?
+Answer: rebel Kurdish leader
+SentenceSize: 1
+CorrectSentence: [7.0]Violent demonstrations by angry Kurds took place around the world yesterday following the arrest of rebel Kurdish leader Abdullah [+0.5] Ocalan [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Violent demonstrations by angry Kurds took place around the world yesterday following the arrest of rebel Kurdish leader Abdullah Ocalan.
+MyAnswerSentence: [7.0]Violent demonstrations by angry Kurds took place around the world yesterday following the arrest of rebel Kurdish leader Abdullah [+0.5] Ocalan [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W09-4-1
+Question: Who was the master of ceremonies for this year's Grammy Awards?
+Answer: Rosie O'Donnell | American talk show host Rosie O'Donnell
+SentenceSize: 1
+CorrectSentence: [11.0]American talk show host Rosie O'Donnell served as master [+0.5] of ceremonies [+0.5] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Dion
+MyAnswerSentence: [11.0]Among the awards [+0.5] , Ms. Dion won record of the year [+0.5] for `` My Heart Will Go On . '' [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W09-4-7
+Question: Who wrote "My Heart Will Go On"?
+Answer: James Horner and Will Jennings
+SentenceSize: 1
+CorrectSentence: [13.0]James Horner and Will Jennings picked up the writing [+3] trophies . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Celine Dion
+MyAnswerSentence: [19.0]`` Titanic '' sailed on as the ballad `` My [+0.5] Heart [+strike1+0.5] Will Go [+3] On '' won four Grammys , including best female pop vocal for Celine Dion and best song written [+3] for a motion picture or television . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W09-4-9
+Question: Who is Will Smith's wife?
+Answer: actress Jada Pinkett Smith | Jada Pinkett Smith
+SentenceSize: 1
+CorrectSentence: [5.0]He paid tribute to God , `` the jiggiest wife [+0.5] in the world '' -LRB- actress Jada Pinkett Smith [+0.5] -RRB- and his son , about whom he received bad news in his first parent-teacher conference Wednesday . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Jada Pinkett Smith
+MyAnswerSentence: [5.0]He paid tribute to God , `` the jiggiest wife [+0.5] in the world '' -LRB- actress Jada Pinkett Smith [+0.5] -RRB- and his son , about whom he received bad news in his first parent-teacher conference Wednesday . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W10-1-1
+Question: Who owns Youth News Network?  
+Answer: Athena Educational Partners Inc. | a company in Montreal
+SentenceSize: 1
+CorrectSentence: [0.0]While public broadcasters such as CBC Newsworld and TV Ontario provide programming free of charge to schools , none can come close to providing the wealth of televisions , VCRs , computers , and video cameras installed at Meadowvale under its pilot project with YNN 's owner , Montreal-based Athena Educational Partners Inc. . []
+MyAnswer: Heather-Jane Robertson
+MyAnswerSentence: [10.0]`` I happen to believe that it is completely unacceptable to sell off little bits of our kids , '' said Heather-Jane Robertson , director of professional development with the Canadian Teachers Federation . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+
+QuestionID: 1999-W10-1-7
+Question: Who is the principal of Meadowvale secondary?
+Answer: Laurie Pedwell
+SentenceSize: 1
+CorrectSentence: [11.0]Meadowvale [+0.5] principal [+0.5] Laurie Pedwell conceded that the technology was part of YNN 's appeal . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Stephanie Lake
+MyAnswerSentence: [13.0]Stephanie Lake is a grade twelve student at Meadowvale [+0.5] secondary [+strike1+0.5] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+QuestionID: 1999-W10-2-4
+Question: What do we call groups of people who are experts at ringing bells?
+Answer: carillon associations
+SentenceSize: 1
+CorrectSentence: [8.0]In Paris , France members of carillon associations - people [+0.5] who [+strike1+0.5] are experts [+0.5] at ringing [+3] bells [+0.5] - coordinated the ringing [+0.5] of cathedral bells [+0.5] across the city . []
+MyAnswer: In Paris, France members of carillon associations - people who are experts at ringing bells - coordinated the ringing of cathedral bells across the city.
+MyAnswerSentence: [8.0]In Paris , France members of carillon associations - people [+0.5] who [+strike1+0.5] are experts [+0.5] at ringing [+3] bells [+0.5] - coordinated the ringing [+0.5] of cathedral bells [+0.5] across the city . []
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W10-2-7
+Question: Who is the Secretary General of the United Nations?
+Answer: Kofi Annan 
+SentenceSize: 1
+CorrectSentence: [13.0]The head of the United [+0.5] Nations [+strike1+0.5] , Secretary-General Kofi Annan described the treaty 's entry into force as a milestone . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Kofi Annan
+MyAnswerSentence: [13.0]The head of the United [+0.5] Nations [+strike1+0.5] , Secretary-General Kofi Annan described the treaty 's entry into force as a milestone . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W10-3-4
+Question: Who fired on the student demonstrators in Tiananmen Square?
+Answer: Chinese government troops
+SentenceSize: 1
+CorrectSentence: [12.5]The film is a Wang 's perspective on the events that led up to June 4 , 1989 , when Chinese government troops opened fire [+0.5+6] on student [+0.5] demonstrators [+strike1+0.5] in Beijing 's Tiananmen [+0.5] Square [+strike1+0.5] . []
+MyAnswer: Wang Shui-Bo
+MyAnswerSentence: [13.0]Wang Shui-Bo is nominated for an Oscar for Best Short Documentary for his half-hour film `` Sunrise over Tiananmen [+0.5] Square [+strike1+0.5] . '' [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W10-3-7
+Question: Who doesn't need another revolution, according to Wang?
+Answer: the Chinese people | China
+SentenceSize: 2
+CorrectSentence: [0.5]The film is a Wang [+0.5] 's perspective on the events that led up to June 4 , 1989 , when Chinese government troops opened fire on student demonstrators in Beijing 's Tiananmen Square . []
+CorrectSentence: [4.5]It 's a journey that begins with Wang [+0.5] as a loyal Communist , full of the political idealism common in China under the early years of leader Mao Tse Tung . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: The people here don't need another revolution.
+MyAnswerSentence: [17.5]The people here do [+3] n't [+0.5+2.0] need [+6] another [+0.5+1.0] revolution [+strike1+0.5+2.0] . []
+Difficulty: Moderate
+
+QuestionID: 1999-W10-4-3
+Question: Who has the Canadian Health Department consulted with about obtaining marijuana?
+Answer: the Food and Drug Administration in the United States 
+SentenceSize: 1
+CorrectSentence: [18.5]The Health [+0.5+1.0] Department [+strike1+0.5+2.0+3] has [+0.5] already consulted [+6] with the Food and Drug Administration in the United States -- which is also planning similar trials -- about [+0.5+1.0] acquiring marijuana [+0.5+1.0] for the tests . []
+MyAnswer: The Health Department has already consulted with the Food and Drug Administration in the United States -- which is also planning similar trials -- about acquiring marijuana for the tests.
+MyAnswerSentence: [18.5]The Health [+0.5+1.0] Department [+strike1+0.5+2.0+3] has [+0.5] already consulted [+6] with the Food and Drug Administration in the United States -- which is also planning similar trials -- about [+0.5+1.0] acquiring marijuana [+0.5+1.0] for the tests . []
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W10-5-1
+Question: Who authored a study on the differences between the rich and poor in Canada?
+Answer: Ms. Armine Yalnizyan
+SentenceSize: 1
+CorrectSentence: [19.0]Armine Yalnizyan , an economist who [+0.5] studied the differences [+0.5] between [+strike1+0.5] Canada [+0.5] 's rich [+0.5] and poor [+0.5] , found that the difference [+0.5] between [+strike1+0.5] rich [+0.5] and poor [+0.5] was growing fastest in Alberta . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Armine Yalnizyan
+MyAnswerSentence: [19.0]Armine Yalnizyan , an economist who [+0.5] studied the differences [+0.5] between [+strike1+0.5] Canada [+0.5] 's rich [+0.5] and poor [+0.5] , found that the difference [+0.5] between [+strike1+0.5] rich [+0.5] and poor [+0.5] was growing fastest in Alberta . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+Included: Yes
+
+QuestionID: 1999-W11-2-4
+Question: Who does Carole Mills represent?
+Answer: the Canadian Arctic Indigenous Peoples Against POPs
+SentenceSize: 1
+CorrectSentence: [10.0]Carole [+0.5] Mills [+strike1+0.5+3] works with the problem daily , both in the contaminants division of the Department of Indian and Northern Affairs , and as a representative of the Canadian Arctic Indigenous Peoples Against POPs . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: both in the contaminants division of the Department of Indian and Northern Affairs
+MyAnswerSentence: [10.0]Carole [+0.5] Mills [+strike1+0.5+3] works with the problem daily , both in the contaminants division of the Department of Indian and Northern Affairs , and as a representative of the Canadian Arctic Indigenous Peoples Against POPs . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W11-2-9
+Question: Who is Eric Loring?
+Answer: environmental wildlife coordinator with the Inuit Tapirisat of Canada
+SentenceSize: 1
+CorrectSentence: [7.0]That advice is seconded by Eric [+0.5] Loring [+strike1+0.5] , environmental wildlife coordinator with the Inuit Tapirisat of Canada . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: environmental wildlife coordinator with the Inuit Tapirisat of Canada.
+MyAnswerSentence: [7.0]That advice is seconded by Eric [+0.5] Loring [+strike1+0.5] , environmental wildlife coordinator with the Inuit Tapirisat of Canada . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W11-5-4
+Question: Who described Dr. Laurin as "a pioneer, a builder, a man of conviction, determined"?
+Answer: Francois Gendron, chairman of the Parti Quebecois caucus in the legislature | Francois Gendron
+SentenceSize: 1
+CorrectSentence: [12.0]`` Dr. [+0.5] Laurin [+strike1+0.5] was a pioneer [+0.5] , a builder [+0.5] , a man [+0.5] of conviction [+0.5] , determined [+3] , '' says Francois Gendron , chairman of the Parti Quebecois caucus in the legislature . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Dr. Camille Laurin once described his beloved language law as the "re-conquest" of Quebec.
+MyAnswerSentence: [14.0]Dr. [+0.5+1.0] Camille Laurin [+0.5+2.0] once described [+6] his beloved language law as the `` re-conquest '' of Quebec . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+QuestionID: 1999-W12-3-1
+Question: Who said Bedouin ways are "a death in life."?
+Answer: T.E. Lawrence
+SentenceSize: 1
+CorrectSentence: [4.0]- T.E. Lawrence -LRB- Lawrence of Arabia -RRB- While adventurer Jamie Clarke was crossing the world s harshest desert , he often thought his 1997 trip up Mount Everest had been easier . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Clarke
+MyAnswerSentence: [7.0]`` We are tired , thirsty and hungry , but ecstatic to be here , '' Clarke said [+3] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W12-4-6
+Question: Who does the boy need to speak to without his parents present, according to lawyers in the case?
+Answer: a medical doctor | doctors | his cancer doctor 
+SentenceSize: 2
+CorrectSentence: [11.0]Doctors say that Tyrell Dueck , 13 , will die from cancer in less than a year if he [+0.5] doesn t have part of his [+0.5] thigh bone removed and undergo chemotherapy treatments . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+CorrectSentence: [14.5]Nanson said Tyrell s only source of information is his [+0.5] father , who [+0.5] won t permit his [+0.5] son to speak [+3] alone with a medical doctor . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Nanson said Tyrell s only source of information is his father, who won t permit his son to speak alone with a medical doctor.
+MyAnswerSentence: [14.5]Nanson said Tyrell s only source of information is his [+0.5] father , who [+0.5] won t permit his [+0.5] son to speak [+3] alone with a medical doctor . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+Included: Yes
+
+QuestionID: 1999-W12-5-2
+Question: Who won Monday night's game?
+Answer: The OCN Blizzards | The OCN Blizzards of the Opaskwayak Cree Nation
+SentenceSize: 1
+CorrectSentence: [0.5]The OCN Blizzards of the Opaskwayak Cree Nation had beaten the hometown Dauphin Kings in a playoff game [+0.5] . []
+MyAnswer: Bushie
+MyAnswerSentence: [11.0]Two weeks ago at a Bantam hockey game [+0.5] in Dauphin involving a team from Waywayseecappo First Nation , fans for the other team brought hand drums to the game [+0.5] to taunt the Native players and fans , Bushie said . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W13-3-6
+Question: Who is Slobodan Milosevic?
+Answer: Yugoslav President | President of Yugoslavia
+SentenceSize: 2
+CorrectSentence: [0.0]Yugoslavia is bracing for air strikes by NATO forces . []
+CorrectSentence: [7.0]Few people believe that Yugoslav President Slobodan [+0.5] Milosevic [+strike1+0.5] is ready to give in . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Few people believe that Yugoslav President Slobodan Milosevic is ready to give in.
+MyAnswerSentence: [7.0]Few people believe that Yugoslav President Slobodan [+0.5] Milosevic [+strike1+0.5] is ready to give in . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W13-5-6
+Question: Who has been protesting the bombing in Yugoslavia?
+Answer: Serbian Canadians and anti-war demonstrators
+SentenceSize: 1
+CorrectSentence: [10.0]Over the past three days Serbian Canadians and anti-war demonstrators have [+0.5] been [+3] holding protests [+0.5+6] in a number of Canadian cities . []
+MyAnswer: Ray Henault
+MyAnswerSentence: [13.5]`` There were [+3] four aircraft and they had [+0.5] four separate targets , '' said lieutenant-general Ray Henault , deputy chief of defence staff . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+QuestionID: 1999-W13-5-9
+Question: Who is Art Eggleton?
+Answer: Defence Minister
+SentenceSize: 1
+CorrectSentence: [7.0]`` We are trying to stop a humanitarian disaster , '' Defence Minister Art [+0.5] Eggleton [+strike1+0.5] told the House of Commons . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: "We are trying to stop a humanitarian disaster
+MyAnswerSentence: [7.0]`` We are trying to stop a humanitarian disaster , '' Defence Minister Art [+0.5] Eggleton [+strike1+0.5] told the House of Commons . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W14-1-6
+Question: Who has a Computer Emergency Response Team?
+Answer: Carnegie Mellon University
+SentenceSize: 1
+CorrectSentence: [0.5]One team [+0.5] of virus experts is at Carnegie Mellon University in Pittsburgh , Pennsylvania . []
+MyAnswer: The university has a "Computer Emergency Response Team."
+MyAnswerSentence: [22.0]The university has [+6] a `` Computer [+0.5+1.0] Emergency [+strike1+0.5+1.0] Response [+strike1+0.5+2.0] Team [+strike1+0.5+1.0] . '' []
+Difficulty: Easy
+
+QuestionID: 1999-W14-1-7
+Question: Who is Ms. Fithen?
+Answer: a member of the Computer Emergency Response Team | a member of the Computer Emergency Response Team at Carnegie Mellon University
+SentenceSize: 1
+CorrectSentence: [0.0]The university has a `` Computer Emergency Response Team . '' []
+MyAnswer: People can also protect themselves by not opening the attachments
+MyAnswerSentence: [7.0]People can also protect themselves by not opening the attachments , Ms. [+0.5] Fithen [+strike1+0.5] says . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-2
+Question: Who governed the early costal communities before civil governors replaced them?
+Answer: fishing admirals
+SentenceSize: 1
+CorrectSentence: [6.0]As permanent settlements formed , civil [+0.5] governors [+strike1+0.5] replaced [+3] fishing admirals and colonial political institutions were set up . []
+MyAnswer: Crosbie
+MyAnswerSentence: [10.5]Mr. Crosbie says a number of federal government programs like unemployment insurance and aid packages to fishers who [+0.5] are out of work are just a few of the reasons Newfoundlanders should count their blessings . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W14-3-9
+Question: Who was prime minister when John Crosbie was a minister?
+Answer: town of Saint Anthony | Saint Anthony
+SentenceSize: 1
+CorrectSentence: [4.0]The town of Saint Anthony staged a referendum during the last 10 days but with a different result than that of half a century ago . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Newfoundlander John Crosbie was a minister in the Conservative government of Prime Minister Brian Mulroney.
+MyAnswerSentence: [10.5]Newfoundlander John [+0.5] Crosbie [+strike1+0.5] was a minister [+0.5] in the Conservative government of Prime [+0.5] Minister [+strike1+0.5] Brian Mulroney . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W14-3-9
+Question: Who was prime minister when John Crosbie was a minister?
+Answer: town of Saint Anthony | Saint Anthony
+SentenceSize: 1
+CorrectSentence: [4.0]The town of Saint Anthony staged a referendum during the last 10 days but with a different result than that of half a century ago . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Newfoundlander John Crosbie was a minister in the Conservative government of Prime Minister Brian Mulroney.
+MyAnswerSentence: [10.5]Newfoundlander John [+0.5] Crosbie [+strike1+0.5] was a minister [+0.5] in the Conservative government of Prime [+0.5] Minister [+strike1+0.5] Brian Mulroney . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W14-5-3
+Question: Who will write stories for the new bureau?
+Answer: The students in Ken Corley's World Studies class 
+SentenceSize: 1
+CorrectSentence: [10.5]The students in Ken Corley 's World Studies class at Sisler High School will be contributing stories [+0.5] to a CNN web site aimed at young people . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Ken Corley
+MyAnswerSentence: [10.5]The students in Ken Corley 's World Studies class at Sisler High School will be contributing stories [+0.5] to a CNN web site aimed at young people . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+Included: Yes
+
+QuestionID: 1999-W15-2-5
+Question: Who is the star of "Snow Day"?
+Answer: Chevy Chase
+SentenceSize: 1
+CorrectSentence: [0.5]Calgary did n't get a single snowflake in March so on Sunday , the crew filming the movie , which stars Chevy Chase , unloaded 450 dump truck loads of snow [+0.5] . []
+MyAnswer: John
+MyAnswerSentence: [10.5]More than 76 centimetres of snow [+0.5] has fallen in Saint John 's since the blizzard started yesterday afternoon . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+QuestionID: 1999-W15-4-5
+Question: Who is Joaquin Garcia?
+Answer: chairman of Mexico's archeology council
+SentenceSize: 1
+CorrectSentence: [7.0]`` Looting and the illegal export of archeological goods is fairly prevalent , '' says Joaquin [+0.5] Garcia [+strike1+0.5] , chairman of Mexico 's archeology council . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: chairman of Mexico's archeology council.
+MyAnswerSentence: [7.0]`` Looting and the illegal export of archeological goods is fairly prevalent , '' says Joaquin [+0.5] Garcia [+strike1+0.5] , chairman of Mexico 's archeology council . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W15-5-8
+Question: Who is Ujjal Dosanjn?
+Answer: Attorney General for British Columbia | Attorney General
+SentenceSize: 1
+CorrectSentence: [7.0]This was a difficult time in British Columbia history , '' Attorney General Ujjal [+0.5] Dosanjn [+strike1+0.5] said yesterday . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: This was a difficult time in British Columbia history
+MyAnswerSentence: [7.0]This was a difficult time in British Columbia history , '' Attorney General Ujjal [+0.5] Dosanjn [+strike1+0.5] said yesterday . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W16-3-8
+Question: Who tried to prevent Grade Four Students from being immunized against Hepatitis B?
+Answer: a group of Manitoba parents
+SentenceSize: 1
+CorrectSentence: [16.0]Last year a group of Manitoba parents went to court in an effort to block a program to immunize [+3] Grade [+0.5] Four [+strike1+0.5] students [+strike1+0.5] against [+0.5] Hepatitis [+strike1+0.5] B [+strike1+0.5] . []
+MyAnswer: Last year a group of Manitoba parents went to court in an effort to  block a program to immunize Grade Four students against Hepatitis B.
+MyAnswerSentence: [16.0]Last year a group of Manitoba parents went to court in an effort to block a program to immunize [+3] Grade [+0.5] Four [+strike1+0.5] students [+strike1+0.5] against [+0.5] Hepatitis [+strike1+0.5] B [+strike1+0.5] . []
+Difficulty: Moderate
+Included: Yes
+
+QuestionID: 1999-W16-4-2
+Question: Who was who was chanting "Shame on China" on Wednesday?
+Answer: a group of about 100 pro-Tibet protesters
+SentenceSize: 1
+CorrectSentence: [5.0]During a protest earlier Wednesday [+0.5] in Cambridge , Massachusetts , a flag-waving pro-Chinese demonstrator was knocked down after he got close to a group of about 100 pro-Tibet protesters who [+0.5] were chanting [+3] `` Shame [+0.5] on China [+0.5] . '' []
+MyAnswer: Wells
+MyAnswerSentence: [11.0]It 's just one small protest to remind the Canadian government that not all Canadians support pandering to China [+0.5] for business contracts , '' said Wells , who [+0.5] is a member of Amnesty International . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W16-4-5
+Question: Who is the mayor of Saint John's?
+Answer: Andy Wells
+SentenceSize: 1
+CorrectSentence: [11.0]`` I was advised through contacts in the business community that if the flag was not lowered , Zhu would cancel his trip to Saint [+0.5] John [+strike1+0.5] 's [+strike1+0.5] , '' said Mayor [+0.5] Andy Wells . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Newfoundland lowered the flag of China's troubled Tibetan territory following reports that Chinese Premier Zhu Rongji wasn't amused.
+MyAnswerSentence: [11.5]The mayor [+0.5] of Saint [+0.5] John [+strike1+0.5] 's [+strike1+0.5] , Newfoundland lowered the flag of China 's [+0.5] troubled Tibetan territory following reports that Chinese Premier Zhu Rongji was n't amused . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W16-5-9
+Question: Who is the Environment Ministry spokesman quoted in this story?
+Answer: Neil Peters
+SentenceSize: 1
+CorrectSentence: [16.5]`` This can be quite dangerous if not controlled , '' says Environment [+0.5] Ministry [+strike1+0.5] spokesman [+strike1+0.5] Neil Peters . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Neil Peters
+MyAnswerSentence: [16.5]`` This can be quite dangerous if not controlled , '' says Environment [+0.5] Ministry [+strike1+0.5] spokesman [+strike1+0.5] Neil Peters . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W17-1-2
+Question: Who won the last game Gretzky played?
+Answer: the Penguins | Pittsburgh Penguins 
+SentenceSize: 1
+CorrectSentence: [4.0]`` It 's always too soon when you see a great player retire , '' said Mario Lemieux , the retired Pittsburgh Penguins centre . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: In front of Lemieux sat Mark Messier - who played with Mr. Gretzky for the Edmonton Oilers - and many other former teammates and opponents who admired "The Great One".
+MyAnswerSentence: [8.5]In front of Lemieux sat Mark Messier - who [+0.5] played [+3] with Mr. Gretzky [+0.5] for the Edmonton Oilers - and many other former teammates and opponents who [+0.5] admired `` The Great One '' . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+
+QuestionID: 1999-W17-1-10
+Question: Who played with Gretzky on the Edmonton Oilers?
+Answer: Mark Messier
+SentenceSize: 1
+CorrectSentence: [11.5]In front of Lemieux sat Mark Messier - who [+0.5] played [+3] with Mr. Gretzky [+0.5] for the Edmonton [+0.5] Oilers [+strike1+0.5] - and many other former teammates and opponents who [+0.5] admired `` The Great One '' . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: In front of Lemieux sat Mark Messier - who played with Mr. Gretzky for the Edmonton Oilers - and many other former teammates and opponents who admired "The Great One".
+MyAnswerSentence: [11.5]In front of Lemieux sat Mark Messier - who [+0.5] played [+3] with Mr. Gretzky [+0.5] for the Edmonton [+0.5] Oilers [+strike1+0.5] - and many other former teammates and opponents who [+0.5] admired `` The Great One '' . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W17-3-3
+Question: What did the two students who did the shootings do as they moved through the school?
+Answer: laughed
+SentenceSize: 1
+CorrectSentence: [4.5]Witnesses said the boys laughed as they methodically moved [+3] through [+0.5] the school [+0.5] shooting [+0.5] people at random . []
+MyAnswer: Police now say 16 people died in the shooting rampage, including one teacher and the two students who turned their guns on themselves.
+MyAnswerSentence: [7.0]Police now say 16 people died in the shooting [+0.5] rampage , including one teacher and the two [+0.5] students [+strike1+0.5] who [+strike1+0.5] turned their guns on themselves . []
+Difficulty: easy
+
+QuestionID: 1999-W17-3-4
+Question: Who described the shootings as a "suicide mission"?
+Answer: Jefferson County Sheriff John Stone | John Stone
+SentenceSize: 1
+CorrectSentence: [22.0]Jefferson County Sheriff John Stone described [+6] their actions as a `` suicide [+0.5+1.0] mission [+strike1+0.5+2.0] . '' [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: John Stone
+MyAnswerSentence: [22.0]Jefferson County Sheriff John Stone described [+6] their actions as a `` suicide [+0.5+1.0] mission [+strike1+0.5+2.0] . '' [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W17-3-10
+Question: Who did students describe as a hero?
+Answer: the teacher who shepherded the students into the choir room
+SentenceSize: 1
+CorrectSentence: [8.0]Students [+0.5+3] have said that the teacher who [+0.5] shepherded the students [+0.5+3] into the choir room is a hero [+0.5] . []
+MyAnswer: John Stone
+MyAnswerSentence: [16.0]Jefferson County Sheriff John Stone described [+6] their actions as a `` suicide mission . '' [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+
+QuestionID: 1999-W17-5-4
+Question: Who is Teresa Woo-Paw?
+Answer: school board chair
+SentenceSize: 1
+CorrectSentence: [7.0]School board chair Teresa [+0.5] Woo-Paw [+strike1+0.5] has said the board ca n't afford to meet the teachers ' demands . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: School board chair Teresa Woo-Paw has said the board can't afford to meet the teachers' demands.
+MyAnswerSentence: [7.0]School board chair Teresa [+0.5] Woo-Paw [+strike1+0.5] has said the board ca n't afford to meet the teachers ' demands . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W17-5-10
+Question: Who is urging the teachers and school board to keep talking?
+Answer: the province's education minister
+SentenceSize: 1
+CorrectSentence: [12.0]The province 's education minister has urged [+6] both sides to keep [+3] talking [+3] . []
+MyAnswer: Teresa Woo-Paw
+MyAnswerSentence: [14.0]School [+0.5] board [+strike1+0.5] chair Teresa Woo-Paw has said the board [+0.5] ca n't afford to meet the teachers [+0.5] ' demands . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+QuestionID: 1999-W18-3-4
+Question: Who is the president of Nexia Biotechnologies ?
+Answer: Jeffrey Turner
+SentenceSize: 1
+CorrectSentence: [10.5]Company president [+0.5] Jeffrey Turner says the silk can be used in tissue repair , neurosurgery and sutures , and to create artificial tendons and ligaments , among other uses . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Jeffrey Turner
+MyAnswerSentence: [10.5]Company president [+0.5] Jeffrey Turner says the silk can be used in tissue repair , neurosurgery and sutures , and to create artificial tendons and ligaments , among other uses . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W18-4-2
+Question: Who shot two students at a high school in Taber?
+Answer: a 14 year-old boy
+SentenceSize: 1
+CorrectSentence: [9.5]Students [+0.5] at W.R. Myers high [+0.5] school [+strike1+0.5] had just settled down after lunch when a 14-year-old boy walked in and shot [+3] two [+0.5] students [+strike1+0.5] , killing one . []
+MyAnswer: Alberta yesterday after two students were shot at the town's high school.
+MyAnswerSentence: [13.5]Pastor Ken Gartly provided comfort and prayer to people in Taber [+0.5] , Alberta yesterday after two [+0.5] students [+strike1+0.5] were shot [+3] at the town 's high [+0.5] school [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W18-4-5
+Question: Who died in the Taber shooting?
+Answer: Jason Lang | a grade 11 student
+SentenceSize: 2
+CorrectSentence: [4.0]The dead teenager has been identified as Jason Lang , 17 . [WHO_PERSON_NER_2:4.0 ]
+CorrectSentence: [0.0]The two grade 11 students were said to be best friends . []
+MyAnswer: Alberta yesterday after two students were shot at the town's high school.
+MyAnswerSentence: [4.5]Pastor Ken Gartly provided comfort and prayer to people in Taber [+0.5] , Alberta yesterday after two students were shot at the town 's high school . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W19-1-8
+Question: Who does Jacques Cing-Mars think used the caves?
+Answer: hunters
+SentenceSize: 1
+CorrectSentence: [7.5]Mr. Cinq-Mars believes the caves [+0.5] were likely used [+3] by hunters over a period of roughly 15,000 years . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Cinq-Mars
+MyAnswerSentence: [7.5]Mr. Cinq-Mars believes the caves [+0.5] were likely used [+3] by hunters over a period of roughly 15,000 years . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W19-2-3
+Question: Who said 40 people were killed in Oklahoma alone?
+Answer: the Oklahoma state medical examiner
+SentenceSize: 1
+CorrectSentence: [23.0625]The Oklahoma [+0.5+1.0] state medical examiner said [+6] 40 [+0.5+0.5] people [+strike1+0.5+1.0] were [+3] killed [+3] in Oklahoma [+0.5+1.0] alone [+strike1+0.5+0.5] in Monday 's storms , the largest of which formed about 110 kilometres southwest of Oklahoma [+0.5+0.0625] City - cutting a path at least a kilometre wide as it moved north and east . []
+MyAnswer: The Oklahoma state medical examiner said 40 people were killed in Oklahoma alone in Monday's storms, the largest of which formed about 110 kilometres southwest of Oklahoma City - cutting a path at least a kilometre wide as it moved north and east.
+MyAnswerSentence: [23.0625]The Oklahoma [+0.5+1.0] state medical examiner said [+6] 40 [+0.5+0.5] people [+strike1+0.5+1.0] were [+3] killed [+3] in Oklahoma [+0.5+1.0] alone [+strike1+0.5+0.5] in Monday 's storms , the largest of which formed about 110 kilometres southwest of Oklahoma [+0.5+0.0625] City - cutting a path at least a kilometre wide as it moved north and east . []
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W19-4-4
+Question: Who was with Ahmet Konyoury on the plane to Canada?
+Answer: his wife and youngest daughter
+SentenceSize: 1
+CorrectSentence: [8.0]Ahmet [+0.5] Konyoury [+strike1+0.5] , who [+0.5] was on the plane [+0.5] with his wife and youngest daughter , said he did n't want to leave Kosovo . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: who was on the plane with his wife and youngest daughter
+MyAnswerSentence: [8.0]Ahmet [+0.5] Konyoury [+strike1+0.5] , who [+0.5] was on the plane [+0.5] with his wife and youngest daughter , said he did n't want to leave Kosovo . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+Included: Yes
+
+QuestionID: 1999-W19-5-5
+Question: Who is Natural Resources Minister?
+Answer: Glen Cummings
+SentenceSize: 1
+CorrectSentence: [16.5]`` St. Theresa Point is the only area that did not receive precipitation , '' said Natural [+0.5] Resources [+strike1+0.5] Minister [+strike1+0.5] Glen Cummings . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Glen Cummings
+MyAnswerSentence: [16.5]`` St. Theresa Point is the only area that did not receive precipitation , '' said Natural [+0.5] Resources [+strike1+0.5] Minister [+strike1+0.5] Glen Cummings . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+Included: Yes
+
+QuestionID: 1999-W20-5-9
+Question: Who is Holly McWilliams?
+Answer:  a diabetic | an 18-year-old Calgarian | an 18-year-old Calgarian who has had to inject insulin four times a day since she was three years old to stay alive
+SentenceSize: 2
+CorrectSentence: [0.0]But , diabetics will have to be patient -- a cure for humans is between five and 10 years away . []
+CorrectSentence: [0.5]`` This is very exciting , '' said the 18-year-old Calgarian who [+0.5] has had to inject insulin four times a day since she was three years old to stay alive . []
+MyAnswer: However
+MyAnswerSentence: [7.0]However , that did n't temper the enthusiasm of diabetic Holly [+0.5] McWilliams [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W21-3-4
+Question: Who said "the effects were top notch" when he was talking about "The Phantom Menace"?
+Answer: Ken Green
+SentenceSize: 1
+CorrectSentence: [13.0]Mark Churchill and Ken Green were [+3] at the St. John 's screening . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Ken
+MyAnswerSentence: [26.5]Ken says [+6] , `` the story was awesome , the effects [+0.5+1.0] were [+3] top [+0.5+1.0] notch [+strike1+0.5+2.0] , and even the acting was well done . '' [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+
+QuestionID: 1999-W21-5-4
+Question: Who is Maude Barlow?
+Answer: of the Council of Canadians
+SentenceSize: 1
+CorrectSentence: [7.0]`` The federal government knows perfectly well that they 're in trouble with this , '' says Maude [+0.5] Barlow [+strike1+0.5] of the Council of Canadians . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: "The federal government knows perfectly well that they're in trouble with this
+MyAnswerSentence: [7.0]`` The federal government knows perfectly well that they 're in trouble with this , '' says Maude [+0.5] Barlow [+strike1+0.5] of the Council of Canadians . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W22-2-8
+Question: Who is the attorney general of British Columbia?
+Answer: Ujal Dosnajh 
+SentenceSize: 1
+CorrectSentence: [10.0]Ujal Dosnajh stresses there is no cost , and no requirement to put refugees in homes . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Dosanjh
+MyAnswerSentence: [10.5]Mr. Dosanjh says he is looking for more than 200 sponsors who [+0.5] can provide emotional and psychological support . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W22-3-1
+Question: Who was Owen Hart?
+Answer: a Calgary, Alberta based wrestler | a wrestler
+SentenceSize: 1
+CorrectSentence: [7.0]Police in Kansas City , Missouri have a theory about the fall that killed Calgary , Alberta based wrestler Owen [+0.5] Hart [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Missouri have a theory about the fall that killed Calgary
+MyAnswerSentence: [7.0]Police in Kansas City , Missouri have a theory about the fall that killed Calgary , Alberta based wrestler Owen [+0.5] Hart [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W22-3-5
+Question: What is the average age of people who watch TSN's professional wrestling shows?
+Answer: 18 to 49
+SentenceSize: 1
+CorrectSentence: [1.0]The average [+0.5] viewer is 18 to 49 , with the 34 to 49 age [+0.5] group being very dominant . '' []
+MyAnswer: Professional wrestling has nothing to do with amateur wrestling.
+MyAnswerSentence: [3.5]Professional [+0.5] wrestling [+strike1+0.5] has nothing to do with amateur wrestling [+0.5] . []
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-9
+Question: Who will be Julie work with to change solar batteries?
+Answer: Russian astronaut Valery Tokarev | Valery Tokarev
+SentenceSize: 1
+CorrectSentence: [4.0]That task will be undertaken with Russian astronaut Valery Tokarev . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Julie will also have to help change the 18 solar batteries on the station module Zarya.
+MyAnswerSentence: [10.5]Julie [+0.5] will also have to help change [+3] the 18 solar [+0.5] batteries [+strike1+0.5] on the station module Zarya . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W22-4-11
+Question: Who is Aline Chretien married to?
+Answer: Prime Minister Jean Chretien | Jean Chretien | the Prime Minister
+SentenceSize: 1
+CorrectSentence: [4.5]Prime Minister Jean Chretien [+0.5] paid tribute to the Montrealer as a credit to the space program and the country . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: the Prime Minister's wife
+MyAnswerSentence: [7.5]She 's very young , very articulate and perfectly bilingual and she 's showing the Canadian colours with pride and dignity and we should pray for her that everything will be all right , and it will be , '' said Mr. Chretien [+0.5] Aline [+0.5] Chretien [+strike1+0.5] , the Prime Minister 's wife , was invited by Julie Payette to watch the launch in Florida . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W22-5-4
+Question: Who is the mayor of La Ronge?
+Answer: Joe Hordyski
+SentenceSize: 1
+CorrectSentence: [13.5]`` It 's amazing that so much vegetation on the perimeter of our community was totally destroyed and we were very fortunate that so little property was destroyed , '' says La [+0.5] Ronge [+strike1+0.5] Mayor [+0.5] Joe Hordyski . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: "It's amazing that so much vegetation on the perimeter of our community was totally destroyed and we were very fortunate that so little property was destroyed," says La Ronge Mayor Joe Hordyski.
+MyAnswerSentence: [13.5]`` It 's amazing that so much vegetation on the perimeter of our community was totally destroyed and we were very fortunate that so little property was destroyed , '' says La [+0.5] Ronge [+strike1+0.5] Mayor [+0.5] Joe Hordyski . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W23-1-2
+Question: Who led the way into the unfinished station?
+Answer: astronaut Tamara Jernigan and Russian crewmate Valery Tokarev
+SentenceSize: 1
+CorrectSentence: [22.5]Astronaut Tamara Jernigan and Russian crewmate Valery Tokarev led [+6] the way [+0.5+2.0] inside the unfinished [+0.5+0.5] station [+strike1+0.5+0.5] yesterday evening . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Astronaut Tamara Jernigan and Russian crewmate Valery Tokarev led the way inside the unfinished station yesterday evening.
+MyAnswerSentence: [22.5]Astronaut Tamara Jernigan and Russian crewmate Valery Tokarev led [+6] the way [+0.5+2.0] inside the unfinished [+0.5+0.5] station [+strike1+0.5+0.5] yesterday evening . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W23-5-4
+Question: Who is the leader of the Liberals?
+Answer: Dalton McGuinty
+SentenceSize: 1
+CorrectSentence: [11.0]The Liberals [+0.5] led by Dalton McGuinty got 35 seats , and the New Democratic Party under leader [+0.5] Howard Hampton took nine seats . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: The Liberals led by Dalton McGuinty got 35 seats, and the New Democratic Party under leader Howard Hampton took nine seats.
+MyAnswerSentence: [11.0]The Liberals [+0.5] led by Dalton McGuinty got 35 seats , and the New Democratic Party under leader [+0.5] Howard Hampton took nine seats . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W23-5-8
+Question: Who hounded Mike Harris at every appearance?
+Answer: protesters
+SentenceSize: 1
+CorrectSentence: [10.5]During the campaign , he was hounded [+6] by protesters at every [+0.5+0.5] appearance [+strike1+0.5+1.0] . []
+MyAnswer: During the campaign
+MyAnswerSentence: [10.5]During the campaign , he was hounded [+6] by protesters at every [+0.5+0.5] appearance [+strike1+0.5+1.0] . []
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W24-5-2
+Question: Who is Judge Arbour replacing in her new job?
+Answer: justice Peter Cory | Peter Cory 
+SentenceSize: 1
+CorrectSentence: [11.0]Justice Minister Anne McLellan says the 52-year-old Arbour [+0.5+3] is perfect for the job [+0.5] and will replace [+3] retired justice Peter Cory quite nicely . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Louise Arbour will become the high court's third female justice when she begins her new job in September.
+MyAnswerSentence: [14.5]Louise Arbour [+0.5+3] will become the high court 's third female justice when she [+0.5] begins her [+0.5] new [+strike1+0.5] job [+strike1+0.5] in September . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W24-5-5
+Question: Who says Louise Arbour is "a down-to-earth individual"?
+Answer: lawyer Earl Levy | Earl Levy
+SentenceSize: 1
+CorrectSentence: [21.5]`` Louise [+0.5+0.5] Arbour [+strike1+0.5+1.0] is a down-to-earth [+0.5+1.0] individual [+strike1+0.5+2.0] , who [+0.5+0.5] understands the needs of the ordinary person , '' says [+6] lawyer Earl Levy . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: who understands the needs of the ordinary person
+MyAnswerSentence: [21.5]`` Louise [+0.5+0.5] Arbour [+strike1+0.5+1.0] is a down-to-earth [+0.5+1.0] individual [+strike1+0.5+2.0] , who [+0.5+0.5] understands the needs of the ordinary person , '' says [+6] lawyer Earl Levy . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 1999-W25-1-2
+Question: Who is Slobodan Milosevic?
+Answer: President of Yugoslavia
+SentenceSize: 1
+CorrectSentence: [7.0]This is the result of the agreement to end the war between NATO and the Yugoslav government led by President Slobodan [+0.5] Milosevic [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: This is the result of the agreement to end the war between NATO and the Yugoslav government led by President Slobodan Milosevic.
+MyAnswerSentence: [7.0]This is the result of the agreement to end the war between NATO and the Yugoslav government led by President Slobodan [+0.5] Milosevic [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W27-2-4
+Question: Who is trying to save the whales?
+Answer: wildlife officials
+SentenceSize: 1
+CorrectSentence: [0.0]About 20 of them have already died , despite the best efforts of wildlife officials . []
+MyAnswer: Hudson Bay
+MyAnswerSentence: [10.0]They live in the Arctic Ocean and its adjoining seas , including the Sea of Okhotsk , the Bering Sea , the Gulf of Alaska , the Beaufort Sea , Baffin Bay , Hudson Bay , and the Gulf of St. Lawrence . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: moderate
+
+QuestionID: 1999-W27-5-4
+Question: Who is Michele Boisclair?
+Answer: Quebec Federation of Nurses Vice-President
+SentenceSize: 1
+CorrectSentence: [7.0]Quebec Federation of Nurses Vice-President Michele [+0.5] Boisclair [+strike1+0.5] has said that the Executive of the Federation is prepared to go to jail if that 's what it takes . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Quebec Federation of Nurses Vice-President Michele Boisclair has said that the Executive of the Federation is prepared to go to jail if that's what it takes.
+MyAnswerSentence: [7.0]Quebec Federation of Nurses Vice-President Michele [+0.5] Boisclair [+strike1+0.5] has said that the Executive of the Federation is prepared to go to jail if that 's what it takes . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W27-5-8
+Question: Who else has threatened to strike?
+Answer: Quebec ambulance technicians
+SentenceSize: 1
+CorrectSentence: [9.5]Quebec ambulance technicians have [+0.5] also threatened [+6] to strike [+3] , and earlier this week , more than 90 per cent of hospital pharmacists submitted their resignations . []
+MyAnswer: Bouchard
+MyAnswerSentence: [10.5]Premier Bouchard has [+0.5] called an emergency meeting of the Quebec National Assembly . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+QuestionID: 1999-W28-5-3
+Question: Who is the plesiosaur supposed to resemble?
+Answer: Scotland's legendary Loch Ness monster | the Loch Ness monster
+SentenceSize: 1
+CorrectSentence: [10.5]The remains include the bones of two giant water dinosaurs : the mosasaur , a razor-toothed `` duck-bill '' animal with paddles , and the plesiosaur [+0.5] , which scientists say looks like Scotland 's legendary Loch Ness monster . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Loch Ness
+MyAnswerSentence: [10.5]The remains include the bones of two giant water dinosaurs : the mosasaur , a razor-toothed `` duck-bill '' animal with paddles , and the plesiosaur [+0.5] , which scientists say looks like Scotland 's legendary Loch Ness monster . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+Included: Yes
+
+QuestionID: 1999-W29-2-5
+Question: Who ranked first in healthcare?
+Answer: Japan
+SentenceSize: 1
+CorrectSentence: [0.0]Japan 's life expectancy is 80 years old , and the United States ' is at 76 . []
+MyAnswer: For the sixth year in a row, the United Nations has ranked Canada as the best country in the world to live in.
+MyAnswerSentence: [6.0]For the sixth year in a row , the United Nations has ranked [+6] Canada as the best country in the world to live in . []
+Difficulty: moderate
+
+QuestionID: 1999-W29-5-1
+Question: Who traveled across America to help convince the American government that stricter gun control laws are needed?
+Answer: 95 students
+SentenceSize: 1
+CorrectSentence: [21.0]About 95 students from across [+0.5] the United States made their way to the White House to help [+3] President Clinton convince [+3] the American [+0.5] government [+strike1+0.5] to put stricter [+0.5] controls [+0.5] on guns [+0.5] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Clinton
+MyAnswerSentence: [21.0]About 95 students from across [+0.5] the United States made their way to the White House to help [+3] President Clinton convince [+3] the American [+0.5] government [+strike1+0.5] to put stricter [+0.5] controls [+0.5] on guns [+0.5] . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+Included: Yes
+
+QuestionID: 1999-W30-1-4
+Question: Who was John F. Kennedy Jr's father?
+Answer: a U.S. president | U.S. President John F. Kennedy | John F. Kennedy 
+SentenceSize: 2
+CorrectSentence: [15.0]America is mourning the loss of John [+0.5] F. [+strike1+0.5] Kennedy [+strike1+0.5] Jr [+strike1+0.5] , his wife Carolyn Bessette-Kennedy , and her sister Lauren Bessette . [WHO_PERSON_NER_2:4.0 ]
+CorrectSentence: [11.0]Kennedy [+0.5] is the son of former U.S. President John [+0.5] F. [+strike1+0.5] Kennedy [+strike1+0.5] . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: John Jr
+MyAnswerSentence: [17.5]In 1963 , John [+0.5] Jr [+0.5] 's [+strike1+0.5] father [+strike1+0.5] , U.S. President John [+0.5] F. [+strike1+0.5] Kennedy [+strike1+0.5] , was assassinated in Dallas . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Easy
+
+QuestionID: 1999-W30-2-4
+Question: Who wrote Glen Clark and specifically asked him to quit his job?
+Answer: a group of people in his own party
+SentenceSize: 1
+CorrectSentence: [5.0]According to a B.C. television station , Clark [+0.5] was sent a letter by a group of people in his [+0.5] own party . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Glen Clark is facing great pressure to quit his job as the Premier of British Columbia.
+MyAnswerSentence: [13.0]Glen [+0.5] Clark [+strike1+0.5] is facing great pressure to quit [+3] his [+0.5] job [+strike1+0.5] as the Premier of British Columbia . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 1999-W30-3-1
+Question: Who is at risk of suffering from shellfish asthma?
+Answer: Fish plant workers | Fish plant workers in Newfoundland | workers who are exposed to crab and shrimp meat
+SentenceSize: 2
+CorrectSentence: [3.0]Fish plant workers in Newfoundland are concerned about a work hazard called `` shellfish [+0.5] asthma [+strike1+0.5] . '' []
+CorrectSentence: [0.5]It can happen to workers who [+0.5] are exposed to crab and shrimp meat . []
+MyAnswer: The union that represents the workers is trying to find out how many employees suffer from shellfish asthma symptoms.
+MyAnswerSentence: [9.5]The union that represents the workers is trying to find out how many employees suffer [+3] from [+0.5] shellfish [+strike1+0.5] asthma [+strike1+0.5] symptoms . []
+Difficulty: Moderate
+
+QuestionID: 1999-W30-5-2
+Question: Who is going to dig up the dead wooly mammoth?
+Answer: a group of international scientists | scientists
+SentenceSize: 1
+CorrectSentence: [6.0]A wooly [+0.5] mammoth [+strike1+0.5] that was mummified 23,000 years ago , will be dug [+3] out of the frozen ground by a group of international scientists . []
+MyAnswer: A wooly mammoth that was mummified 23,000 years ago, will be dug out of the frozen ground by a group of international scientists.
+MyAnswerSentence: [6.0]A wooly [+0.5] mammoth [+strike1+0.5] that was mummified 23,000 years ago , will be dug [+3] out of the frozen ground by a group of international scientists . []
+Difficulty: Easy
+Included: Yes
+
+QuestionID: 2000-W03-4-1
+Question: Who is Canada's Minister of Health?
+Answer: Allan Rock
+SentenceSize: 1
+CorrectSentence: [10.0]Allan Rock said yesterday that he 's convinced the labels will work . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Allan Rock
+MyAnswerSentence: [10.0]Allan Rock said yesterday that he 's convinced the labels will work . [WHO_PERSON_NER:6.0 WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+Included: Yes
+
+QuestionID: 2000-W03-4-5
+Question: Who is Rob Parker a spokesman for?
+Answer: The Canadian Tobacco Manufacturers Association
+SentenceSize: 1
+CorrectSentence: [0.0]The Canadian Tobacco Manufacturers Association , which represents tobacco companies , says it would take two years and cost millions of dollars to change the packaging on Canadian cigarettes . []
+MyAnswer: Spokesman Rob Parker is convinced the warnings won't work.
+MyAnswerSentence: [7.5]Spokesman [+0.5] Rob [+0.5] Parker [+strike1+0.5] is convinced the warnings wo n't work . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 2000-W03-5-4
+Question: Who helped Jerry see?
+Answer: John Girvin | a Canadian brain surgeon | a neurosurgery (brain surgery) professor | a neurosurgery (brain surgery) professor in London, Ontario | a doctor | a computer
+SentenceSize: 3
+CorrectSentence: [0.0]A Canadian brain surgeon is sharing the glory in the development of one of the world 's first artificial eyes . []
+CorrectSentence: [0.0]Researchers in New York City say a blind 62-year-old volunteer can now read large letters and navigate around big objects by using a tiny camera wired to computers and a platinum electrode implanted in his brain . []
+CorrectSentence: [4.5]John Girvin , a neurosurgery -LRB- brain surgery -RRB- professor in London , Ontario is the doctor who [+0.5] implanted the electrodes in the patient 's brain at the New York Neurological Institute in 1979 . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: Jerry - the name of the patient - doesn't see images.
+MyAnswerSentence: [7.5]Jerry [+0.5] - the name of the patient - does n't see [+3] images . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: Moderate
+
+QuestionID: 2000-W06-4-6
+Question: Who said he has never witnessed a problem in Sisler's hallways?
+Answer: Jeffrey Besyk
+SentenceSize: 1
+CorrectSentence: [4.0]Jeffrey Besyk is in Grade 12 . [WHO_PERSON_NER_2:4.0 ]
+MyAnswer: and he says the school shouldn't regulate what students do when they're not in class.
+MyAnswerSentence: [32.375]He [+0.5+2.0] says [+6] he [+0.5+1.0] has [+0.5] never [+0.5+1.0] witnessed [+3] a problem [+0.5+1.0] in Sisler [+0.5+0.25] 's [+strike1+0.5+0.125] hallways [+strike1+0.5+0.5] , and he [+0.5+1.0] says [+3] the school should n't regulate what students do when they 're not in class . [WHO_PERSON_NER_2:4.0 ]
+Difficulty: easy
+
+sum=43, length = 89

@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#define N  10000
+
+int map[256];
+char str[N]; 
+
+int factorial(int n){
+    if (n==1) return 1;
+    else factorial(n-1)*n;
+}
+
+
+int main(){
+
+    while(scanf("%s",str)!=EOF)
+    {
+        memset(map,0,sizeof(int)*256);
+        int oddsum = 0;
+        int evensum = 0;
+        int len = strlen(str);
+        int number = 1;
+        for(int i=0;i<len;i++)
+        {
+            map[str[i]]++;
+        }
+        for (int j=0;j<256;j++)
+        {
+            if(map[j]==0)
+                continue;
+            else {
+                if(map[j]%2!=0){
+                    oddsum ++;
+                    map[j]-=1;
+                }
+                if(map[j]>2) {
+                    number= number * factorial(map[j]);
+                    evensum++;
+                }
+                if(map[j]>0)
+                evensum++;
+            }
+        }
+        int half = (len - oddsum+1)/2;
+        printf("half=%d,number = %d\n",factorial(half),number);
+        printf("%d,%d\n",oddsum-1<0?0:oddsum-1,factorial(half)/number);
+        memset(str,0,sizeof(char)*256);
+    }
+    return 0;
+}

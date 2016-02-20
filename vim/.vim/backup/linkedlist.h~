@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdlib>
+
+
+template<class Type> class ListItem{
+
+    template< class T> friend class List;
+    ListItem(const Type &t):item(t),next(0){}
+    Type item;
+    ListItem *next;
+};
+
+
+template<class Type> class List{
+
+
+
+}
+
+

@@ -1,0 +1,245 @@
+#coding=utf8
+from __future__ import division
+
+import numpy as np
+from skimage import data, io
+from skimage.feature import blob_dog, blob_log, blob_doh
+from math import sqrt,pow
+from skimage.color import rgb2gray
+from skimage import data, img_as_float
+from skimage import exposure
+from skimage import morphology
+
+import os
+import csv
+import sys
+import glob
+import copy
+import time
+import datetime
+from itertools import *
+from StringIO import StringIO
+
+strptime = datetime.datetime.strptime
+
+POS =  1
+NEG = -1
+
+CSV_HEADER = "label, poss, detDiss, detxys, ints, rs, ts, detTimes(m), vs, vxys"
+
+class PStar(object):
+    """
+    Potential Star, in a single image
+    """
+    def __init__(self, pos, r, intensity, time, label):
+        self.pos = pos
+        self.r = r
+        self.intensity = intensity 
+        self.time = time
+        self.label = label
+
+    def __repr__(self):
+        return "pos[" + str(self.pos[0]) + ", " + str(self.pos[1]) + "] " + \
+               "r[" + str(self.r) + "] " + "intensity[" + str(self.intensity) + "] " + \
+               "time[" + str(self.time) + "]"
+
+    __str__ = __repr__
+
+class PObject(object):
+    """
+    Potential Object, in a series of images
+    """
+    def __init__(self, stars):
+        # stars [PStar]
+        self.poss = map(lambda s: s.pos, stars)
+        self.ints = map(lambda s: s.intensity, stars)
+        self.rs = map(lambda s: s.r, stars)
+        self.ts = map(lambda s: s.time, stars)
+        self.labels = map(lambda s: s.label, stars)
+        self.update()
+
+    def update(self):
+        self.detTimes = map(lambda t2, t1: (t2-t1)/60, self.ts[1:], self.ts[:-1])  # minutes
+        self.detInts = map(lambda int2, int1: (int2-int1),  self.ints[1:], self.ints[:-1])
+        self.detDiss = map(lambda pos2, pos1: sqrt(pow(pos2[0]-pos1[0],2)+pow(pos2[1]-pos1[1],2)), self.poss[1:], self.poss[:-1])
+        self.detxys = map(lambda pos2, pos1: (pos2[0]-pos1[0],pos2[1]-pos1[1]), self.poss[1:], self.poss[:-1])
+        self.vs = map(lambda diss,time: diss/time , self.detDiss, self.detTimes)
+        self.vxys = map(lambda dxy,time: (dxy[0]/time , dxy[1]/time), self.detxys, self.detTimes)
+        self.label = reduce(lambda x, y: 1 if y == 1 and x == 1 else 0, self.labels)
+
+    def append(self, pstar):
+        self.poss.append(pstar.pos)
+        self.ints.append(pstar.intensity)
+        self.rs.append(pstar.r)
+        self.ts.append(pstar.time)
+        self.labels.append(pstar.label)
+        self.update()
+
+    #def toCSVLine(self):
+    #    line = StringIO()
+    #    wtr = csv.writer(line)
+    #    seq = [str(self.label), \
+    #           ",".join(map(str, self.poss)), \
+    #           ",".join(map(str, self.detDiss)), \
+    #           ",".join(map(str, self.detxys)), \
+    #           ",".join(map(str, self.ints)), \
+    #           ",".join(map(str, self.rs)), \
+    #           ",".join(map(str, self.ts)), \
+    #           ",".join(map(str, self.detTimes)), \
+    #           ",".join(map(str, self.vs)), \
+    #           ",".join(map(str, self.vxys))]
+    #    wtr.writerow(seq)
+    #    return line.getvalue()[:-2]
+
+    def toCSVLine(self):
+        line = StringIO()
+        wtr = csv.writer(line)
+        seq = [str(self.label), \
+               ";".join(map(str, self.poss)), \
+               ";".join(map(str, self.detInts)), \
+               ";".join(map(str, self.rs)), \
+               ";".join(map(str, self.vs)), \
+               ";".join(map(str, self.vxys))]
+        wtr.writerow(seq)
+        return line.getvalue()[:-2]
+
+    def isPossible(self):
+        # detIntensity ratio less than 0.2
+        def intensityFilter(obj):
+            percentDiffs = map(lambda x, y: abs(x - y), obj.ints[1:], obj.ints[:-1])
+            return reduce(lambda x, y: x and y < 0.2, percentDiffs, True)
+        
+        # detRadius ratio less than 0.2, radius < 5
+        def raduisFilter(obj):
+            percentDiffs = map(lambda x, y: abs(x - y) / y, obj.rs[1:], obj.rs[:-1])
+            return reduce(lambda x, y: x and y < 0.1, percentDiffs, True) and reduce(lambda x, y: x and y < 5, obj.rs,True) 
+        
+        # detVelocity ratio less than 20, 1/min for comets,20/12 pixal/min
+        def velocityFilter(obj):
+            return reduce(lambda x, y: x and y >1.67, obj.vs, True)
+        
+        # startPoint of comets should be 3rd and 4th quarant,y > 512 
+        def regionFilter(obj):
+            return reduce(lambda x, y: x and y[1] > 512, obj.poss, True)
+
+        filters = [regionFilter, intensityFilter, raduisFilter, velocityFilter]
+        return reduce(lambda x, y: x and y(self), filters, True)
+
+    def __repr__(self):
+        return self.toCSVLine()
+
+    __str__ = __repr__
+        
+def getTimeFromFilename(filepath):
+    if os.sep in filepath:
+        filepath = filepath.split(os.sep)[-1]
+    return "".join(filepath.split(".")[0].split("_")[:2])
+
+def getStarsFromImage(filepath, method="log"):
+    """
+    Get potential stars from a single image
+
+    Arguments:
+        filepath: string
+        method: string, `log` or `dog`
+
+    Returns:
+        a list of potential stars  
+    """
+    def getBlobs(image, method):
+        blobs = None
+        if method == "log":
+            blobs = blob_log(image, min_sigma=1, max_sigma=30, num_sigma=10, threshold=0.1)
+        elif method == "dog":
+            blobs = blob_dog(image, max_sigma=30, threshold=0.1)
+        else:
+            raise NotImplementedError("not supported blob method: " + method)
+
+        blobs[:, 2] = blobs[:, 2] * sqrt(2)
+        return blobs
+
+    def blob2Star(blob):
+        y, x, r = blob
+        intensity = meanIntensity(x, y, image_gray)
+        label = NEG
+        return PStar((x, y), r, intensity, unixts, label)
+
+    t = getTimeFromFilename(filepath)
+    unixts = time.mktime(strptime(t, "%Y%m%d%H%M").timetuple())
+    image = io.imread(filepath)
+    image_gray = rgb2gray(image)
+
+    io.imsave("./gray.jpg", image_gray)
+    
+    # Contrast stretching
+    p2, p98 = np.percentile(image_gray, (2, 98))
+    image_gray = exposure.rescale_intensity(image_gray, in_range=(p2, p98))
+
+    io.imsave("./contrast.jpg", image_gray)
+
+    image_gray = morphology.dilation(image_gray)
+    io.imsave("./dilation.jpg", image_gray)
+
+    blobs = getBlobs(image_gray, method)
+    return map(blob2Star, blobs)
+
+def meanIntensity(x, y, image):
+    ints = []
+    ints.append(image[x][y])
+    ints.append(image[max(0, x-1)][y])
+    ints.append(image[min(1023, x+1)][y])
+    ints.append(image[x][max(0, y-1)])
+    ints.append(image[x][min(1023, y+1)])
+    return sum(ints) / 5
+
+# string -> (int, int)
+def getCoordinateFromFilenameWithoutExt(filename):
+    return tuple(map(int, filename.split("_")[-1].split("x")))
+
+def getCometObjectFromFilenames(filepaths):
+    def getPStar(filepath):
+        filename, ext = os.path.splitext(filepath)
+        x, y = getCoordinateFromFilenameWithoutExt(filename)
+        image = io.imread(filepath)
+        image_gray = rgb2gray(image)
+        intensity = meanIntensity(x, y, image_gray)
+        t = getTimeFromFilename(filepath)
+        unixts = time.mktime(strptime(t, "%Y%m%d%H%M").timetuple())
+        return PStar((x,y), 1, intensity, unixts, POS)
+
+    return PObject(map(getPStar, filepaths))
+
+def createPObject(obj, s):
+    newObj = copy.deepcopy(obj)
+    newObj.append(s)
+    return newObj
+
+def getObjectsFromImages(filepaths, method="log"):
+    objectss = map(getStarsFromImage, filepaths)
+    comet = getCometObjectFromFilenames(filepaths)
+    print comet.isPossible()
+    #print comet
+    #for x in objectss[0]:
+    #    print (x, pow(comet.poss[0][0]-x.pos[0],2)+pow(comet.poss[0][1]- x.pos[1],2), pow(x.r,2))
+    combObjectss = map(PObject, apply(product, objectss[:2]))
+    combObjectss = filter(lambda o: o.isPossible(), combObjectss)
+    for pstars in objectss[2:]:
+        combObjectss = [createPObject(obj, s) for obj in combObjectss for s in pstars]
+        combObjectss = filter(lambda o: o.isPossible(), combObjectss)
+    combObjectss.append(comet)
+    return combObjectss
+
+def usage():
+    print("usage: python getObject.py directory > stars.csv")
+
+if __name__ == "__main__":
+    if not len(sys.argv) == 2:
+        usage()
+        exit()
+    
+    jpgs = glob.glob(sys.argv[1] + "/*.jpg")
+    # TODO order
+    stars = getObjectsFromImages(jpgs)
+    print(CSV_HEADER)
+    for s in stars:
+        print s

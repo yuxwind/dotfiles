@@ -1,0 +1,22 @@
+import os,sys 
+import utils
+import csv
+
+
+def LabeledPoint
+
+
+
+def main(argv):
+    try:
+        with open(argv[1], 'rb') as csvfile:
+            csvreader = csv.reader(csvfile, delimiter=',', quotechar='"')
+            for row in csvreader:
+                print row
+
+    except IOError as ex:
+        print("IO error %s" % ex.strerror)
+
+if __name__ == "__main__":
+    main(sys.argv)
+

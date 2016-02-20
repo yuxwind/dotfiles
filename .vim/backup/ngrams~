@@ -1,3 +1,0 @@
-#!/bin/bash
-echo $@
-python ngrams.py $@

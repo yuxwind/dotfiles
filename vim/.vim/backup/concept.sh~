@@ -1,0 +1,10 @@
+grep -B4 "Possible invoked concepts: " ../v_2/test.decode.allstages.err | grep 'word = ' | sort | uniq -c |sort -nk1r | awk '{print $1,$4}' > all_concept_word.err
+grep -B4 "Possible invoked concepts: List()" ../v_2/test.decode.allstages.err | grep 'word = ' | sort | uniq -c |sort -nk1r | awk '{print $1,$4}' > no_concept_word.err
+echo 'all words trying to find concept:'`grep "Possible invoked concepts: List" ../v_2/test.decode.allstages.err | wc -l` 
+echo 'no concept:'`grep "Possible invoked concepts: List()" ../v_2/test.decode.allstages.err | wc -l` 
+echo 'all words in snts'`wc -w ../../../data/AMR-Bank-v1.4/amr-bank-struct-v1.4-test.txt.snt` 
+cat ../conceptTable.train | cut -d' ' -f 1 | uniq -c | sort -k1nr > all_train_word
+echo 'all Missing span:'`cat test.decode.allstages.err|grep "Missing span" | wc -l`
+echo 'puncture:'`cat no_concept_word.err| awk 'BEGIN{sum = 0}{if(length($2)==1) {sum+=$1}}END{print sum}'` 
+
+

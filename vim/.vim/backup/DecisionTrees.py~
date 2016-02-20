@@ -1,0 +1,216 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# author: Jie Cao
+
+import os, sys, pdb,pprint
+from math import log
+from itertools import chain
+
+class DecisionTree:
+
+    # Dictionary to describe the recurrence tree data structure,
+    # keys will be every Node with best attribute
+    # value will be the recurrence tree[an dictionary] or may just a final leave node with a single label value, all label values or feature values are just a real number.
+    # the func for supporting different impurityFunc
+    
+    impurityFunc = None 
+    treeModel = {}
+    
+    def __init__(self,impurityFunc):
+        self.impurityFunc = impurityFunc
+    
+    def chooseBestFeature(self,rootSet,features):
+        totalCount = len(rootSet)
+        featureLength = len(features)
+        baseImpurity = self.impurityFunc(rootSet)
+        bestInfoGain = 0.0
+        bestFeatureCol = -1
+        for i in xrange(featureLength):
+            ufValues_i = set([row[i] for row in rootSet])
+            newImpurity_i = 0.0
+            for value in ufValues_i:
+                subSet_i = self.splitSet(rootSet,i,value)
+                p_i = len(subSet_i)/float(totalCount)
+                newImpurity_i += p_i * self.impurityFunc(subSet_i)
+            infoGain_i = baseImpurity - newImpurity_i
+            # keep the bestInfoGain
+            if infoGain_i > bestInfoGain:
+                bestInfoGain = infoGain_i
+                bestFeatureCol = i
+        return bestFeatureCol
+
+
+    # split the rootSet into subSet, by chosenFeatureCol and its value
+    # terrible! no immutable set for python using map
+    def splitSet(self,rootSet,featureCol,value):
+        subSet = []
+        for row in rootSet:
+            if row[featureCol] == value:
+                subRow = row[:featureCol]
+                subRow.extend(row[featureCol+1:])
+                subSet.append(subRow)
+        return subSet
+    
+    @staticmethod
+    def calcGini(rootSet):
+        totalLabelCount = len(rootSet)
+        labelCounts = {}
+        for row in rootSet:
+            label = row[-1]
+            labelCounts[label] = labelCounts.setdefault(label,0) + 1
+        gini = 0.0
+        for key in labelCounts.keys():
+            p = float(labelCounts[key])/totalLabelCount
+            gini += p * (1-p)
+        return gini
+    
+    @staticmethod
+    def calcMisRate(rootSet):
+        totalLabelCount = len(rootSet)
+        labelCounts = {}
+        for row in rootSet:
+            label = row[-1]
+            labelCounts[label] = labelCounts.setdefault(label,0) + 1
+        maxP = 0.0
+        for key in labelCounts.keys():
+            p = float(labelCounts[key])/totalLabelCount
+            if maxP < p:
+                maxP = p
+        return 1-maxP
+    
+    @staticmethod
+    def calcID3(rootSet):
+        totalLabelCount = len(rootSet)
+        labelCounts = {}
+        for row in rootSet:
+            label = row[-1]
+            labelCounts[label] = labelCounts.setdefault(label,0) + 1
+        ent = 0.0
+        for key in labelCounts.keys():
+            p = float(labelCounts[key])/totalLabelCount
+        ent -= p * log(p,2)
+        return ent
+
+    def matchTree(self,treeModel,features,testVec):
+        try:
+           rootFeatureName = treeModel.keys()[0]
+           subTreeDict = treeModel[rootFeatureName]
+           featureCol = features.index(rootFeatureName)
+           testFeatureValue = testVec[featureCol]
+           # decide into which subset
+           subTreeModel =  subTreeDict[testFeatureValue]
+           # subTreeModel will be dict or just a label value
+           if isinstance(subTreeModel,dict):
+               label = self.matchTree(subTreeModel,features,testVec)
+           else:
+               label = subTreeModel
+           return label
+        #when no key in model, hand it with undefined
+        except KeyError:
+           return "undefined"
+
+    def buildTree(self,rootSet,features):
+        labelList = [dataPoint[-1] for dataPoint in rootSet]
+        #Terminate case 0: if no feature left, stop splitting.
+        dataCount = len(labelList)
+        featureLenth = len(features)
+        if featureLenth == 0:
+            #print 'Terminate case 0: no feature left to split, return the max(label)'
+            #caculate the most frequent label in labelList
+            #1. sort the labelList O(nlogn)
+            sortedLabelList = sorted(labelList)
+            maxFrequency = 1
+            index = 0
+            frequentLabelIndex = 0 
+            #2. if labelList[i]==labelList[i+l], at most O(n-maxFrequency)
+            while index+maxFrequency < dataCount:
+                if sortedLabelList[index]==sortedLabelList[index+maxFrequency]:
+                    #update the maxFrequency and the frequentLabelIndex
+                    maxFrequency+=1
+                    frequentLabelIndex = index
+                    index+=maxFrequency
+                else:
+                    #skip until a new one, which is not the same with current one
+                    while sortedLabelList[index]==sortedLabelList[index+1]:
+                        index = index +1
+                    #make the index to the first different one
+                    index = index +1 
+            return sortedLabelList[frequentLabelIndex]
+        # Terminate case 1: when all labels are the same, no need to split this node, just return a
+        # leave label node.
+        if labelList.count(labelList[0]) == len(labelList):
+            #print 'Terminate case 1: All labels in this tree are the same, stop splitting'
+            return labelList[0]
+        bestFeatureCol = self.chooseBestFeature(rootSet,features)
+        bestFeatureName = features[bestFeatureCol]
+        tree = {bestFeatureName:{}}
+        del(features[bestFeatureCol])
+        ufValues = set([row[bestFeatureCol] for row in rootSet])
+        for value in ufValues:
+            leftFeatures = features[:]
+        
+    def trainTreeModel(self,trainingFile,features,splitToken=','):
+        dataSet=[]
+        file = open(trainingFile)
+        while 1:
+            line = file.readline()
+            if not line: 
+                break
+            trainVec = line.strip().split(splitToken)
+            dataSet.append(trainVec)
+        self.treeModel = self.buildTree(dataSet,features)
+    
+    def validateModel(self,testFile,features,splitToken=','):
+        dataSet=[]
+        file = open(testFile)
+        rightCount = 0
+        totalCount = 0
+        while 1:
+            line = file.readline()
+            if not line: 
+                break
+            testVec = line.strip().split(splitToken)
+            totalCount+=1
+            if testVec[-1] == self.matchTree(self.treeModel,features,testVec[:-1]):
+                rightCount+=1
+            else:
+                print 'badcase: %s' % ','.join(testVec)
+        if totalCount!=0:
+            print "accuracy= %.4f" %(rightCount/float(totalCount))
+            
+
+def main(argv):
+    trainingFile = ""
+    testFile = ""
+    n = 0
+    impurity = DecisionTree.calcID3 # default is ID3
+    try:
+       if len(argv) < 4:
+           print "too few arguments"
+           exit(-1)
+       trainingFile = argv[1]
+       if os.path.isfile(trainingFile) == False:
+           print "trainingCorpus[%s] does not exist" % trainingCorpus
+           exit(-1)
+       testFile = argv[2]
+       if os.path.isfile(testFile) == False:
+           print "testFile[%s] does not exist" % testFile
+           exit(-1)
+       # number of features
+       n = int(argv[3])
+       if len(argv)==5:
+           if argv[4] == 'ID3':
+               impurity = DecisionTree.calcID3
+           elif argv[4] == "MisRate":
+               impurity = DecisionTree.MisRate
+           elif argv[4] == "Gini":
+               impurity = DecisionTree.calcGini
+
+       decisionTree = DecisionTree(impurity)
+       decisionTree.trainTreeModel(trainingFile,features=range(n),splitToken=',')
+       decisionTree.validateModel(testFile,features=range(n),splitToken=',')
+    except ValueError:
+        print "argument error %s" ",".join(argv)
+
+if __name__ == "__main__":
+    main(sys.argv)

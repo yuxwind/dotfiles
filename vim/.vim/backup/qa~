@@ -1,0 +1,4 @@
+#!/bin/bash
+#source ./cade_env.sh
+#java -jar ../lib/talking-geckos-1.0-jar-with-dependencies.jar $1 2&>err | tee responsefile
+java -jar ../lib/talking-geckos-1.0.jar $1 2&>err | tee responsefile

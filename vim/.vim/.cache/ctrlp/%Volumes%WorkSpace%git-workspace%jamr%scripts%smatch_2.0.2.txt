@@ -1,0 +1,10 @@
+amr.py
+smatch.py
+README.txt
+update_log
+LICENSE.txt
+smatch.py_ori
+smatch-table.py
+test_input1.txt
+test_input2.txt
+sample_file_list

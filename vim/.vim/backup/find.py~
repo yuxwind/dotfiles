@@ -1,0 +1,88 @@
+from skimage import data, io, filters, exposure,img_as_ubyte
+from skimage.color import rgb2gray
+from skimage.feature import blob_dog, blob_log, blob_doh
+from matplotlib import pyplot as plt
+from math import sqrt
+from skimage.morphology import disk
+from skimage.filters.rank import median
+import os,sys 
+import utils
+
+def load_image(filename):
+    img = io.imread(filename)
+    return img
+
+def main(argv):
+    try:
+        if len(argv) < 1:
+            print("too few arguments")
+        #rootFolder = "./test/"
+        #os.mkdir(rootFolder)
+        images = []
+        filenames = []
+        delta = []
+        for filename in os.listdir(argv[1]):
+            suffix = os.path.splitext(filename)[1][1:]
+            print(suffix)
+            if suffix !="jpg":
+                continue
+            filenames.append(filename)
+            filename = os.path.join(argv[1],filename)
+            img = load_image(filename)
+            print(filename)
+            img_gray = utils.preprocess(['',filename])
+            images.append(img_gray)
+        
+        length = len(images)
+        delta.append(images[0]- images[length-1])
+        print(delta[0])
+        delta[0]=map(lambda row: map(lambda x: max(0,x) , row ), delta[0])
+        for row in delta[0]:
+            for pixal in row:
+                if pixal <  0:
+                    print(pixal)
+        deltaFilename = "delta_"+filenames[0]
+        print("delta: %f" % reduce(lambda x,y: max(x,max(y)) ,delta[0] ,0))
+        io.imsave(deltaFilename,delta[0])
+        imageT = io.imread(deltaFilename)
+        image_gray = rgb2gray(imageT)
+        print("reread: %f"  % reduce(lambda x,y: max(x,max(y)) ,image_gray ,0))
+        utils.preprocess(['',deltaFilename])
+        point = utils.getCometsLocationInReport(deltaFilename)
+        print(point)
+        
+        if length > 1:
+            print(images[1])
+            delta.append(images[1]- images[0])
+            print(delta[1])
+            delta[1]=map(lambda row: map(lambda x: max(0,x) , row ), delta[1])
+            deltaFilename = "delta_"+filenames[1]
+            io.imsave(deltaFilename,delta[1])
+            utils.preprocess(['',deltaFilename])
+            point = utils.getCometsLocationInReport(deltaFilename)
+            print(point)
+        if length >2:
+            delta.append(images[2]- images[1])
+            print(delta[2])
+            delta[2]=map(lambda row: map(lambda x: max(0,x) , row ), delta[2])
+            deltaFilename = "delta_"+filenames[2]
+            io.imsave(deltaFilename,delta[2])
+            utils.preprocess(['',deltaFilename])
+            point = utils.getCometsLocationInReport(deltaFilename)
+            print(point)
+        if length >3:
+            delta.append(images[3]- images[2])
+            print(delta[3])
+            delta[3]=map(lambda row: map(lambda x: max(0,x) , row ), delta[3])
+            deltaFilename = "delta_"+filenames[3]
+            io.imsave(deltaFilename,delta[3])
+            utils.preprocess(['',deltaFilename])
+            point = utils.getCometsLocationInReport(deltaFilename)
+            print(point)
+
+    except IOError as ex:
+        print("IO error %s" % ex.strerror)
+
+if __name__ == "__main__":
+    main(sys.argv)
+

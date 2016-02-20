@@ -1,0 +1,8 @@
+smatch_err
+smatch_log
+smatch_err_new
+smatch_log_new
+test.decode.allstages
+test.decode.stage2only
+test.decode.allstages.err
+test.decode.stage2only.err

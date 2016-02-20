@@ -1,6 +1,0 @@
-#!/usr/bin/expect
-set timeout 30
-spawn ssh -l root spark-yarn
-expect "password:"
-send "et8KqMeBW\r"
-interact

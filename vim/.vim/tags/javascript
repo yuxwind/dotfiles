@@ -1,0 +1,25 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+bufferHelper	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^var bufferHelper = require('bufferhelper');$/;"	v	language:JavaScript
+cluster	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^var cluster = require('cluster');$/;"	v	language:JavaScript
+http	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^var http = require('http'),$/;"	v	language:JavaScript
+http	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var http = require('http'),$/;"	v	language:JavaScript
+http	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^var http = require('http'),$/;"	v	language:JavaScript
+lineReader	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var lineReader = require('line-reader');$/;"	v	language:JavaScript
+numCPUs	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^var numCPUs = require('os').cpus().length;$/;"	v	language:JavaScript
+port	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^var port = process.argv[2], proxyDest = process.argv[3]; $/;"	v	language:JavaScript
+port	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var port = process.argv[2], proxyDest = process.argv[3]; $/;"	v	language:JavaScript
+port	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^var port = process.argv[2], proxyDest = process.argv[3]; $/;"	v	language:JavaScript
+proxy	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^var proxy = httpProxy.createProxyServer({});$/;"	v	language:JavaScript
+proxy	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var proxy = httpProxy.createProxyServer({});$/;"	v	language:JavaScript
+proxy	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^var proxy = httpProxy.createProxyServer({});$/;"	v	language:JavaScript
+server	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var server = require('http').createServer(function(req, res) {$/;"	v	language:JavaScript
+server	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^var server = require('http').createServer(function(req, res) {$/;"	v	language:JavaScript
+String	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^String.prototype.startsWith = function(s) {$/;"	c	language:JavaScript
+String	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^String.prototype.startsWith = function(s) {$/;"	c	language:JavaScript
+String	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^String.prototype.startsWith = function(s) {$/;"	c	language:JavaScript
+String.startsWith	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^String.prototype.startsWith = function(s) {$/;"	m	language:JavaScript
+String.startsWith	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^String.prototype.startsWith = function(s) {$/;"	m	language:JavaScript
+String.startsWith	/Volumes/WorkSpace/git-workspace/dummy_token/dummy-token-proxy.js	/^String.prototype.startsWith = function(s) {$/;"	m	language:JavaScript
+urlTools	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var urlTools = require('url')$/;"	v	language:JavaScript
+winston	/Volumes/WorkSpace/git-workspace/dt-proxy/dt-cluster.js	/^var winston = require('winston');$/;"	v	language:JavaScript
+winston	/Volumes/WorkSpace/git-workspace/dt-proxy/dummy-token-proxy.js	/^var winston = require('winston');$/;"	v	language:JavaScript

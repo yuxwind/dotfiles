@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+
+import re,sys
+
+reload(sys) 
+sys.setdefaultencoding('UTF-8')
+
+p = re.compile(r'(?P<label>.*?) \((?P<firstWord>.*?),(?P<secondWord>.*?),.*\)',re.S)
+
+for line in sys.stdin:
+    m = p.match(line)
+    label = m.group('label')
+    firstWord = m.group('firstWord')
+    secondWord = m.group('secondWord')
+    print firstWord+","+secondWord

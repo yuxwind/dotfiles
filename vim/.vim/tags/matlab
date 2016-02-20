@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+cofiCostFunc	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex8/cofiCostFunc.m	/^function [J, grad] = cofiCostFunc(params, Y, R, num_users, num_movies, ...$/;"	f	language:MatLab
+computeCentroids	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/computeCentroids.m	/^function centroids = computeCentroids(X, idx, K)$/;"	f	language:MatLab
+dataset3Params	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex6/dataset3Params.m	/^function [C, sigma] = dataset3Params(X, y, Xval, yval)$/;"	f	language:MatLab
+estimateGaussian	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex8/estimateGaussian.m	/^function [mu sigma2] = estimateGaussian(X)$/;"	f	language:MatLab
+findClosestCentroids	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/findClosestCentroids.m	/^function idx = findClosestCentroids(X, centroids)$/;"	f	language:MatLab
+kMeansInitCentroids	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/kMeansInitCentroids.m	/^function centroids = kMeansInitCentroids(X, K)$/;"	f	language:MatLab
+pca	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/pca.m	/^function [U, S] = pca(X)$/;"	f	language:MatLab
+projectData	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/projectData.m	/^function Z = projectData(X, U, K)$/;"	f	language:MatLab
+recoverData	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/recoverData.m	/^function X_rec = recoverData(Z, U, K)$/;"	f	language:MatLab
+runkMeans	/Volumes/WorkSpace/git-workspace/ml/mlclass-ex7/runkMeans.m	/^function [centroids, idx] = runkMeans(X, initial_centroids, ...$/;"	f	language:MatLab

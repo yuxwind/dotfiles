@@ -1,0 +1,82 @@
+@misc{nips10_tutorial,
+      title={Tutorial: Optimization Algorithms in Machine Learning},
+      howpublished ={\url {http://videolectures.net/nips2010_wright_oaml/}},
+          year={2010}
+}
+
+@misc{momrate,
+    title="Momentum and Learning Rate Adaptation",
+    howpublished ={\url {https://www.willamette.edu/~gorr/classes/cs449/momrate.html}},
+    note = "[Online; accessed 24-Nov-2015]"
+}
+
+@misc{ufldl,
+    title="Optimization: Stochastic Gradient Descent",
+    howpublished ={\url{http://ufldl.stanford.edu/tutorial/supervised/OptimizationStochasticGradientDescent/}},
+    note = "[Online; accessed 24-Nov-2015]"
+}
+
+@inproceedings{ICML13,
+    title={On the importance of initialization and momentum in deep learning},
+    author={Sutskever, Ilya and Martens, James and Dahl, George and Hinton,
+        Geoffrey},
+    booktitle={Proceedings of the 30th international conference on machine
+        learning (ICML-13)},
+    pages={1139--1147},
+    year={2013}
+}
+
+@misc{NAG_recent,
+    title="Accelerated first-order methods",
+    howpublished ={\url{https://www.cs.cmu.edu/~ggordon/10725-F12/slides/09-acceleration.pdf}},
+    note = "[Online; accessed 24-Nov-2015]"
+}
+
+@article{pegasos,
+    title={Pegasos: Primal estimated sub-gradient solver for svm},
+    author={Shalev-Shwartz, Shai and Singer, Yoram and Srebro, Nathan and
+        Cotter, Andrew},
+    journal={Mathematical programming},
+    volume={127},
+    number={1},
+    pages={3--30},
+    year={2011},
+    publisher={Springer}
+}
+
+@misc{adaptive_rate,
+    title="Overview of mini-batch gradient descent",
+    howpublished ={\url{http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf}},
+    note = "[Online; accessed 24-Nov-2015]"
+}
+
+@misc{2nd_order,
+    title="Second Order Optimization Methods",
+    howpublished ={\url{https://ipvs.informatik.uni-stuttgart.de/mlr/marc/teaching/13-Optimization/04-secondOrderOpt.pdf}},
+    note = "[Online; accessed 24-Nov-2015]"
+}
+
+@inproceedings{hession_free,
+  title={Deep learning via Hessian-free optimization},
+  author={Martens, James},
+  booktitle={Proceedings of the 27th International Conference on Machine Learning (ICML-10)},
+  pages={735--742},
+  year={2010}
+}
+
+@misc{initialization,
+    title="Initialization of deep networks",
+    howpublished ={\url{http://deepdish.io/2015/02/24/network-initialization/}},
+    note = "[Online; accessed 24-Nov-2015]"
+}
+
+@inproceedings{Xavier,
+    title={Understanding the difficulty of training deep feedforward neural
+        networks},
+    author={Glorot, Xavier and Bengio, Yoshua},
+    booktitle={International conference on artificial intelligence and
+        statistics},
+    pages={249--256},
+    year={2010}
+}
+

@@ -1,0 +1,7 @@
+[user]
+	name = jiessie
+	email = jiessie.cao@gmail.com
+[color]
+	ui = true
+[core]
+	excludesfile = /Users/Jiessie/.gitignore

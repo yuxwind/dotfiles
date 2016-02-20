@@ -1,0 +1,19 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal fdm=expr
+setlocal fde=getline(v:lnum-1)=~'-\\{80}'?'>2':getline(v:lnum-1)=~'=\\{80}'?'>1':getline(v:lnum)=~'=\\{80}'?'0':getline(v:lnum)=~'-\\{80}'?'1':'='
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+let s:l = 50 - ((14 * winheight(0) + 9) / 19)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+50
+normal! 033|
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

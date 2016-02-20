@@ -1,0 +1,9 @@
+from sunpy.net.helioviewer import HelioviewerClient
+import matplotlib.pyplot as plt
+from matplotlib.image import imread
+hv = HelioviewerClient()
+file = hv.download_jp2('2012/07/03 14:30:00', "image-test", sourceId = 4,observatory='SOHO', instrument='LASCO', detector='C2', measurement='white-light')
+im = imread(file)
+plt.imshow(im)
+plt.axis('off')
+plt.show()

@@ -1,0 +1,5 @@
+#/bin/bash
+./clean.sh
+python find.py ../data/20150820_113833
+mkdir delta
+mv delta*.jpg delta

@@ -1,0 +1,142 @@
+\documentclass[11pt,fullpage,letterpaper]{article}
+\usepackage{url}
+\usepackage{amsmath,amsthm,enumitem}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage[top=0.5in, bottom=1in, left=1in, right=1in]{geometry}
+\graphicspath{ {./image/} }
+
+\newcommand{\var}{\text{Var}}
+\newtheorem*{claim}{Claim}
+\newcommand{\semester}{Fall 2015}
+\newcommand{\dueDate}{Oct 29, 2015}
+
+\newcommand{\bx}{{\bf x}}
+
+\title{CS 5350/6350: Machine Learining \semester \\  
+Intermediate Report \\
+Discovering New Comets in SOHO Images}
+
+\author{Guannan Wei, Jie Cao}
+\date{
+  Due date: \dueDate}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+{\Large \item Progress}
+
+\begin{enumerate}
+\item  \textbf{Data Collection}
+
+We will use confirmed comets and its images as training and testing data.
+
+In the home page of Sungrazer Project\cite{reportArchive}, we can find all reports of comets reported by astronomy amateurs from year 2000. These reports can be roughly classified into six categories: potential comet, correction of previous report, retraction of previous report, confirmation a report (by administrator), known comet entering, possible fragment. To collect the training data, what we need to focus on is potential comet report and confirmation of report.
+
+A potential comet report is like this\cite{comets201509}:
+
+\begin{lstlisting}[basicstyle=\small, frame=shadowbox]
+Sep 02 2015 01:58:52
+Potential comet:
+Images: C3; 1024x1024 images.
+(0,0) Upper Left.
+2015-09-02
+Kreutz group comet.
+04:30  623  570
+04:42  621  568
+04:54  619  567
+05:06  617  566
+--Vladimir Bezugly
+\end{lstlisting}
+
+A potential report has a lot of useful information. For example, the date and time of images, the telescope which take the image, the size of image, and most importantly, the coordinates potential comet in the image with a timestamp.
+
+A confirming comet report by the administrator is like this\cite{comets201509}:
+ 
+\begin{lstlisting}[basicstyle=\small, frame=shadowbox]
+Confirming comet of:
+Images: C3; 20150828     06:55:03
+Kreutz group comet.
+--Peiyuan Sun
+\end{lstlisting}
+
+Firstly, we extract all confirmation of report from web pages. Since only the potential report have the coordinates of comet, we need to find the original report by the confirmation report date. From the original report, we parse it and extract all coordinates and time of image as the user reported, then we can assemble these information as a url to download the image from SOHO's image repository website.
+
+We have wrote a Python script to automatically download training and testing images.
+
+\item \textbf{Potential Features}
+\begin{enumerate}
+\item \textbf{Date, Coordinates, Moving Pah}
+
+Different time of the year,  the position of comets shown in the image satisfy some specified pattern \cite{comets_pattern}. For example, in Oct and Nov, comets will show in the four quadrant of the image, but in June and July, they will show in the third quadrant. What' more, comets will always move towards the sun in the image because of the gravity.
+
+\item \textbf{The Moving Speed}
+
+In different time, the moving speed of comets also have some patterns to follow. Additionally, in different direction X,Y, comets will have different speed.
+
+\item \textbf{The Intensity}
+
+For above features, some comets may be recognized. But some of the noise point may occurrently satisify the same pattern.  Then we can use the changing of intensity to distinguish them. What's more, real comets often blur, but noise point often shine or in high intensity.
+
+\end{enumerate}
+
+\item \textbf{Image Processing and Feature Extraction}
+
+Feature Extracting involves 2 phrases. Phrase 1: Denoising and object detection for any single images. 
+Phrase 2: For the remained objects in the image, we will need to analysis the moving pattern to figure out the potential comets.  Now we mainly finished part of the phrase 1 for the following work.
+\begin {enumerate}
+\item \textbf{Denoise} \\
+First, for easy computing, we transform the simple RGB image into Gray image, and 
+For denoising, we simple using median filter \cite{1} to remove the random noise in the image.
+However, now simply median filter  is still every hard to distinguish the background star, the noise, and potential comets.  We are planning to remove the corona and background star first, and then we can use other potential features to distingush the comets. 
+
+\item \textbf{Intensity Blob Detection} \\
+Blobs are bright on dark or dark on bright regions in an image. We try to use this method to find the potention objects. However as the image is not cleaned throughly, among the results of 3 algorithm on blob detection. Now we found the Laplacian of Gaussian method \cite{2} is the best as follows.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[height=3in]{LaplacianofGaussian.jpg}
+\caption{SOHO Image Sample with comets}
+\label{SOHO}
+\end{center}
+\end{figure}
+
+\end {enumerate}
+\end{enumerate}
+
+{\Large \item Future Plan} 
+
+\begin{enumerate}
+    \item Identify background stars and exclude them. Here we have two methods to do this.
+    \begin{enumerate}
+    \item Since the SOHO satellite is at the L1 point, so at a specific time we can calculate the ecliptic longitude of Sun, then we can obtain the sky area which the LASCO telescope aimed to at that time, and get the background stars in that area.
+
+    \item Since the images we get from the report is roughly consecutive, that is the time interval of two images is range from 12 minutes to 1 hour. If we know how far in this interval the SOHO move on its orbit, we can also know how far these background stars move in two images. Then we have a overlap that two images share some background stars, now we can only deal with the overlaped area and exclude the same star, and discard other area (they are relatively very small).
+    \end{enumerate}
+
+<<<<<<< HEAD
+    \item Identify potential comets noisy data using the potential feature mentioned above
+=======
+    \item Identify potential comets noisy data.
+    To do this, a challenge is to identify same object in two or more images. After this, we can extract features and apply our learning algorithm.
+>>>>>>> 2e03aaa92ac4077119afaf7e695ab303cc624c94
+    
+\end{enumerate}
+
+%\begin{figure}[htbp]
+%\begin{center}
+%\includegraphics[height=3in]{1.jpg}
+%\caption{SOHO Image Sample with comets}
+%\label{SOHO}
+%\end{center}
+%\end{figure}
+
+\end{enumerate}
+\renewcommand\refname{Reference}
+\bibliographystyle{plain}
+\bibliography{ref}
+\nocite{*}
+\end{document}
+
+\end{document}
+
