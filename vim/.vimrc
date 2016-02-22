@@ -118,9 +118,6 @@
 "   > vimux - https://github.com/benmills/vimux
 "     Easily interact with tmux from vim
 "     info -> :help vimux.txt
-"   > markdown-preview - https://github.com/swaroopch/vim-markdown-preview
-"     Select Markdown text, render to HTML and preview in browser
-"     info -> https://github.com/swaroopch/vim-markdown-preview/blob/master/README.md
 "   > unite-outline - https://github.com/h1mesuke/unite-outline
 "     Provide your Vim's buffer with the outline view
 "     info -> :help unite-outline.txt
@@ -139,9 +136,6 @@
 "   > vim-startify - https://github.com/mhinz/vim-startify
 "     Provide a good start screen for vim
 "     info -> :help startify.txt
-"   > vim-speeddating - https://github.com/tpope/vim-speeddating
-"     Use CTRL-A/CTRL-X to increment dates, times, and more
-"     info -> :help speeddating.txt
 "   > vim-multiple-cursors - https://github.com/terryma/vim-multiple-cursors
 "     Provide Sublime Text's awesome multiple selection feature to vim
 "     info -> :help multiple_cursors.txt
@@ -346,32 +340,55 @@ if has('python')
 endif
 
 " Automatic Helper
+" automatic quotes
 Bundle 'Raimondi/delimitMate'
-Bundle 'tpope/vim-speeddating'
+
+" automatically complete 
 Bundle 'Valloric/YouCompleteMe'
+
+" locationlist and quickfix
 Bundle 'Valloric/ListToggle'
+
+" syntax error
 Bundle 'scrooloose/syntastic'
 
 " Language related
+" ruby on rails 
 Bundle 'tpope/vim-rails'
+
+" preview markdown in browser <leader> P
 Bundle 'swaroopch/vim-markdown-preview'
+
+" automatic finds and insert URLs for links in Markdown
 Bundle 'sampsyo/autolink.vim'
+
 Bundle 'LaTeX-Box-Team/LaTeX-Box'
-Bundle 'juvenn/mustache.vim'
+
+" mustache abbreviation and handlebars
+Bundle 'mustache/vim-mustache-handlebars'
+" better json for vim
 Bundle 'elzr/vim-json'
+" dynamic CSS
 Bundle 'groenewege/vim-less'
-Bundle 'iamcco/markdown-preview.vim'
 
 " Others
 if executable('ctags')
     Bundle 'xolox/vim-easytags'
 endif
+
+" Outline buffer
 Bundle 'h1mesuke/unite-outline'
+
+" support repeating for other plugins
 Bundle 'tpope/vim-repeat'
 Bundle 'jistr/vim-nerdtree-tabs'
+" auto reload
 Bundle 'xolox/vim-misc'
+
+" disable arrowkeys and hjkl, just using character-wise navigation
 Bundle 'wikitopian/hardmode'
-Bundle 'marksim/vim-octopress'
+
+" generate doxygen group
 Bundle 'vim-scripts/DoxygenToolkit.vim'
 Bundle 'vim-scripts/a.vim'
 " Local bundles if avaiable
@@ -467,10 +484,18 @@ vmap <Tab> %
 set number " Show line numbers
 " Toggle relativenumber
 function! ToggleRelativenumber()
-    if &number==1
-        set relativenumber
-    else
-        set number
+    if (&relativenumber==1 && &number==1)
+        set nonu
+        set nornu
+    elseif(&relativenumber==0 && &number==0)
+        set nu
+        set nornu
+    elseif(&relativenumber==0 && &number==1)
+        set nonu
+        set rnu
+    elseif(&relativenumber==1 && &number==0)
+        set nu
+        set rnu
     endif
 endfunction
 nnoremap <Leader>n :call ToggleRelativenumber()<CR>
@@ -736,8 +761,8 @@ vnoremap j gj
 vnoremap k gk
 
 " Navigation one line
-noremap <C-a> <Home>
-noremap <C-e> <End>
+noremap <C-A> <Home>
+noremap <C-E> <End>
 
 " Navigation between windows
 nnoremap <C-J> <C-W>j
@@ -984,6 +1009,8 @@ endif
 " => EasyTags
 "--------------------------------------------------
 
+" Outline buffer
+
 function! InitializeTagDirectory()
     let parent=$HOME
     let prefix='.vim'
@@ -1076,7 +1103,4 @@ filetype indent on
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
-
-" markdown-preview
-let vim_markdown_preview_browser='Google Chrome'
 

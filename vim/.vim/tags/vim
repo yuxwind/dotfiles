@@ -16,8 +16,8 @@ $PATH	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/tex.vim	/^let $PAT
 /	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap \/ \/\\v$/;"	m	language:Vim
 /	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap \/ \/\\v$/;"	m	language:Vim
 <	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^vnoremap < <gv$/;"	m	language:Vim
-<C-a>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^noremap <C-a> <Home>$/;"	m	language:Vim
-<C-e>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^noremap <C-e> <End>$/;"	m	language:Vim
+<C-A>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^noremap <C-A> <Home>$/;"	m	language:Vim
+<C-E>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^noremap <C-E> <End>$/;"	m	language:Vim
 <C-G>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <silent> <C-G> <Plug>GoldenViewSwitchToggle$/;"	m	language:Vim
 <C-H>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nmap <silent> <C-H> <Plug>GoldenViewNext$/;"	m	language:Vim
 <C-J>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <C-J> <C-W>j$/;"	m	language:Vim
@@ -231,7 +231,6 @@ TTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/comp
 TVTarget	/Volumes/WorkSpace/git-workspace/dotfiles/.vim/ftplugin/latex-suite/compiler.vim	/^com! -nargs=1 TVTarget :call Tex_SetTeXCompilerTarget('View', <f-args>)$/;"	c	language:Vim
 Vaa	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap Vaa ggVG$/;"	m	language:Vim
 vaa	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap vaa ggvGg_$/;"	m	language:Vim
-vim_markdown_preview_browser	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^let vim_markdown_preview_browser='Google Chrome'$/;"	v	language:Vim
 VSetSearch	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^function! s:VSetSearch()$/;"	f	language:Vim
 \<Space>	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\<Space> :call IsWhiteLine()<CR>$/;"	m	language:Vim
 \h	/Volumes/WorkSpace/Users/Jiessie/.vimrc	/^nnoremap <silent>\\h :colorscheme hybrid<CR>$/;"	m	language:Vim

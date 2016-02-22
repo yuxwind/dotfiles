@@ -1,0 +1,269 @@
+\documentclass[addpoints]{exam}
+\usepackage{amsmath,amsthm,amssymb,url}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{tkz-berge}
+\graphicspath{ {./images/} }
+
+
+\newtheorem{lemma}{Lemma}[section]
+\newcommand{\var}{\text{Var}}
+\title{CS 6968: Algorithms and Approximation, HW1}
+\date{Due Date:  Jan 28, Jie Cao, u1012011}
+\begin{document}
+\maketitle
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{\centering
+This assignment has \numquestions\ questions, for a total of \numpoints\
+points.
+Unless otherwise specified, complete and reasoned arguments will be
+expected for all answers. 
+}}}
+\end{center}
+
+\qformat{Question \thequestion: \thequestiontitle\dotfill \textbf{[\totalpoints]}}
+\pointname{}
+\bonuspointname{}
+\pointformat{[\bfseries\thepoints]}
+
+\printanswers 
+
+\begin{center}
+  \gradetable
+\end{center}
+\newpage
+
+
+
+\begin{questions}
+
+\titledquestion{Local Search for Max-Cut}[5]
+Recall the local search algorithm for the Max-Cut problem (lecture 1). Construct a graph and a starting partition for which the algorithm terminates with a cut of size $\leq$ (1/2) the size of the maximum cut.
+\begin{solution}
+According the local search algorithm, for every vertex u, at least half of its degree cross to the cut. Hence, for any input, we can get a $ALG(I) \geq  1/2 |E| \geq 1/2 OPT(I)$,
+\[ALG(I) \geq 1/2 OPT(I)\]
+Now, we want to get a cut of size $ALG(I) \leq 1/2OPT(I)$, hence, i.f.f \[ALG(I) = 1/2 OPT(I) \quad and \quad OPT(I) = |E|\]
+Easy to find that A complete bipartite graph has a $ OPT(I) = |E|$, hence, we just need to offer a init state for this complete bipartite graph to ensure that every vertex has \textbf {exactly half of its degree} contribute cross the cut. Think of \textbf{a complete bipartite graph} with the minimum even number cross edges 2. \\
+\textbf{MAX-CUT of Complete Bipartite Graph} \\
+For example, the MAX-CUT of a \textbf{complete bipartite graph} is \{a0,a1\}\{b0,b1\} with 4 crossed edges {a0b0,a0b1,a1b0,a1b1}, as the following left graph. \\
+\textbf{Local Search Result of Complete Bipartite Graph} \\
+For simple, we show the init state which is also the end state by the local search algorithm. By groups {a0,b0}{a1,b1}, for every vertex in these 2 groups, all of them have only 1 edge crossed and 1 edge in their own group, which meet the requirement of local search. Hence, by local search, the right initial graph is also the end state of local search algorithm. Finally, the cut of the right graph  is 2, exactly $1/2$ of the MAX-CUT\\
+\begin{center}
+\begin{tikzpicture}
+\begin{scope}[rotate=270]
+       \SetVertexMath
+        \grEmptyPath[Math,prefix=b,RA=2,RS=2]{2}
+       \grEmptyPath[Math,prefix=a,RA=2,RS=0]{2}
+       \EdgeFromOneToSel{a}{b}{0}{0,1}
+       \EdgeFromOneToSel{a}{b}{1}{0,1}
+ \end{scope}
+\end{tikzpicture} 
+\hspace{1cm}
+\begin{tikzpicture}
+       \SetVertexMath
+        \grEmptyPath[Math,prefix=b,RA=2,RS=2]{2}
+       \grEmptyPath[Math,prefix=a,RA=2,RS=0]{2}
+       \EdgeFromOneToSel{a}{b}{0}{0,1}
+       \EdgeFromOneToSel{a}{b}{1}{0,1}
+\end{tikzpicture} 
+\end{center}
+\end{solution}
+
+\titledquestion{Greedy for Set Cover}[5]
+Now consider the greedy algorithm for the Set Cover problem. Construct an instance with N topics, for which the output of the greedy algorithm is $\Omega(log N )$ factor worse than the optimum.Hint: think of N as a power of 2 and generalize the construction in the following figure (dots are topics..)
+\begin{figure}[H]
+\centering
+         \includegraphics[height=1.5in]{1.png}
+	\caption {dots are topcis}
+\label{fig:origin}
+\end{figure}
+\begin{solution}
+As the greedy algorithm described, at step $j$ say we have $U_j$ uncoverd, then run for T steps 
+\[U_{j+1} \leq U_{j} - U_{j}/k\]
+\[|U_T| \leq (1-1/k)^Tn< n\cdot e^{-T/k} = n \cdot e^{-\log n} = 1\]
+it means the number of iteration $T<= k \cdot \log(n) = OPT \cdot \log(n) = OPT\cdot O(\log n)$ \\
+Now we want $T=OPT\cdot \Omega(\log n)>=OPT \cdot \log n$ 
+then exactly $T = \log n$. \\
+Hence, according to the process, we can construct an generalized instance by choose experts every steps who can exactly cover $U_j/k$ topics, where k is the OPT.
+\[|U_T| = (1-1/k)^TN\]
+For simple, we can make $k= 2$, and N is a power of 2, then it proved by $T = 2 = OPT \cdot \log 2$
+
+\end{solution}
+
+\titledquestion{Vertex Cover}
+The vertex cover problem is defined as follows. We have a graph G = (V, E), and the goal is to pick the smallest subset S of the vertices, such that for every edge $e \in E$, at least one of its endpoints is in S.
+\begin{parts}
+  \part[2] Show that the vertex cover problem is a special case of the Set Cover problem.
+  \begin{solution}
+	Think every edge $e \in E$ is an universe element in Set Cover, in that U = E. Then we will define n subsets S of U as follows: label the vertices of G from 1 to n, and let $S_i$ be the set of edges that attach to vertex i (the edges for which vertex i is an end-point), then $S_i$ ? U for all i.  \\
+	Now, the goal of vertex cover is to find the smallest subset C of some of the $S_i$, to make C cover the whole U(all the edges). Easy to note that,  the goal set S of vertex cover is all the vertex $i$ of $S_i$ in collection C, which is also the smallest one. What's more, the $S_i$ is all edges attached with vertex i, which means it meet the condition of "at least one of its endpoints in S" . Hence, Vertex Cover is a special case for Set Cover problem.
+	 \end{solution}
+  
+  \part[3]  Consider any maximal matching in the graph. Suppose M is the set of edges in this matching. First prove that the set of all end points of the edges in M give a vertex cover. Second, prove that any vertex cover must have size $\geq$ M. How does this lead to an approximation algorithm for vertex cover? What is the approximation factor?
+  
+\begin{solution}
+We can proof it by contradiction. If it($V_M$) does not give a vertex cover, which means there exist a edge $e \in E$, none of its endpoints is in $V_M$. Then we can simply add this edge in M to form a new $V_M$ to towards a vertex cover. However, it contradict with maximal matching M. Hence, the set of all end points of the edges in M give a vertex cover.  \\
+
+Proof $ OPT(I) \geq |M|$.
+As proofed before, since the optimum vertex cover OPT(I) must cover every edge in M. Hence, it must contain at least one of the endpoints of each edge in M. Also in a matching, no two edges in M share a vertex. Hence, 
+\[OPT(I) \geq |M|\]
+
+By finding the maximum matching M of a graph G, and then return the set of endpoints of all edges in M. This algorithm can find a vertex cover \[ALG(I) = 2|M| \leq 2 OPT(I)\]
+Hence, the approximation factor is 2.
+
+\end{solution}
+ \part[5] Consider the ILP for the vertex cover problem, in which we have variables $x_i$ for the vertices i, and for every edge $ij$, we have a constraint $x_i + x_j \geq 1$. Now consider the LP relaxation (so $x_i$ are allowed to be fractional, in the interval [0,1]). What can we say about max\{$x_i,x_j$\} for an edge ij? Give a rounding algorithm that leads to an approximation factor of 2.
+ \begin{solution}
+  max\{$x_i,x_j$\} for an edge ij is an approximation factor of 2\\
+ First, S is a vertex cover.
+ for every edge ij, $x_i+x_j\geq 1$, and thus either $x_i'\geq 1/2$ or $x_j' \geq 1/2$. Hence, for every edge ij, at least one of i,j will be in S. S is a vertex cover.  \\
+ Second, approximation factor.
+ \[OPT(I) = \sum_{i} w_i x_i' \geq 1/2 \sum_{i \in S} w_i \]
+
+ \end{solution}
+ 
+\end{parts}
+
+
+
+\titledquestion{Maximum Gap}[0]
+
+Suppose we pick n random numbers in the interval [0,1], what is the maximum gap between successive numbers? Can you give upper and lower bounds for this quantity, with high probability?(Hint: divide the interval into equal sized parts, and do a balls and bins style analysis. The lower bound is more tricky..)
+\begin{solution} 
+a little confused, can number be the same?  need with highest probability?
+then the upper bound of maximum gap can be 1, when all n numbers $\in \{0,1\}$ \\
+and the lower bound of maximum gap can be 0, when all n numbers are the same. \\
+
+to with highest probability, //TODO
+\end{solution}
+
+\titledquestion{Markov Inequality}
+Markov's inequality states that for a non-negative random variable X, for any t > 0, we have
+\[Pr[X> t E[X]] \leq 1/t\]
+\begin{parts}
+\part[5] Give a short proof
+\begin{solution}
+make $y = \frac{X}{E(X)}$
+\[
+\begin{aligned}
+E(Y) = \int_{0}^{\infty} y f(y)dy \\
+	& =  \int_{0}^{t} yf(y)dy +  \int_{t}^{\infty}yf(y)dy  \\
+	& \geq \int_{t}^{\infty} y f(y)dy  \\
+	& \geq \int_{t}^{\infty} t f(y)dy \\
+	& = t P(Y>t) \\
+	P(Y>t) \leq E(Y)/t \\
+	E(Y) = E(\frac{X}/E(X)) = 1 \\
+	Pr[X> t E[X]] \leq 1/t
+\end{aligned}
+\]
+\end{solution}
+
+\part[5] Markov's inequality is used typically with t > 1, i.e., to say that the likelihood that a random variable is much larger than its expectation is small. Can we also say that a non-negative random variable is not smaller than its expectation with reasonable probability? I.e., does the following hold:
+\[Pr[X> (1/10)E[X]] < 1/1000\]
+If so, prove it. if not, give a counterexample.
+\end{parts}
+\begin{solution}
+make $y = \frac{E(X)}{x}$, where x non-negaitve, also $x \neq  0$  and $E(Y)=1$
+\[
+\begin{aligned}
+Pr(X<(1/t)E(X)) & = Pr(y>t) \\
+	    &\leq \frac{E(Y)}{t} \quad Markov Inequality \\
+	    & = \frac{1}{t}
+\end{aligned}
+\]
+Hence, in this case, t = 10, \[Pr(X<(1/t)E(X)) \leq 1/10\] is not always right for $< 1/1000$.
+A counter exmaple is uniform distribution $U(0,1)$, then 
+\[Pr(X<(1/t)E(X)) = Pr(X<(1/10)(1/2)) = Pr(X<1/20) = 1/20 >1/1000 \]
+\end{solution}
+
+\titledquestion{ILP for Max-Cut}
+Let us examine the trick we used to write Max-Cut as an ILP. The key was to introduce new variables $x_uv$ for every pair of vertices u,v, along with the variables $x_u$,$x_v$, and imposing the following constraints:
+\[x_{uv} \in \{0,1\}; \quad x_{uv} \leq x_{u};\quad x_{uv} \leq x_{v} ; \quad 1- x_{u} - x_{v} +x_{uv} \geq 0\]
+\begin{parts}
+\part[5] Prove that for any 0/1 values of $x_u$ and $x_v$, the constraints above force $x_{uv}$ totake the value $x_u \ddot x_v$.
+\begin{solution}
+Write the MAXCUT into ILP.
+we want to maximize the E(V1,V2) (the edges between subset V1, V2.). 
+\begin{align*}
+& \max \sum_{u,v adjacent} w_{uv} x_{uv} (x_u\ and\  x_v\  is\  different)\\
+subject\ to  \\
+& x_u \in \{0,1\} \\
+\end{align*}
+Now we need to design the variable $x_{uv}$ with the constraints.
+we want $x_{uv}$ can present $x_u$ and $x_v$ is different.
+According the constraits,\\
+when $x_u = x_v = 1$, then $x_{uv} = 1$. \\
+when $x_u = x_v = 0$, then $x_{uv} = 0$. \\
+when $x_u= 1,x_v = 0$, then $x_{uv} = 0$ \\
+when $x_u= 0,x_v = 1$, then $x_{uv} = 0$ \\
+if we want to present the $x_{uv}$ a function of $x_u and x_v$.  
+First, considering linear function,  $x_{uv} = c+ a x_u + b x_v$
+\[
+  \left \{
+	\begin{aligned}
+	1 = c+ a + b \\
+	0 = c \\
+	0 = c+  a \\
+	0 = c + b \\
+	\end{aligned}
+	\right.
+\] 
+then there is no solution for above constraints.\\
+Now try second order function. $x_{uv} = a x_u^2 + b x_v ^ 2 + c x_u x_v +dx_u + e x_v + f$
+ \[
+  \left \{
+	\begin{aligned}
+	1 = a + b + c + d +e + f\\
+	0 = f \\
+	0 = a+d+f \\
+	0 = b+e+f \\
+	\end{aligned}
+	\right.
+\] 
+ we can get 
+\[
+  \left \{
+	\begin{aligned}
+	a + d = 0 \\
+	b + e =0 \\
+	f = 0 \\
+	c = 1\\
+	\end{aligned}
+	\right.
+\] 
+Hence,
+\[x_{uv} = x_u x_v\]
+It is enough to present the difference of u and v, of course it can try high order function. such as $x_u^2x_v$ like this. However for $x_u, x_v \in {0,1}$ and $x_u^n = x_u$, so we only need to consider the first order and second order, higher order solution is meaningless.
+\end{solution}
+
+\part[5] Suppose we introduce variables $x_{uvw}$ for every triple u,v,w of vertices (along with $x_{uv}$'s as above). Can we give linear constraints (along with $x_{uvw}$ $\in$ \{0,1\}) that force $x_{uvw}$ to take the value $x_ux_vx_w$?
+\begin{solution}
+Consider tree vertices u,v,w, in order to force to $x_{uvw} = x_ux_vx_w$,
+then $x_{uvw} = 1$, only when all is 1, otherwise is 0. We can think of boolean algebra.
+Then we can have following constraints
+\[
+\begin{aligned}
+x_{uvw} \in {0,1}; \\
+x_{uvw} \leq x_u ;x_{uvw} \leq x_v ;x_{uvw} \leq x_w ;\\
+x_{uvw} \leq x_{uv} ; x_{uvw} \leq x_{vw} ; x_{uvw} \leq x_{uw} ;\\
+(1-x_u)(1-x_v)(1-x_w) = 1-x_ux_vx_w + x_{uv}+x_{vw}+x_{uw}- x_u-x_v-x_w\geq 0
+\end{aligned}
+\]
+
+
+\end{solution}
+\end{parts}
+
+
+\end{questions}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

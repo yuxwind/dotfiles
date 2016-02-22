@@ -1,0 +1,24 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+CMD="edu.utah.cs.learnlab.core.Main"
+
+CP=""
+CP=$CP:$SCRIPT_DIR/../manager/target/scala-2.11/classes
+CP=$CP:$SCRIPT_DIR/../core/target/scala-2.11/classes
+CP=$CP:$SCRIPT_DIR/../wordstock/target/scala-2.11/classes
+CP=$CP:$SCRIPT_DIR/../jstruct/target/scala-2.11/classes
+
+
+for file in `find $SCRIPT_DIR/../lib_managed | grep '.jar$'`; do
+   CP=$CP:$file
+done
+
+MEMORY="-J-Xmx20g"
+
+time nice scala $MEMORY -cp $CP $CMD ${1+"$@"}
+
+# See
+# https://stackoverflow.com/questions/743454/space-in-java-command-line-arguments
+# for the reason for the weird ${1+"$@"} at the end.
+
