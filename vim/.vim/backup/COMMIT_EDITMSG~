@@ -1,11 +1,27 @@
+add ConstituentVariable, ConceptLabel, RelationVariable, RelationLabel, and
+check expandedConstituent has 0.77 recall, 0.21 precise. 
+TODO: Propbank to handle verb. Other special Entities. improve the precise.
 
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
-# On branch master
+# On branch amr
 # Changes to be committed:
-#	new file:   HADOOP-9648.v2.patch
-#	modified:   hadoop-common-project/hadoop-common/src/main/native/src/org/apache/hadoop/security/JniBasedUnixGroupsNetgroupMapping.c
-#	modified:   hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/native/container-executor/impl/configuration.c
-#	modified:   hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/native/container-executor/impl/container-executor.c
-#	modified:   hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-nodemanager/src/main/native/container-executor/test/test-container-executor.c
+#	modified:   project/Build.scala
+#	modified:   research/src/main/scala/edu/utah/cs/learnlab/amr/data/AMRDataset.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/data/AMRView.scala
+#	modified:   research/src/main/scala/edu/utah/cs/learnlab/amr/experiments/AMRExperiment.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/features/AMRFeatureExtractor.scala
+#	modified:   research/src/main/scala/edu/utah/cs/learnlab/amr/inference/ilp/VariableGenerators.scala
+#	renamed:    research/src/main/scala/edu/utah/cs/learnlab/amr/data/AMRAnnotation.scala -> research/src/main/scala/edu/utah/cs/learnlab/amr/learning/AMRExample.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/learning/ConceptLabel.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/learning/ConstituentVariable.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/learning/RelationLabel.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/learning/RelationVariable.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/learning/Variable.scala
+#	new file:   research/src/main/scala/edu/utah/cs/learnlab/amr/utils/JaroWinklerMetric.scala
+#	modified:   research/src/main/scala/edu/utah/cs/learnlab/amr/utils/Node.scala
+#	deleted:    research/src/test/scala/edu/utah/cs/learnlab/amr/data/AMRAnnotationSpec.scala
+#	modified:   research/src/test/scala/edu/utah/cs/learnlab/amr/data/AMRDatasetSpec.scala
+#	new file:   research/src/test/scala/edu/utah/cs/learnlab/amr/learning/AMRExampleSpec.scala
+#	modified:   wordstock/src/main/scala/edu/utah/cs/learnlab/wordstock/core/DGView.scala
 #

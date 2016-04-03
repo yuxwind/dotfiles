@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Volumes/WorkSpace/Eclipse/java_test/.settings'
 let g:netrw_dirhist_2='/Volumes/WorkSpace/Users/Jiessie/.rvm/log'
 let g:netrw_dirhist_3='/Volumes/WorkSpace/Users/Jiessie/.rvm/log/ruby-1.9.3-p429'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Volumes/WorkSpace/Users/Jiessie/.rvm/log'
 let g:netrw_dirhist_5='/Volumes/WorkSpace/Users/Jiessie/.rvm/log/ruby-1.9.3-p429'
 let g:netrw_dirhist_6='/Volumes/WorkSpace/git-workspace/octopress/.themes/classic'
 let g:netrw_dirhist_7='/Volumes/WorkSpace/vim74/src'
+let g:netrw_dirhist_8='/Volumes/WorkSpace/Users/Jiessie/dotfiles/.git'

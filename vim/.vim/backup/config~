@@ -2,10 +2,10 @@ Host github.com
     IdentityFile ~/.ssh/id_rsa
     User jiessie.cao@gmail.com
 
-Host do-vps
-    IdentityFile ~/.ssh/id_rsa
-    User root
-
 Host lab1-1.eng.utah.edu
     IdentityFile ~/.ssh/id_rsa
     User jiec
+
+Host psmith.cs.utah.edu
+    IdentityFile ~/.ssh/id_rsa
+    User jcao

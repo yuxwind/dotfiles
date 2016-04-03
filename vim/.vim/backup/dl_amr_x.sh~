@@ -1,0 +1,22 @@
+#!/bin/bash
+set -ueo pipefail
+
+if [ $# != 1 ]; then
+    echo "./dl_amr_x.sh versionNumber"
+    exit 1; 
+fi
+version=$1
+echo $version
+# Source config script
+LEARNLAB_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )/../.." > /dev/null && pwd )"
+
+mkdir -p "$LEARNLAB_HOME/data/AMR-Bank-v"$version
+pushd "$LEARNLAB_HOME/data/AMR-Bank-v"$version
+for split in training dev test; do
+    file=amr-bank-struct-v$version-$split.txt
+    if [ ! -f $file ]; then
+        wget http://amr.isi.edu/download/$file
+    fi
+done
+popd
+# "${LEARNLAB_HOME}/scripts/TRAIN.sh"

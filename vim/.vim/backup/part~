@@ -1,0 +1,100 @@
+# AMR release; corpus: lpp; section: training; number of AMRs: 1274 (generated on Fri Sep 11, 2015 at 17:11:29)
+
+# ::id lpp_1943.289 ::date 2012-11-18T16:26:36 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 7 .
+# ::zh VII。
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_289.txt
+# ::tok Chapter 7 .
+# ::alignments 0-1|0 1-2|0.0 ::annotator Aligner v.02 ::date 2016-03-03T05:59:43.900
+# ::node	0	chapter	0-1
+# ::node	0.0	7	1-2
+# ::root	0	chapter
+# ::edge	chapter	mod	7	0	0.0	
+(c / chapter :mod 7)
+
+# ::id lpp_1943.290 ::date 2012-11-18T16:26:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt On the fifth day -- again , as always , it was thanks to the sheep -- the secret of the little prince 's life was revealed to me .
+# ::zh 第五天，还是羊的事，把小王子的生活秘密向我揭开了。
+# ::save-date Thu Apr 18, 2013 ::file lpp_1943_290.txt
+# ::tok On the fifth day -- again , as always , it was thanks to the sheep -- the secret of the little prince 's life was revealed to me .
+# ::alignments 26-27|0 8-9|0.5 5-6|0.4 3-4|0.3 18-19|0.1 24-25|0.1.0 22-23|0.1.0.0 21-22|0.1.0.0.0 15-16|0.0 12-13|0.0.0 ::annotator Aligner v.02 ::date 2016-03-03T05:59:44.042
+# ::node	0	reveal-01	26-27
+# ::node	0.0	sheep	15-16
+# ::node	0.0.0	thank-01	12-13
+# ::node	0.1	secret	18-19
+# ::node	0.1.0	life	24-25
+# ::node	0.1.0.0	prince	22-23
+# ::node	0.1.0.0.0	little	21-22
+# ::node	0.2	i	
+# ::node	0.3	day	3-4
+# ::node	0.3.0	ordinal-entity	
+# ::node	0.3.0.0	5	
+# ::node	0.4	again	5-6
+# ::node	0.5	always	8-9
+# ::root	0	reveal-01
+# ::edge	day	ord	ordinal-entity	0.3	0.3.0	
+# ::edge	life	poss	prince	0.1.0	0.1.0.0	
+# ::edge	ordinal-entity	value	5	0.3.0	0.3.0.0	
+# ::edge	prince	mod	little	0.1.0.0	0.1.0.0.0	
+# ::edge	reveal-01	ARG0	sheep	0	0.0	
+# ::edge	reveal-01	ARG1	secret	0	0.1	
+# ::edge	reveal-01	ARG2	i	0	0.2	
+# ::edge	reveal-01	mod	again	0	0.4	
+# ::edge	reveal-01	time	always	0	0.5	
+# ::edge	reveal-01	time	day	0	0.3	
+# ::edge	secret	poss	life	0.1	0.1.0	
+# ::edge	sheep	ARG1-of	thank-01	0.0	0.0.0	
+(r / reveal-01
+      :ARG0 (s / sheep
+            :ARG1-of (t / thank-01))
+      :ARG1 (s2 / secret
+            :poss (l / life
+                  :poss (p / prince
+                        :mod (l2 / little))))
+      :ARG2 (i / i)
+      :time (d / day
+            :ord (o / ordinal-entity :value 5))
+      :mod (a / again)
+      :time (a2 / always))
+
+# ::id lpp_1943.291 ::date 2012-11-18T16:34:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt Abruptly , without anything to lead up to it , and as if the question had been born of long and silent meditation on his problem , he demanded : " A sheep -- if it eats little bushes , does it eat flowers , too ? "
+# ::zh 好象默默地思索了很长时间以后，得出了什么结果一样，他突然没头没脑地问我：“羊，要是吃小灌木，它也要吃花罗？”
+# ::save-date Thu Jun 4, 2015 ::file lpp_1943_291.txt
+# ::tok Abruptly , without anything to lead up to it , and as if the question had been born of long and silent meditation on his problem , he demanded : " A sheep -- if it eats little bushes , does it eat flowers , too ? "
+# ::alignments 28-29|0 3-4|0.4.1 17-18|0.3 14-15|0.3.1+0.3.1.0 25-26|0.3.0.0 19-20|0.3.0.1 21-22|0.3.0.2 36-37|0.1 42-43|0.1.2 38-39|0.1.2.0 37-38|0.1.2.0.0 43-44|0.1.1 45-46|0.1.1.0 32-33|0.1.0 27-28|0.0 5-6|0.4 22-23|0.3.0 0-1|0.2 ::annotator Aligner v.02 ::date 2016-03-03T05:59:44.198
+# ::node	0	demand-01	28-29
+# ::node	0.0	he	27-28
+# ::node	0.1	eat-01	36-37
+# ::node	0.1.0	sheep	32-33
+# ::node	0.1.1	flower	43-44
+# ::node	0.1.1.0	too	45-46
+# ::node	0.1.2	eat-01	42-43
+# ::node	0.1.2.0	bush	38-39
+# ::node	0.1.2.0.0	little	37-38
+# ::node	0.2	abrupt	0-1
+# ::node	0.3	bear-02	17-18
+# ::node	0.3.0	meditate-01	22-23
+# ::node	0.3.0.0	problem	25-26
+# ::node	0.3.0.1	long-03	19-20
+# ::node	0.3.0.2	silent	21-22
+# ::node	0.3.1	thing	14-15
+# ::node	0.3.1.0	question-01	14-15
+# ::node	0.4	lead-up-05	5-6
+# ::node	0.4.0	-	
+# ::node	0.4.1	anything	3-4
+# ::root	0	demand-01
+# ::edge	bear-02	ARG0	meditate-01	0.3	0.3.0	
+# ::edge	bear-02	ARG1	thing	0.3	0.3.1	
+# ::edge	bush	mod	little	0.1.2.0	0.1.2.0.0	
+# ::edge	demand-01	ARG0	he	0	0.0	
+# ::edge	demand-01	ARG1	eat-01	0	0.1	
+# ::edge	demand-01	ARG2-of	lead-up-05	0	0.4	
+# ::edge	demand-01	conj-as-if	bear-02	0	0.3	
+# ::edge	demand-01	manner	abrupt	0	0.2	
+# ::edge	eat-01	ARG0	sheep	0.1	0.1.0	
+# ::edge	eat-01	ARG0	sheep	0.1.2	0.1.0	
+# ::edge	eat-01	ARG1	bush	0.1.2	0.1.2.0	
+# ::edge	eat-01	ARG1	flower	0.1	0.1.1	
+# ::edge	eat-01	condition	eat-01	0.1	0.1.2	
+# ::edge	flower	mod	too	0.1.1	0.1.1.0	

@@ -1,0 +1,67 @@
+want: if M \not in PSD, find a validation constraint
+
+##  separation orable  -==== min eightvalue problem 
+find y $y^T M y < 0  === one fo the eighvalue is negative 
+
+# Semidefinite Programming 
+
+ - optimize on PSD_m
+ - min C\cdot M
+ s.t  A_1 M \geq b_i
+ A_m M \geq b_m
+ M \in PSD
+
+
+ can be solved effiently ? Poly time m,n
+ Lineaer min C^T X \geq b_i
+ s.t a_i
+
+
+
+ Vector formulation 
+ M  \in PSd
+ claim s,t M_{ij} = <v_i, v_j>
+
+ cholesky decomposition 
+ M = U [\almabda matrix] U^T
+ U D^(1/2) D^(-1/2)^T U^T = V V^T
+
+ comparing to ILP rpgblems, 
+ variables are vectors, constraints involve dot productive
+
+ MAX -CUT
+ maximize go across
+
+ max _{x_i \in {-1,1,}}
+ 
+ vector relazrion 
+
+ unit vector 
+ <v_i,v_j> = 1
+ max 1/4\sum (v_i,v_j)^2  all in do product form .
+
+
+example 2 
+independent set 
+
+x_i \in {0,1}
+
+intended solution 
+v_i is  0 verctor or e_i
+start off a tough relatition , make it a better and narrow constrains
+
+<v_i,v_i> + <v_j, v_j> \leq 1
+    ==.
+<v_i,v_j> = 0
+
+loviasy theta relations 
+
+
+Rounding algorigrtm for MAC_CUT
+SDP relaxiation 
+opt sdp.
+Gaol : edges \geq opt_sdp(0.898)
+    
+relation -> rounding 
+partition into two 
+
