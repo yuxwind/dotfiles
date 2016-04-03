@@ -1,3 +1,7 @@
+/home/jcao/git-workspace/dotfiles/zsh/.oh-my-zsh/themes/robbyrussell.zsh-theme
+/home/jcao/.zshrc
+/home/jcao/.zshrc.local
+/home/jcao/.vimrc
 /Volumes/WorkSpace/Users/Jiessie/.gitconfig
 /Users/Jiessie/.ideavimrc
 /Volumes/WorkSpace/Users/Jiessie/dotfiles/slate/.slate
@@ -244,7 +248,3 @@
 /Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/How_1242.report
 /Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/How_311.report
 /Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/Why_1263.report
-/Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/Why_237.report
-/Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/Why_1242.report
-/Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/Why_207.report
-/Volumes/WorkSpace/git-workspace/talking-geckos/data/classify/Why_156.report

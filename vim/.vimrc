@@ -165,7 +165,7 @@ set timeoutlen=500 " Time to wait for a command
 autocmd BufWritePost .vimrc source $MYVIMRC
 " Fast edit the .vimrc file using ',x'
 nnoremap <Leader>x :tabedit $MYVIMRC<CR>
-
+set shell=/bin/zsh
 set autoread " Set autoread when a file is changed outside
 set autowrite " Write on make/shell commands
 set hidden " Turn on hidden"
@@ -1060,12 +1060,6 @@ nnoremap <Leader>vq :VimuxCloseRunner<CR>
 nnoremap <Leader>vi :VimuxInspectRunner<CR>
 nnoremap <Leader>vl :VimuxRunLastCommand<CR>
 nnoremap <Leader>vc :VimuxClearRunnerHistory<CR>
-" Fix bug in ruby 1.9
-ruby << EOF
-class Object
-  def flush; end unless Object.new.respond_to?(:flush)
-end
-EOF
 
 "-----------------------------------------------------------------¬
 " "" plugin - DoxygenToolkit.vim doxygen¬
